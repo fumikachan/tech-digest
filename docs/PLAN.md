@@ -5,7 +5,7 @@
 
 ## 現在地
 
-**Phase 2 の途中**: CI・GHCR への push・定期実行・Dependabot を追加。残りはマージ後の動作確認、QIITA_TOKEN の登録、要約の方法の決定
+**Phase 2 完了・サイトを GitHub Pages で公開中** → 次は Phase 3（AWS）。AWS アカウントの作成から
 
 ## Phase 0: ローカル CLI ✅（2026-10-12）
 
@@ -65,8 +65,8 @@
 
 学ぶこと: CDN、DNS、TLS、オブザーバビリティ
 
-- [ ] Markdown → HTML 変換（**変換側でも生の HTML を無効化・サニタイズする**。render.py のエスケープと二重に守る）
-- [ ] S3 + CloudFront で配信
+- [x] HTML のサイトを生成（Jinja2 の自動エスケープ + CSP。JavaScript は textContent のみ）。2026-10-12、先に GitHub Pages で公開
+- [ ] S3 + CloudFront で配信（GitHub Pages から移す。違いを比べる）
 - [ ] （任意）Route 53 + ACM で独自ドメインと HTTPS
 - [ ] Slack / Discord に毎朝通知
 - [ ] ログを構造化（JSON）、CloudWatch アラームで失敗を通知（`fetch` は取得元が1つでも失敗すると終了コード 1）
@@ -88,8 +88,12 @@
 - 2026-10-12: リポジトリは private で始める
 - 2026-10-12: 公開してはいけない情報がなければ public にする（全履歴を点検し、問題なしを確認済み）
 - 2026-10-12: 作業はブランチを作り、PR で main に取り込む。マージはユーザーが行う
+- 2026-10-12: 収集した記事を見られるサイトを GitHub Pages で公開する（機能: アーカイブ・絞り込み・検索・並べ替え）。過去の記録は data ブランチの JSON に残す
 
 ## 申し送り（いつかやること）
+
+- [ ] GitHub Pages を有効にする（Settings → Pages → Source を「GitHub Actions」。**ユーザーが実行**）
+- [ ] DB のキャッシュが消えたとき、data ブランチの JSON から DB を復元できるようにする（今は消えると、トレンドの記事が翌日もう一度載る）
 
 - [x] リポジトリを public に切り替える（2026-10-12、ユーザーが実行）
 - [x] main をルールセットで保護する（PR 必須・直接 push と削除と force push を禁止。**ユーザーが実行**。Claude の自動モードではリポジトリのルール変更が止められる）。Phase 2 で CI 通過も必須にする

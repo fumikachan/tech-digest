@@ -1,0 +1,74 @@
+# data ブランチの JSON からサイトを作り、GitHub Pages に公開する。
+#   https://fumikachan.github.io/tech-digest/
+# 動くタイミング:
+#   - Daily digest の後（workflow_call で呼ばれる）
+#   - サイトのコード（テンプレートなど）を main にマージしたとき
+#   - Actions の画面から手動で
+name: Pages
+
+on:
+  workflow_call:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "src/**"
+      - "pyproject.toml"
+      - "uv.lock"
+      - ".github/workflows/pages.yml"
+
+permissions:
+  contents: read
+
+# 公開は 1 つずつ。途中で止めると中途半端な状態になるので、キャンセルはしない
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: サイトを作る
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      # 過去の記録（JSON）は data ブランチにある
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: data
+          path: archive-store
+          persist-credentials: false
+
+      - uses: astral-sh/setup-uv@c18668ad3cf93ea998bef934396af7bb5c839dc7 # v10.2.0
+        with:
+          version: "0.13.0"
+          enable-cache: true
+
+      - name: 依存のインストール
+        run: uv sync --locked --no-dev
+
+      - name: サイトを生成
+        run: uv run tech-digest site --data archive-store/daily --out _site
+
+      - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+        with:
+          path: _site
+
+  deploy:
+    name: GitHub Pages に公開
+    needs: build
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    # Pages への公開に必要な権限。id-token は OIDC（長く使えるトークンを保存しない認証）に使う
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1

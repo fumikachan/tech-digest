@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}アーカイブ - 技術ブログダイジェスト{% endblock %}
+{% block content %}
+<h1>アーカイブ</h1>
+{% if days %}
+<table class="archive">
+  <thead>
+    <tr>
+      <th scope="col">日付</th>
+      {% for source in sources %}<th scope="col">{{ source.title }}</th>{% endfor %}
+    </tr>
+  </thead>
+  <tbody>
+    {% for d in days %}
+    <tr>
+      <td><a href="{{ root }}days/{{ d.date }}.html">{{ d.date.year }}/{{ d.date.month }}/{{ d.date.day }}</a></td>
+      {% for source in sources %}<td class="num">{{ d.counts[source.name] }}</td>{% endfor %}
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% else %}
+<p class="empty">まだダイジェストがありません。</p>
+{% endif %}
+{% endblock %}
