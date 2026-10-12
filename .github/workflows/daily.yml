@@ -1,0 +1,71 @@
+# 毎朝 7:00（JST）にダイジェストを作り、Actions の「Artifacts」に保存する。
+# 本格的な定期実行は Phase 3（AWS）で行う。これは無料でできる最初の定期実行。
+#
+# - DB は SQLite。actions/cache で次の実行に引き継ぎ、「初めて載った日」の記録を保つ
+#   （キャッシュは 7 日使われないと消えるが、毎日動けば残り続ける）
+# - QIITA_TOKEN は Settings → Secrets and variables → Actions に置く（任意）。
+#   GitHub のランナーは IP を共有しているので、トークンなしだと Qiita の制限（60 回/時）に当たりやすい
+# - 公開リポジトリで 60 日間コミットがないと、GitHub がスケジュール実行を自動で止める
+name: Daily digest
+
+on:
+  schedule:
+    - cron: "0 22 * * *" # UTC 22:00 = JST 7:00（cron は UTC で書く）
+  workflow_dispatch: # Actions の画面から手動でも実行できる
+
+permissions:
+  contents: read
+
+concurrency:
+  group: daily-digest
+  cancel-in-progress: false
+
+jobs:
+  digest:
+    name: ダイジェストを作る
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    env:
+      TECH_DIGEST_DB_PATH: data/tech-digest.db
+      TECH_DIGEST_OUTPUT_DIR: digests
+      QIITA_TOKEN: ${{ secrets.QIITA_TOKEN }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - uses: astral-sh/setup-uv@c18668ad3cf93ea998bef934396af7bb5c839dc7 # v10.2.0
+        with:
+          version: "0.13.0"
+          enable-cache: true
+
+      - name: 依存のインストール
+        run: uv sync --locked --no-dev
+
+      # 前回の DB を取り出す。キーは実行ごとに変わるので、restore-keys で一番新しいものを使う
+      - name: DB を復元
+        uses: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: data
+          key: digest-db-${{ github.run_id }}
+          restore-keys: digest-db-
+
+      - name: 取得してダイジェストを作る
+        run: uv run tech-digest run
+
+      # 取得元の一部が失敗しても（終了コード 1）、取れた分の DB とダイジェストは残す
+      - name: DB を保存
+        if: ${{ !cancelled() }}
+        uses: actions/cache/save@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: data
+          key: digest-db-${{ github.run_id }}
+
+      - name: ダイジェストを Artifacts に保存
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: digest-${{ github.run_id }}
+          path: digests/*.md
+          retention-days: 30
+          if-no-files-found: error

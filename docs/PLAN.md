@@ -5,7 +5,7 @@
 
 ## 現在地
 
-**Phase 2 の途中**: CI（lint・型チェック・テスト・Docker ビルド）を追加。次は GHCR への push と定期実行
+**Phase 2 の途中**: CI・GHCR への push・定期実行・Dependabot を追加。残りはマージ後の動作確認、QIITA_TOKEN の登録、要約の方法の決定
 
 ## Phase 0: ローカル CLI ✅（2026-10-12）
 
@@ -32,10 +32,12 @@
 
 - [x] push / PR で lint・型チェック・テストを実行（PostgreSQL はサービスコンテナで用意し、`TEST_DATABASE_URL` を渡す）
 - [x] PR で Docker イメージがビルドできるか確認（push はしない）
-- [ ] ブランチ保護に「CI が通らないとマージできない」を追加
-- [ ] Docker イメージを build して GHCR に push
-- [ ] `schedule:` で毎日実行してみる（無料でできる最初の定期実行）
-- [ ] Dependabot で依存の更新を自動化
+- [x] ブランチ保護に「CI が通らないとマージできない」を追加（2026-10-12）
+- [x] Docker イメージを build して GHCR に push（main へのマージ時、`publish.yml`）
+- [x] `schedule:` で毎日実行してみる（毎朝 7:00 JST、`daily.yml`。DB は actions/cache で引き継ぎ、ダイジェストは Artifacts）
+- [x] Dependabot で依存の更新を自動化（uv・Actions・Dockerfile・compose を毎週）
+- [ ] マージ後に Actions の画面から「Daily digest」を手動実行して動作確認
+- [ ] GitHub の Secrets に `QIITA_TOKEN` を登録（ランナーは IP を共有しているので、トークンなしだと制限に当たりやすい）
 - [ ] Claude Code に `github@claude-plugins-official` を追加
 - [ ] **要約の方法を決める**（下の「未決定事項」）
 
@@ -90,7 +92,7 @@
 ## 申し送り（いつかやること）
 
 - [x] リポジトリを public に切り替える（2026-10-12、ユーザーが実行）
-- [ ] main をルールセットで保護する（PR 必須・直接 push と削除と force push を禁止。**ユーザーが実行**。Claude の自動モードではリポジトリのルール変更が止められる）。Phase 2 で CI 通過も必須にする
+- [x] main をルールセットで保護する（PR 必須・直接 push と削除と force push を禁止。**ユーザーが実行**。Claude の自動モードではリポジトリのルール変更が止められる）。Phase 2 で CI 通過も必須にする
 
 - [ ] 2つ目のプロジェクトを作るときに、`ENABLE_STOP_REVIEW` と `permissions.deny` をプロジェクト設定からユーザー設定（`~/.claude/settings.json`）へ移す
 - [ ] 定期実行を始める前に Qiita のアクセストークンを発行して `.env` に置く（60 → 1000 リクエスト/時）

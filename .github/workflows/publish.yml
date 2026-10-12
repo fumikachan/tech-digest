@@ -1,0 +1,61 @@
+# main にマージされたら Docker イメージをビルドし、GitHub Container Registry（GHCR）に push する。
+#   ghcr.io/fumikachan/tech-digest:latest      … main の最新
+#   ghcr.io/fumikachan/tech-digest:sha-xxxxxxx … コミットごと（どのコードのイメージか追える）
+# Phase 3 で AWS からこのイメージを使う。
+name: Publish image
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - "docs/**"
+      - "**.md"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    name: GHCR に push
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    # GHCR に push するには packages: write が必要。このジョブだけに付ける
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - uses: docker/setup-buildx-action@f87e5991a6d7451dcb8d9637bfbc97413f497069 # v4.4.1
+
+      # GITHUB_TOKEN で GHCR にログインする（個人のトークンを Secrets に置かなくてよい）
+      - uses: docker/login-action@dbcb813823bdd20940b903addbd779551569679f # v4.6.0
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      # タグとラベル（どのリポジトリ・コミットから作ったか）を作る
+      - id: meta
+        uses: docker/metadata-action@dc802804100637a589fabce1cb79ff13a1411302 # v6.2.0
+        with:
+          images: ghcr.io/${{ github.repository }}
+          tags: |
+            type=raw,value=latest,enable={{is_default_branch}}
+            type=sha,prefix=sha-
+
+      - uses: docker/build-push-action@c3c9e263c25d99ce0380d002d59b67737d91b0dc # v7.4.0
+        with:
+          context: .
+          push: true
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max

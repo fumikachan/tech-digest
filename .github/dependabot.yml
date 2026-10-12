@@ -1,0 +1,38 @@
+# 依存の更新を毎週チェックし、更新があれば PR を作る。
+# CI が通ることを確認してからマージする（マージはユーザーが行う）。
+version: 2
+updates:
+  # Python のパッケージ（pyproject.toml / uv.lock）
+  - package-ecosystem: "uv"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      timezone: "Asia/Tokyo"
+    groups:
+      python:
+        patterns: ["*"]
+        update-types: ["minor", "patch"]
+
+  # ワークフローのアクション（SHA と「# vX.Y.Z」のコメントをまとめて更新する）
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      timezone: "Asia/Tokyo"
+    groups:
+      actions:
+        patterns: ["*"]
+
+  # Dockerfile のベースイメージ（python、uv）
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      timezone: "Asia/Tokyo"
+
+  # compose.yaml のイメージ（postgres）
+  - package-ecosystem: "docker-compose"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      timezone: "Asia/Tokyo"
