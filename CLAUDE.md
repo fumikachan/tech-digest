@@ -14,6 +14,7 @@ Qiita・Zenn などの技術記事を日次で収集・整形・通知するバ�
 - テスト: `uv run pytest`（PostgreSQL でも試すときは `TEST_DATABASE_URL` を設定。一時的な DB は `docker run --rm -e POSTGRES_PASSWORD=test -p 127.0.0.1:55432:5432 postgres:18.6-trixie`）
 - 型チェック: `uv run pyright`
 - Docker: `docker build -t tech-digest .` / compose: `docker compose run --rm app`（詳細は README）
+  - DynamoDB Local: `docker compose run --rm app-dynamodb create-table`（初回）→ `docker compose run --rm app-dynamodb`
   - 依存を変えたら `uv.lock` も更新する（イメージは `uv sync --locked` で入れるので、ずれるとビルドが失敗する）
 - lint: `uv run ruff check --fix && uv run ruff format`
   - 編集時の hook は未使用 import（F401）を消さないので、作業の最後に必ず `ruff check` を通す

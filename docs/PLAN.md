@@ -5,7 +5,7 @@
 
 ## 現在地
 
-**Phase 2 完了・サイトを GitHub Pages で公開中** → Phase 3-1（AWS を使わずにローカルで作る）。次は compose に DynamoDB Local を追加
+**Phase 2 完了・サイトを GitHub Pages で公開中** → Phase 3-1（AWS を使わずにローカルで作る）。次は API のハンドラー
 
 ## Phase 0: ローカル CLI ✅（2026-10-12）
 
@@ -54,7 +54,7 @@ Lambda と DynamoDB は VPC の外に置く（VPC 内の Lambda が外部 API �
 
 - [x] ページごとに必要なデータ（問い合わせの形）を決め、DynamoDB のキー設計（パーティションキー・ソートキー・GSI）を決める（2026-10-13、[API_DESIGN.md](API_DESIGN.md)）
 - [x] `storage` に DynamoDB 版を追加（`DYNAMODB_TABLE` で切り替え。SQLite / PostgreSQL もそのまま動くようにする）。テストは moto（2026-10-13）
-- [ ] compose に DynamoDB Local を追加し、ローカルでテーブルを作るコマンドを用意する
+- [x] compose に DynamoDB Local を追加し、ローカルでテーブルを作るコマンドを用意する（2026-10-13、`app-dynamodb`・`create-table`）
 - [ ] API のハンドラーを作る（`src/tech_digest/api/`。フレームワークを使わず、API Gateway のイベントを直接扱う）。テストは偽のイベントを渡す
 - [ ] ハンドラーを包む開発用サーバーで、ローカルから API を呼べるようにする
 - [ ] `web/` に SPA を作る（TypeScript + Vite。外部の文字列は `textContent` だけ。ローカルでは Vite のプロキシでローカルの API を呼ぶ）

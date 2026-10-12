@@ -23,9 +23,9 @@ updates:
       actions:
         patterns: ["*"]
 
-  # Dockerfile のベースイメージ（python、uv）
+  # Dockerfile のベースイメージ（python、uv、DynamoDB Local）
   - package-ecosystem: "docker"
-    directory: "/"
+    directories: ["/", "/docker/dynamodb-local"]
     schedule:
       interval: "weekly"
       timezone: "Asia/Tokyo"

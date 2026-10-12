@@ -67,6 +67,25 @@ def site(data_dir: Path, out_dir: Path) -> None:
     logger.info("サイトを作りました: %s（%d 日分）", out_dir, len(days))
 
 
+def create_table(settings: Settings) -> int:
+    """DynamoDB Local にテーブルを作る。AWS のテーブルは Terraform（Phase 3 では手作業）で作る。"""
+    if not (settings.dynamodb_table and settings.dynamodb_endpoint_url):
+        logger.error(
+            "create-table は DynamoDB Local 用です。"
+            "DYNAMODB_TABLE と DYNAMODB_ENDPOINT_URL を設定してください"
+        )
+        return 1
+    from tech_digest.storage import dynamodb
+
+    with closing(dynamodb.connect(settings.dynamodb_table, settings.dynamodb_endpoint_url)) as db:
+        created = dynamodb.create_table(db.client, db.table)
+    if created:
+        logger.info("テーブルを作りました: %s", settings.dynamodb_table)
+    else:
+        logger.info("テーブルは既にあります: %s", settings.dynamodb_table)
+    return 0
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(
         prog="tech-digest", description="技術ブログの新着記事を集めてダイジェストにまとめる"
@@ -88,6 +107,7 @@ def main(argv: list[str] | None = None) -> int:
     site_parser = sub.add_parser("site", help="JSON の記録から静的サイトを作る")
     site_parser.add_argument("--data", type=Path, default=Path("archive"), help="JSON の置き場所")
     site_parser.add_argument("--out", type=Path, default=Path("site"), help="サイトの出力先")
+    sub.add_parser("create-table", help="DynamoDB Local にテーブルを作る（ローカル開発用）")
     args = parser.parse_args(argv)
 
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
@@ -104,6 +124,8 @@ def main(argv: list[str] | None = None) -> int:
     if args.command == "site":
         site(args.data, args.out)
         return 0
+    if args.command == "create-table":
+        return create_table(settings)
 
     digest_date = today_jst()
     failed = fetch(settings, digest_date)

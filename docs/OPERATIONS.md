@@ -26,6 +26,8 @@ tech-digest をふだん動かすときのコマンド・接続方法・トラ�
 | **compose（ふだんはこれ）** | `docker compose run --rm app` | PostgreSQL（ボリューム `tech-digest_db-data`） |
 | uv で直接 | `uv run tech-digest run` | SQLite（`data/tech-digest.db`） |
 | uv で直接 + PostgreSQL | `DATABASE_URL="postgresql://tech_digest:<パスワード>@localhost:5432/tech_digest" uv run tech-digest run` | compose の PostgreSQL（db の起動が必要） |
+| compose + DynamoDB Local | `docker compose run --rm app-dynamodb` | DynamoDB Local（ボリューム `tech-digest_dynamodb-data`）。初回は先にテーブルを作る（[2. DB を起動・停止する](#dynamodb-local)） |
+| uv で直接 + DynamoDB Local | `DYNAMODB_TABLE=tech-digest DYNAMODB_ENDPOINT_URL=http://localhost:8000 uv run tech-digest run` | compose の DynamoDB Local（dynamodb の起動が必要） |
 
 - ダイジェストは `digests/YYYY-MM-DD.md` に出力される
 - サブコマンド: `run`（取得 + 出力）/ `fetch`（取得だけ）/ `build --date 2026-10-12`（指定日を作り直す）
@@ -49,6 +51,22 @@ docker compose down         # 止める（データはボリュームに残る�
 | PC の再起動・`wsl --shutdown` の後 | 止まっている → `docker compose up -d db` で起動 |
 
 Docker 本体は WSL の起動時に自動で起動する（systemd で有効化済み）。
+
+### DynamoDB Local
+
+AWS の DynamoDB と同じ API で動く、ローカル用の DynamoDB（AWS が無料で配布している Docker イメージ）。
+Phase 3 で AWS に移す構成を、費用をかけずに試すために使う。
+
+```bash
+docker compose up -d --wait dynamodb                      # 起動
+docker compose run --rm app-dynamodb create-table         # テーブルを作る（初回だけ。既にあれば何もしない）
+docker compose run --rm app-dynamodb                      # 取得してダイジェストを出力
+docker compose down                                       # 止める（データはボリュームに残る）
+```
+
+- `create-table` は DynamoDB Local 専用。`DYNAMODB_ENDPOINT_URL` がないと断る（AWS のテーブルは Terraform で作る）
+- DynamoDB Local につなぐときは、アプリがダミーの認証情報を使う。手元の AWS の認証情報は要らないし、送られない
+- データは `-sharedDb` で 1 つにまとめている。付けないとアクセスキーとリージョンの組み合わせごとに別のデータになる
 
 ## 3. DB の中を見る
 
@@ -84,7 +102,24 @@ A5:SQL で SQLite のデータベースとして次のファイルを開く。
 \\wsl.localhost\Ubuntu-24.04\home\amneru\projects\tech-digest\data\tech-digest.db
 ```
 
-### テーブル
+### DynamoDB Local
+
+先に `docker compose up -d --wait dynamodb` で起動しておく。
+
+- **NoSQL Workbench（Windows）**: AWS 公式の GUI。「Operation builder」→「Add connection」→「DynamoDB local」で、ポート `8000`（`.env` で `DYNAMODB_PORT` を変えた場合はその値）を指定する
+- **コマンドで見る**（日付ごとの件数）:
+
+  ```bash
+  DYNAMODB_TABLE=tech-digest DYNAMODB_ENDPOINT_URL=http://localhost:8000 uv run python -c "
+  from tech_digest import storage
+  from tech_digest.config import Settings
+  db = storage.connect(Settings.from_env())
+  for d in db.list_days(): print(d.date, d.counts)"
+  ```
+
+テーブルの設計（キーの付け方）は [API_DESIGN.md](API_DESIGN.md) を参照。
+
+### テーブル（SQLite / PostgreSQL）
 
 `articles` テーブル 1 つだけ。
 
@@ -106,7 +141,8 @@ A5:SQL で SQLite のデータベースとして次のファイルを開く。
 |---|---|---|
 | `POSTGRES_PASSWORD` | compose では必須 | PostgreSQL のパスワード |
 | `QIITA_TOKEN` | 任意 | Qiita のアクセストークン（なしだと 60 リクエスト/時） |
-| `DB_PORT` | 任意 | 手元に公開するポート（既定 5432） |
+| `DB_PORT` | 任意 | 手元に公開する PostgreSQL のポート（既定 5432） |
+| `DYNAMODB_PORT` | 任意 | 手元に公開する DynamoDB Local のポート（既定 8000） |
 
 `.env` がないときの作り方（既にあれば何もしない）:
 
@@ -165,7 +201,8 @@ git branch -d feat/<内容>                   # 手元のブランチを消す
 
 | 消したいもの | コマンド |
 |---|---|
-| compose の PostgreSQL | `docker compose down -v`（ボリュームごと削除） |
+| compose の PostgreSQL と DynamoDB Local | `docker compose down -v`（ボリュームごと削除） |
+| DynamoDB Local だけ | `docker compose down && docker volume rm tech-digest_dynamodb-data` |
 | uv で作った SQLite | `rm data/tech-digest.db` |
 | ダイジェスト | `rm digests/*.md` |
 
@@ -177,6 +214,8 @@ git branch -d feat/<内容>                   # 手元のブランチを消す
 | `password authentication failed for user "tech_digest"` | `.env` のパスワードと DB 側が違う。[4. 設定](#4-設定env) の「注意」の手順で DB 側を合わせる |
 | A5:SQL で接続できない | db が止まっている → `docker compose ps` で確認し `docker compose up -d db` |
 | `port is already allocated`（5432） | ほかのソフトが 5432 を使っている → `.env` に `DB_PORT=15432` と書き、A5:SQL のポートも合わせる |
+| `port is already allocated`（8000） | ほかのソフトが 8000 を使っている → `.env` に `DYNAMODB_PORT=18000` と書き、uv で直接使うときの `DYNAMODB_ENDPOINT_URL` も合わせる |
+| `ResourceNotFoundException`（DynamoDB Local） | テーブルがない → `docker compose run --rm app-dynamodb create-table` |
 | `digests/` に書き込めない（Permission denied） | `digests/` を Docker に作らせると root の持ち物になる → `sudo chown -R $USER: digests` |
 | コードを変えたのに compose の結果が変わらない | イメージが古い → `docker compose build app` |
 | `uv sync --locked` でビルドが失敗する | `pyproject.toml` を変えたのに `uv.lock` が古い → `uv lock` して両方コミット |
