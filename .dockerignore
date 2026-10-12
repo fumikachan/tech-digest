@@ -1,0 +1,29 @@
+# イメージに入れないもの。秘密情報・ローカルのデータ・ビルドに不要なファイル
+# （ビルドコンテキストが小さくなり、ビルドも速くなる）
+
+# 秘密情報
+.env
+.env.*
+
+# ローカルの環境・データ
+.venv/
+data/
+digests/
+*.db
+*.sqlite3
+
+# キャッシュ
+__pycache__/
+*.py[oc]
+.ruff_cache/
+.pytest_cache/
+
+# 実行に不要なもの
+.git/
+.github/
+.claude/
+docs/
+tests/
+CLAUDE.md
+Dockerfile
+.dockerignore

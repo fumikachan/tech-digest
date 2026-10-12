@@ -59,6 +59,24 @@ uv run tech-digest build --date 2026-10-12   # DB から指定日のダイジェ
 
 `.env` に書いた場合は `uv run --env-file .env tech-digest run` で読み込める。
 
+## Docker で動かす
+
+```bash
+docker build -t tech-digest .
+mkdir -p digests   # 先に作っておく（Docker に作らせると root の持ち物になり、書き込めない）
+docker run --rm -v tech-digest-data:/data -v "$PWD/digests:/output" tech-digest
+```
+
+| マウント | 中身 | 種類 |
+|---|---|---|
+| `tech-digest-data:/data` | SQLite の DB | 名前付きボリューム（Docker が管理。コンテナを消しても残る） |
+| `$PWD/digests:/output` | ダイジェストの Markdown | バインドマウント（ホストのディレクトリ） |
+
+- サブコマンドは末尾に書く: `docker run --rm -v tech-digest-data:/data -v "$PWD/digests:/output" tech-digest build --date 2026-10-12`
+- 環境変数を渡す: `--env-file .env` を `docker run` に付ける
+- コンテナ内のユーザーは UID 1000（WSL の最初のユーザーと同じ）。ホストの UID が違う場合は `docker build --build-arg APP_UID=$(id -u) -t tech-digest .`
+- DB を消して最初からやり直す: `docker volume rm tech-digest-data`
+
 ## 開発
 
 ```bash
