@@ -26,7 +26,7 @@ GitHub Actions（毎朝 7:00 JST）
 | 0 | ローカル CLI（取得 → SQLite → Markdown） | Linux、git、uv |
 | 1 | Docker / compose（PostgreSQL） | コンテナ、ボリューム、ネットワーク |
 | 2 | GitHub Actions（lint・test・イメージ build） | CI/CD、シークレット管理 |
-| 3 | AWS へデプロイ（定期実行） | IAM、VPC、Lambda / ECS |
+| 3 | AWS へデプロイ（DynamoDB + Lambda + API Gateway、サイトを API から読む形に） | IAM、Lambda、API Gateway、DynamoDB |
 | 4 | Terraform 化 | IaC、state 管理 |
 | 5 | S3 + CloudFront で公開、監視 | CDN、DNS、TLS、オブザーバビリティ |
 

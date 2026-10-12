@@ -5,7 +5,7 @@
 
 ## 現在地
 
-**Phase 2 完了・サイトを GitHub Pages で公開中** → 次は Phase 3（AWS）。AWS アカウントの作成から
+**Phase 2 完了・サイトを GitHub Pages で公開中** → 次は Phase 3（AWS: DynamoDB + Lambda + API Gateway）。AWS アカウントの作成から
 
 ## Phase 0: ローカル CLI ✅（2026-10-12）
 
@@ -41,22 +41,32 @@
 - [ ] Claude Code に `github@claude-plugins-official` を追加
 - [ ] **要約の方法を決める**（下の「未決定事項」）
 
-## Phase 3: AWS へ手動デプロイ
+## Phase 3: AWS へ手動デプロイ（DynamoDB + Lambda + API Gateway）
 
-学ぶこと: IAM（最小権限）、VPC、Secrets Manager / SSM、定期実行
+学ぶこと: IAM（最小権限）、Lambda、API Gateway、DynamoDB のキー設計、Secrets Manager / SSM、定期実行
+
+構成: 収集バッチ（Lambda）→ DynamoDB ← API（Lambda + API Gateway の HTTP API）← サイト（SPA）。
+Lambda と DynamoDB は VPC の外に置く（VPC 内の Lambda が外部 API に出るには NAT Gateway が要り、月 6,000 円以上かかるため）
 
 - [ ] **最初に**: AWS Budgets で予算アラート、root ユーザーに MFA
 - [ ] 作業用の IAM ユーザー（または IAM Identity Center）を作る
-- [ ] 構成を決める（下の「未決定事項」）。作る前に概算の月額と削除方法を確認する
-- [ ] EventBridge Scheduler で毎朝実行
+- [ ] 作る前に概算の月額と削除方法を確認する（目安: 無料枠内でほぼ 0 円〜数十円）
+- [ ] ページごとに必要なデータ（問い合わせの形）を決め、DynamoDB のキー設計（パーティションキー・ソートキー・GSI）を決める
+- [ ] `storage.py` に DynamoDB 版を追加（ローカルは SQLite / PostgreSQL のまま動くようにする）
+- [ ] 収集バッチを Lambda で動かし、EventBridge Scheduler で毎朝実行
 - [ ] `QIITA_TOKEN` などの秘密情報を Secrets Manager / SSM に置く
+- [ ] API の Lambda ハンドラーを作る（`src/tech_digest/api/`。フレームワークを使わず、API Gateway のイベントを直接扱う）
+- [ ] API Gateway（HTTP API）で公開する。スロットリングと Lambda の同時実行数の上限を設定し、CORS はサイトのオリジンだけ許可
+- [ ] IAM ロールを分ける（バッチは書き込みだけ、API は読み取りだけ）
+- [ ] サイトを API から読む SPA に作り替える（`web/`。今の `templates/` と `static/` を置き換える。外部の文字列は `textContent` だけ、CSP の `connect-src` に API を追加）
 - [ ] Claude Code に `aws-core`、`deploy-on-aws` を追加
 
 ## Phase 4: Terraform
 
 学ぶこと: 宣言的なインフラ管理、state、plan / apply
 
-- [ ] Phase 3 で手作業で作ったものを Terraform で作り直す（`infra/terraform/`）
+- [ ] Phase 3 で手作業で作ったもの（DynamoDB・Lambda 2 つ・API Gateway・EventBridge Scheduler・IAM）を Terraform で作り直す（`infra/terraform/`）
+- [ ] CI に paths フィルターを入れ、バッチ / API / `web/` の変更ごとに必要なジョブだけ実行する
 - [ ] tfstate を S3 で管理、`dev` / `prod` を分ける
 - [ ] GitHub Actions から OIDC で AWS にデプロイ（アクセスキーを使わない）
 - [ ] Claude Code に `terraform@claude-plugins-official` を追加
@@ -67,6 +77,7 @@
 
 - [x] HTML のサイトを生成（Jinja2 の自動エスケープ + CSP。JavaScript は textContent のみ）。2026-10-12、先に GitHub Pages で公開
 - [ ] S3 + CloudFront で配信（GitHub Pages から移す。違いを比べる）
+- [ ] API の前にも CloudFront を置いてキャッシュする（Lambda の呼び出し回数を減らす）
 - [ ] （任意）Route 53 + ACM で独自ドメインと HTTPS
 - [ ] Slack / Discord に毎朝通知
 - [ ] ログを構造化（JSON）、CloudWatch アラームで失敗を通知（`fetch` は取得元が1つでも失敗すると終了コード 1）
@@ -76,8 +87,11 @@
 | 項目 | 選択肢 | 決める時期 |
 |---|---|---|
 | 記事の要約 | LLM API で要約 / 記事の description を使う / 要約しない / その他（検討中） | Phase 2〜3 |
-| AWS の実行基盤 | Lambda（安い、月数十円程度） / ECS Fargate + RDS（一般的、月 2,000〜4,000 円程度） | Phase 3 の前 |
-| AWS の DB | DynamoDB / S3 に SQLite / RDS PostgreSQL | Phase 3 の前 |
+| DynamoDB の容量モード | プロビジョンド（無料枠内なら 0 円。上限を超えると書き込みが失敗する） / オンデマンド（月数円程度、上限なし） | テーブルを作る前 |
+| ローカル・CI での DynamoDB | DynamoDB Local（Docker） / moto（Python のモック） | storage の DynamoDB 版を作る前 |
+| Lambda のパッケージ形式 | zip / コンテナイメージ（ECR） | 収集バッチを Lambda に移す前 |
+| フロントのツール | 素の JavaScript（今と同じ、ビルドなし） / TypeScript + Vite | `web/` を作る前 |
+| data ブランチの JSON | DynamoDB に移った後もバックアップとして続ける / やめる | 収集バッチを Lambda に移した後 |
 | 通知先 | Slack / Discord | Phase 5 |
 | 独自ドメイン | 取るか（年 1,000〜2,000 円程度） | Phase 5 |
 
@@ -89,11 +103,15 @@
 - 2026-10-12: 公開してはいけない情報がなければ public にする（全履歴を点検し、問題なしを確認済み）
 - 2026-10-12: 作業はブランチを作り、PR で main に取り込む。マージはユーザーが行う
 - 2026-10-12: 収集した記事を見られるサイトを GitHub Pages で公開する（機能: アーカイブ・絞り込み・検索・並べ替え）。過去の記録は data ブランチの JSON に残す
+- 2026-10-12: インフラ学習のため、API Gateway + Lambda で API を作る。DB は DynamoDB（期限なしの無料枠でほぼ 0 円。RDS は月 3,000 円〜で、VPC 内の Lambda から外部に出るための NAT Gateway も高い）
+- 2026-10-12: 収集バッチも Lambda で動かす（API と実行基盤をそろえる）。ECS Fargate と RDS は使わない
+- 2026-10-12: サイトは全体を API から読む SPA に作り替える（フロントとバックの分離を学ぶため）
+- 2026-10-12: API とフロントは別のリポジトリにせず、tech-digest の中でディレクトリを分ける（`src/tech_digest/api/`、`web/`）。書く側（バッチ）と読む側（API・サイト）が DynamoDB のキー設計と記事の形を共有するので、1 つの PR でまとめて変えられるようにする
 
 ## 申し送り（いつかやること）
 
 - [ ] GitHub Pages を有効にする（Settings → Pages → Source を「GitHub Actions」。**ユーザーが実行**）
-- [ ] DB のキャッシュが消えたとき、data ブランチの JSON から DB を復元できるようにする（今は消えると、トレンドの記事が翌日もう一度載る）
+- [ ] DB のキャッシュが消えたとき、data ブランチの JSON から DB を復元できるようにする（今は消えると、トレンドの記事が翌日もう一度載る）。Phase 3 で DynamoDB に移れば不要になる
 
 - [x] リポジトリを public に切り替える（2026-10-12、ユーザーが実行）
 - [x] main をルールセットで保護する（PR 必須・直接 push と削除と force push を禁止。**ユーザーが実行**。Claude の自動モードではリポジトリのルール変更が止められる）。Phase 2 で CI 通過も必須にする
