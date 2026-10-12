@@ -129,6 +129,7 @@ docker compose down                                 # 止める（データは�
 
 - dynamodb のポートは `127.0.0.1:8000` に公開している。uv で直接使うときは `DYNAMODB_ENDPOINT_URL=http://localhost:8000`
 - 詳しくは [docs/OPERATIONS.md](docs/OPERATIONS.md#dynamodb-local)
+- API（Lambda のハンドラー）を手元で動かす: `DYNAMODB_TABLE=tech-digest DYNAMODB_ENDPOINT_URL=http://localhost:8000 uv run python -m tech_digest.api.devserver` → `curl localhost:8080/days`
 
 ## 開発
 

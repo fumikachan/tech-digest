@@ -119,6 +119,22 @@ A5:SQL で SQLite のデータベースとして次のファイルを開く。
 
 テーブルの設計（キーの付け方）は [API_DESIGN.md](API_DESIGN.md) を参照。
 
+### API をローカルで動かす
+
+開発用サーバー（API Gateway の代わり）が、本物の Lambda のハンドラーを呼ぶ。DynamoDB Local のデータを返す。
+
+```bash
+docker compose up -d --wait dynamodb
+DYNAMODB_TABLE=tech-digest DYNAMODB_ENDPOINT_URL=http://localhost:8000 uv run python -m tech_digest.api.devserver
+# 別のターミナルで
+curl localhost:8080/days
+curl localhost:8080/days/2026-10-13
+curl "localhost:8080/search?q=aws&sort=date"
+```
+
+- 止めるときは Ctrl+C。ポートは `--port 18080` で変えられる
+- エンドポイントとレスポンスの形は [API_DESIGN.md](API_DESIGN.md#api) を参照
+
 ### テーブル（SQLite / PostgreSQL）
 
 `articles` テーブル 1 つだけ。

@@ -129,13 +129,16 @@ class DynamoStore:
             ExpressionAttributeValues={":pk": {"S": DAYS_PK}},
             ScanIndexForward=False,  # SK（日付）の降順
         )
-        days = []
-        for page in pages:
-            for raw in page["Items"]:
-                item = _to_python(raw)
-                counts = {source: int(n) for source, n in item["counts"].items()}
-                days.append(DaySummary(date=date.fromisoformat(item["SK"]), counts=counts))
-        return days
+        return [_to_day(_to_python(item)) for page in pages for item in page["Items"]]
+
+    def get_day(self, digest_date: date) -> DaySummary | None:
+        """digest_date のダイジェストがなければ None。"""
+        response = self.client.get_item(
+            TableName=self.table,
+            Key={"PK": {"S": DAYS_PK}, "SK": {"S": digest_date.isoformat()}},
+        )
+        item = response.get("Item")
+        return _to_day(_to_python(item)) if item else None
 
     def close(self) -> None:
         self.client.close()
@@ -250,3 +253,8 @@ def _to_article(item: Mapping[str, Any]) -> Article:
         score=None if score is None else int(score),
         tags=tuple(item["tags"]),
     )
+
+
+def _to_day(item: Mapping[str, Any]) -> DaySummary:
+    counts = {source: int(n) for source, n in item["counts"].items()}
+    return DaySummary(date=date.fromisoformat(item["SK"]), counts=counts)

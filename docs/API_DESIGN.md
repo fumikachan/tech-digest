@@ -89,7 +89,11 @@ DynamoDB は SQL のように後から自由に絞り込めないので、先に
 
 ## API
 
-ベースの URL は API Gateway の HTTP API。読み取りだけで、認証はなし。
+ベースの URL は API Gateway の HTTP API。読み取りだけで、認証はなし。実装は `src/tech_digest/api/`。
+
+API Gateway には下の 4 つのルートを個別に作る（`$default` ルートで全部を Lambda に流すことはしない）。
+ルートのないパスには API Gateway が 404 を返し、Lambda は呼ばれない（ボットのアクセスで課金が増えない）。
+ハンドラーはイベントの `routeKey`（例: `GET /days/{date}`）で処理を選ぶ。ルートの一覧は `api/routes.py` の `ROUTES`。
 
 | メソッドとパス | 返すもの | 使う DynamoDB の操作 |
 |---|---|---|
@@ -122,6 +126,30 @@ DynamoDB は SQL のように後から自由に絞り込めないので、先に
 - `url` は `render.safe_url` を通す。http(s) 以外は `null` にする（今のサイトと同じ）
 - 記事の並び順はスコアの高い順（同じなら新しい順）
 
+`GET /days`
+
+```json
+{"days": [{"date": "2026-10-13", "counts": {"qiita": 404, "zenn": 20, "hatena": 30}}]}
+```
+
+- 新しい順。記事のなかった取得元も 0 として入れる
+
+`GET /search?q=aws`
+
+```json
+{"total": 25, "articles": [{"date": "2026-10-13", "source": "hatena", "url": "…", "title": "…", "…": "…"}]}
+```
+
+- `q` は空白で区切った語をすべて含む記事（タイトルとタグ、大文字小文字は区別しない）。1〜100 文字
+- `source` は取得元の name、`sort` は `score`（既定）か `date`
+- `total` は全件数、`articles` は最大 100 件
+
+`GET /sources`
+
+```json
+{"sources": [{"name": "qiita", "title": "Qiita", "description": "前日の新着", "score_unit": "いいね"}]}
+```
+
 ### エラー
 
 | 状況 | ステータス |
@@ -133,7 +161,7 @@ DynamoDB は SQL のように後から自由に絞り込めないので、先に
 ### その他
 
 - **CORS**: AWS では API Gateway の CORS 設定で、サイトのオリジンだけ許可する。ローカルでは Vite の開発サーバーのプロキシ経由で呼ぶので、CORS は要らない
-- **キャッシュ**: 過去の日付は内容が変わらないので `Cache-Control` を付ける（Phase 5 で CloudFront を前に置いたときに効く）
+- **キャッシュ**: 成功したレスポンスに `Cache-Control: public, max-age=300` を付ける（Phase 5 で CloudFront を前に置いたときに効く）。過去の日付でも、後日の取得でスコアやタイトルが更新されるので長くはしない。エラーは `no-store`
 - **ハンドラー**: フレームワークは使わず、API Gateway のイベント（ペイロード形式 2.0）を直接受け取る。処理の中身はハンドラーの外の関数に分け、テストとローカルの開発用サーバーから同じ関数を呼ぶ
 
 ## ローカルでの動かし方
@@ -141,7 +169,7 @@ DynamoDB は SQL のように後から自由に絞り込めないので、先に
 | 本番 | ローカル | テスト（pytest） |
 |---|---|---|
 | DynamoDB | DynamoDB Local（compose に追加） | moto |
-| API Gateway + Lambda | ハンドラーを包む開発用サーバー | ハンドラーに偽のイベントを渡す |
+| API Gateway + Lambda | 開発用サーバー（`api/devserver.py`、ポート 8080）。リクエストを API Gateway と同じ形のイベントにしてハンドラーを呼ぶ | ハンドラーに偽のイベントを渡す |
 | SPA の配信 | Vite の開発サーバー | — |
 
 - 接続先は環境変数で切り替える。`DYNAMODB_TABLE` があれば DynamoDB を使い、`DYNAMODB_ENDPOINT_URL` があればその URL（DynamoDB Local）につなぐ
