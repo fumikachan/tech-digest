@@ -1,2 +1,1 @@
-def main() -> None:
-    print("Hello from tech-digest!")
+"""技術ブログの新着記事を集めてダイジェストにまとめる。"""

@@ -10,13 +10,18 @@ Qiita・Zenn などの技術記事を日次で収集・整形・通知するバ�
 
 ## よく使うコマンド
 - 依存追加: `uv add <pkg>`（開発用は `uv add --dev <pkg>`）
-- 実行: `uv run tech-digest`
+- 実行: `uv run tech-digest run`（`fetch` / `build --date YYYY-MM-DD` で個別実行）
 - テスト: `uv run pytest`
+- 型チェック: `uv run pyright`
 - lint: `uv run ruff check --fix && uv run ruff format`
+  - 編集時の hook は未使用 import（F401）を消さないので、作業の最後に必ず `ruff check` を通す
 
 ## 構成
-- `src/tech_digest/` アプリ本体（取得元は `sources/` に共通インターフェースで追加する）
-- `tests/` テスト
+- `src/tech_digest/cli.py` サブコマンド（fetch / build / run）
+- `src/tech_digest/sources/` 取得元。`fetch(client, digest_date, settings) -> list[Article]` を持つモジュールを作り `SOURCES` に登録する。HTTP 部分と `parse()` を分け、テストは `parse()` と `httpx.MockTransport` で書く
+- `src/tech_digest/storage.py` SQLite。主キーは (source, url)、`digest_date` は初めて載った日で更新しない
+- `src/tech_digest/render.py` Markdown 生成
+- `tests/` テスト（ネットワークに出ない）
 - `infra/terraform/` インフラ定義（Phase 4 以降）
 
 ## ロードマップ
@@ -26,6 +31,8 @@ Qiita・Zenn などの技術記事を日次で収集・整形・通知するバ�
 3. AWS へ手動デプロイ
 4. Terraform 化
 5. 公開（S3 + CloudFront）と監視
+
+記事の要約は Phase 2〜3 のあたりで追加予定。方法はユーザーが検討中なので、勝手に実装しない。
 
 ## 方針
 - 設定は環境変数から読む（ローカル・Docker・クラウドで同じコードが動くように）

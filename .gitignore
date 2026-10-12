@@ -29,3 +29,7 @@ wheels/
 *.tfstate
 *.tfstate.*
 *.tfvars
+
+# Phase 0 の出力
+data/
+digests/
