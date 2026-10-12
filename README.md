@@ -140,4 +140,12 @@ uv run pyright          # 型チェック
 uv run ruff check --fix && uv run ruff format   # lint / format
 ```
 
+画面（`web/`、TypeScript + Vite）:
+
+```bash
+cd web && nvm use && npm ci
+npm run dev        # http://127.0.0.1:5173（API を別に起動しておく。docs/OPERATIONS.md を参照）
+npm run typecheck && npm test && npm run build
+```
+
 新しい取得元を足すときは、`src/tech_digest/sources/` に `fetch(client, digest_date, settings)` を持つモジュールを作り、`sources/__init__.py` の `SOURCES` に追加する。

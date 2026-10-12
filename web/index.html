@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--
+    自分のサイトのファイル以外は読み込まない（XSS が起きてもスクリプトを外から持ち込めない）。
+    connect-src は fetch の接続先。AWS に移すときに API Gateway のオリジンを足す
+  -->
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>技術ブログダイジェスト</title>
+  <meta name="description" content="Qiita・Zenn・はてなブックマークの技術記事を毎朝まとめるダイジェスト">
+  <!-- CSS は JavaScript から読み込まず link で読む（開発サーバーでインラインの style にならないように。CSP で禁止している） -->
+  <link rel="stylesheet" href="/src/style.css">
+  <script type="module" src="/src/main.ts"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="site-title" href="#/">技術ブログダイジェスト</a>
+      <nav class="site-nav" aria-label="サイト内">
+        <a href="#/">最新</a>
+        <a href="#/archive">アーカイブ</a>
+        <a href="#/search">検索</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap" id="app">
+    <noscript><p class="empty">このサイトの表示には JavaScript が必要です。</p></noscript>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Qiita・Zenn・はてなブックマークの公開 API / RSS から毎朝 7:00（JST）に自動で集めています。
+        記事の内容と著作権は各著者に帰属します。このサイトはタイトルとリンクだけを載せています。</p>
+      <p><a href="https://github.com/fumikachan/tech-digest">ソースコード（GitHub）</a></p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -13,6 +13,17 @@ updates:
         patterns: ["*"]
         update-types: ["minor", "patch"]
 
+  # web/ の npm パッケージ（package.json / package-lock.json）
+  - package-ecosystem: "npm"
+    directory: "/web"
+    schedule:
+      interval: "weekly"
+      timezone: "Asia/Tokyo"
+    groups:
+      web:
+        patterns: ["*"]
+        update-types: ["minor", "patch"]
+
   # ワークフローのアクション（SHA と「# vX.Y.Z」のコメントをまとめて更新する）
   - package-ecosystem: "github-actions"
     directory: "/"
