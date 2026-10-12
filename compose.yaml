@@ -19,8 +19,12 @@ services:
       interval: 2s
       timeout: 5s
       retries: 15
-    # ports は公開しない。app からは compose のネットワーク内で「db」というホスト名で届く。
-    # 手元から中を見るときは: docker compose exec db psql -U tech_digest
+    # A5:SQL などの DB ツールで手元から見られるように公開する。
+    # 127.0.0.1 に限定するので、この PC からしか接続できない（WSL2 は Windows の localhost に中継する）。
+    # 5432 がほかのソフトと重なるときは .env に DB_PORT=15432 などを書く。
+    # app からはポートを使わず、compose のネットワーク内で「db」というホスト名で届く。
+    ports:
+      - "127.0.0.1:${DB_PORT:-5432}:5432"
 
   app:
     build: .
