@@ -4,10 +4,10 @@ from datetime import UTC, date, datetime
 
 import pytest
 
-from tech_digest import storage
 from tech_digest.models import Article
 from tech_digest.render import render_markdown
 from tech_digest.sources import SOURCES
+from tech_digest.storage import sql
 
 NOW = datetime(2026, 10, 12, tzinfo=UTC)
 DAY1 = date(2026, 10, 12)
@@ -25,23 +25,26 @@ def article(url: str, score: int | None = None, source: str = "qiita", **kw) -> 
     )
 
 
-@pytest.fixture(params=["sqlite", "postgres"])
+@pytest.fixture(params=["sqlite", "postgres", "dynamodb"])
 def db(request, tmp_path):
-    """同じテストを SQLite と PostgreSQL の両方で実行する。
+    """同じテストを SQLite・PostgreSQL・DynamoDB（moto）で実行する。
 
     PostgreSQL は TEST_DATABASE_URL があるときだけ（なければ skip）。中のデータは毎回消す。
     CI（GitHub Actions は CI=true を設定する）では skip せず失敗させる。
     設定漏れで PostgreSQL のテストが黙って省略され、「成功」に見えるのを防ぐため。
     """
+    if request.param == "dynamodb":
+        yield request.getfixturevalue("dynamo_store")
+        return
     if request.param == "sqlite":
-        database = storage.connect_sqlite(tmp_path / "test.db")
+        database = sql.connect_sqlite(tmp_path / "test.db")
     else:
         url = os.environ.get("TEST_DATABASE_URL")
         if not url:
             if os.environ.get("CI"):
                 pytest.fail("CI では TEST_DATABASE_URL が必要です")
             pytest.skip("TEST_DATABASE_URL が未設定のため PostgreSQL のテストを省略")
-        database = storage.connect_postgres(url)
+        database = sql.connect_postgres(url)
         database.execute("TRUNCATE articles")
         database.commit()
     yield database
@@ -49,12 +52,12 @@ def db(request, tmp_path):
 
 
 def test_save_is_idempotent_and_keeps_first_digest_date(db):
-    storage.save(db, [article("https://a", score=1)], DAY1, NOW)
+    db.save([article("https://a", score=1)], DAY1, NOW)
     # 翌日も同じ記事がトレンドに残っていた（スコアは増えた）
-    storage.save(db, [article("https://a", score=9), article("https://b", score=2)], DAY2, NOW)
+    db.save([article("https://a", score=9), article("https://b", score=2)], DAY2, NOW)
 
-    day1 = storage.load(db, DAY1)
-    day2 = storage.load(db, DAY2)
+    day1 = db.load(DAY1)
+    day2 = db.load(DAY2)
     assert [a.url for a in day1] == ["https://a"]
     assert day1[0].score == 9  # スコアは最新に更新される
     assert [a.url for a in day2] == ["https://b"]  # 前日に載った記事は重複しない
@@ -62,8 +65,8 @@ def test_save_is_idempotent_and_keeps_first_digest_date(db):
 
 def test_load_orders_by_score_with_nulls_last(db):
     articles = [article("https://low", 1), article("https://none"), article("https://high", 50)]
-    storage.save(db, articles, DAY1, NOW)
-    assert [a.url for a in storage.load(db, DAY1)] == [
+    db.save(articles, DAY1, NOW)
+    assert [a.url for a in db.load(DAY1)] == [
         "https://high",
         "https://low",
         "https://none",

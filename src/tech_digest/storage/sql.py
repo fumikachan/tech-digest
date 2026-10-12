@@ -1,4 +1,4 @@
-"""記事を DB に保存する。DATABASE_URL があれば PostgreSQL、なければ SQLite を使う。
+"""SQLite と PostgreSQL の保存先。
 
 digest_date は「その記事が初めて載ったダイジェストの日付」。
 同じ記事を後日また取得しても digest_date は変えないので、
@@ -20,7 +20,6 @@ from typing import Any, Literal, LiteralString, cast
 import psycopg
 from psycopg.rows import DictRow, dict_row
 
-from tech_digest.config import Settings
 from tech_digest.models import Article
 
 # 日時やタグは両方の DB で同じように扱えるよう TEXT で持つ
@@ -62,7 +61,7 @@ ORDER BY score DESC NULLS LAST, published_at DESC
 
 
 class Database:
-    """SQLite と PostgreSQL の接続を同じ使い方にする薄いラッパー。"""
+    """SQLite と PostgreSQL の接続を同じ使い方にする薄いラッパー。storage.Store を満たす。"""
 
     def __init__(
         self,
@@ -89,6 +88,45 @@ class Database:
     def close(self) -> None:
         self.conn.close()
 
+    def save(self, articles: Iterable[Article], digest_date: date, now: datetime) -> None:
+        rows = [
+            {
+                "source": a.source,
+                "url": a.url,
+                "title": a.title,
+                "author": a.author,
+                "published_at": a.published_at.astimezone(UTC).isoformat(),
+                "score": a.score,
+                "tags": json.dumps(a.tags, ensure_ascii=False),
+                "digest_date": digest_date.isoformat(),
+                "updated_at": now.astimezone(UTC).isoformat(),
+            }
+            for a in articles
+        ]
+        if not rows:
+            return
+        try:
+            self.executemany(UPSERT, rows)
+            self.commit()
+        except Exception:
+            self.rollback()
+            raise
+
+    def load(self, digest_date: date) -> list[Article]:
+        rows = self.execute(SELECT_BY_DIGEST_DATE, {"digest_date": digest_date.isoformat()})
+        return [
+            Article(
+                source=row["source"],
+                url=row["url"],
+                title=row["title"],
+                published_at=datetime.fromisoformat(row["published_at"]),
+                author=row["author"],
+                score=row["score"],
+                tags=tuple(json.loads(row["tags"])),
+            )
+            for row in rows
+        ]
+
     def _sql(self, query: LiteralString) -> LiteralString:
         if self.kind == "sqlite":
             return query
@@ -96,12 +134,6 @@ class Database:
         # （コードに直接書いた文字列）を求める。
         # 変換元はモジュール定数の SQL で、外部からの値は含まないので cast してよい
         return cast(LiteralString, re.sub(r":(\w+)", r"%(\1)s", query))
-
-
-def connect(settings: Settings) -> Database:
-    if settings.database_url:
-        return connect_postgres(settings.database_url)
-    return connect_sqlite(settings.db_path)
 
 
 def connect_sqlite(path: Path) -> Database:
@@ -124,44 +156,3 @@ def _init(db: Database) -> Database:
             db.execute(statement)
     db.commit()
     return db
-
-
-def save(db: Database, articles: Iterable[Article], digest_date: date, now: datetime) -> None:
-    rows = [
-        {
-            "source": a.source,
-            "url": a.url,
-            "title": a.title,
-            "author": a.author,
-            "published_at": a.published_at.astimezone(UTC).isoformat(),
-            "score": a.score,
-            "tags": json.dumps(a.tags, ensure_ascii=False),
-            "digest_date": digest_date.isoformat(),
-            "updated_at": now.astimezone(UTC).isoformat(),
-        }
-        for a in articles
-    ]
-    if not rows:
-        return
-    try:
-        db.executemany(UPSERT, rows)
-        db.commit()
-    except Exception:
-        db.rollback()
-        raise
-
-
-def load(db: Database, digest_date: date) -> list[Article]:
-    rows = db.execute(SELECT_BY_DIGEST_DATE, {"digest_date": digest_date.isoformat()})
-    return [
-        Article(
-            source=row["source"],
-            url=row["url"],
-            title=row["title"],
-            published_at=datetime.fromisoformat(row["published_at"]),
-            author=row["author"],
-            score=row["score"],
-            tags=tuple(json.loads(row["tags"])),
-        )
-        for row in rows
-    ]

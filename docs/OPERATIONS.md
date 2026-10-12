@@ -127,7 +127,7 @@ PR を出す前にすべて通す。GitHub Actions でも同じものが動く�
 ```bash
 uv run ruff check --fix && uv run ruff format   # lint と整形
 uv run pyright                                  # 型チェック
-uv run pytest                                   # テスト（PostgreSQL の分は skip される）
+uv run pytest                                   # テスト（PostgreSQL の分は skip される。DynamoDB は moto で常に動く）
 ```
 
 PostgreSQL のテストも手元で動かすとき:
