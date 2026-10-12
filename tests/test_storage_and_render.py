@@ -30,12 +30,16 @@ def db(request, tmp_path):
     """同じテストを SQLite と PostgreSQL の両方で実行する。
 
     PostgreSQL は TEST_DATABASE_URL があるときだけ（なければ skip）。中のデータは毎回消す。
+    CI（GitHub Actions は CI=true を設定する）では skip せず失敗させる。
+    設定漏れで PostgreSQL のテストが黙って省略され、「成功」に見えるのを防ぐため。
     """
     if request.param == "sqlite":
         database = storage.connect_sqlite(tmp_path / "test.db")
     else:
         url = os.environ.get("TEST_DATABASE_URL")
         if not url:
+            if os.environ.get("CI"):
+                pytest.fail("CI では TEST_DATABASE_URL が必要です")
             pytest.skip("TEST_DATABASE_URL が未設定のため PostgreSQL のテストを省略")
         database = storage.connect_postgres(url)
         database.execute("TRUNCATE articles")

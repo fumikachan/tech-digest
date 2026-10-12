@@ -5,7 +5,7 @@
 
 ## 現在地
 
-**Phase 1 完了 → 次は Phase 2（GitHub Actions）**
+**Phase 2 の途中**: CI（lint・型チェック・テスト・Docker ビルド）を追加。次は GHCR への push と定期実行
 
 ## Phase 0: ローカル CLI ✅（2026-10-12）
 
@@ -30,7 +30,8 @@
 
 学ぶこと: CI パイプライン、Secrets、コンテナレジストリ
 
-- [ ] push / PR で lint・型チェック・テストを実行（PostgreSQL はサービスコンテナで用意し、`TEST_DATABASE_URL` を渡す）
+- [x] push / PR で lint・型チェック・テストを実行（PostgreSQL はサービスコンテナで用意し、`TEST_DATABASE_URL` を渡す）
+- [x] PR で Docker イメージがビルドできるか確認（push はしない）
 - [ ] ブランチ保護に「CI が通らないとマージできない」を追加
 - [ ] Docker イメージを build して GHCR に push
 - [ ] `schedule:` で毎日実行してみる（無料でできる最初の定期実行）
