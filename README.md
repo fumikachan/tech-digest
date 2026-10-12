@@ -29,6 +29,8 @@
 
 細かいタスク、未決定事項、申し送りは [docs/PLAN.md](docs/PLAN.md) にまとめている。
 
+ふだんの実行コマンド・DB への接続方法・困ったときの対処は [docs/OPERATIONS.md](docs/OPERATIONS.md) にまとめている。
+
 ## 使い方
 
 ```bash
