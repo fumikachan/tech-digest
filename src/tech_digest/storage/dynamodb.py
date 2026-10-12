@@ -27,6 +27,8 @@ if TYPE_CHECKING:
 ARTICLE_SK = "ARTICLE"
 DAYS_PK = "DAYS"
 GSI1 = "GSI1"
+# DynamoDB Local につなぐときのリージョン（-sharedDb なので使われないが、boto3 が指定を求める）
+LOCAL_REGION = "ap-northeast-1"
 
 _deserializer = TypeDeserializer()
 
@@ -38,15 +40,36 @@ class DaySummary:
 
 
 def connect(table: str, endpoint_url: str | None = None) -> "DynamoStore":
-    # リージョンと認証情報は boto3 の標準の方法で読む（AWS_REGION などの環境変数や IAM ロール）
-    return DynamoStore(boto3.client("dynamodb", endpoint_url=endpoint_url), table)
+    if endpoint_url:
+        # DynamoDB Local は認証情報を確かめない（-sharedDb ならリージョンも関係ない）。
+        # ダミーの値を使い、手元にある本物の AWS の認証情報をローカルのサーバーへ送らない
+        client = boto3.client(
+            "dynamodb",
+            endpoint_url=endpoint_url,
+            region_name=LOCAL_REGION,
+            aws_access_key_id="local",
+            aws_secret_access_key="local",
+        )
+    else:
+        # リージョンと認証情報は boto3 の標準の方法で読む（AWS_REGION などの環境変数や IAM ロール）
+        client = boto3.client("dynamodb")
+    return DynamoStore(client, table)
 
 
-def create_table(client: "DynamoDBClient", table: str) -> None:
-    """テーブルを作る（ローカルの DynamoDB Local とテスト用）。
+def create_table(client: "DynamoDBClient", table: str) -> bool:
+    """テーブルを作る（ローカルの DynamoDB Local とテスト用）。既にあれば何もせず False を返す。
 
     AWS では Terraform（Phase 3 では手作業）で作り、アプリにはテーブルを作る権限を渡さない。
     """
+    try:
+        _create_table(client, table)
+    except client.exceptions.ResourceInUseException:
+        return False
+    client.get_waiter("table_exists").wait(TableName=table)
+    return True
+
+
+def _create_table(client: "DynamoDBClient", table: str) -> None:
     client.create_table(
         TableName=table,
         # 定義するのはキーに使う属性だけ（ほかの属性はアイテムごとに自由に持てる）
@@ -70,7 +93,6 @@ def create_table(client: "DynamoDBClient", table: str) -> None:
         ],
         BillingMode="PAY_PER_REQUEST",
     )
-    client.get_waiter("table_exists").wait(TableName=table)
 
 
 class DynamoStore:

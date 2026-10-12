@@ -1,7 +1,18 @@
-# アプリ + PostgreSQL をまとめて動かす。
-#   docker compose run --rm app      # 取得してダイジェストを出力（db は自動で起動する）
+# アプリ + DB をまとめて動かす。
+#   docker compose run --rm app      # 取得してダイジェストを出力（PostgreSQL。db は自動で起動する）
 #   docker compose down              # 止める（DB のデータはボリュームに残る）
+#
+# DynamoDB Local を使うとき（Phase 3 で AWS に移す構成をローカルで試す）:
+#   docker compose run --rm app-dynamodb create-table   # 初回だけ。テーブルを作る
+#   docker compose run --rm app-dynamodb                # 取得してダイジェストを出力
+#
 # パスワードなどは .env に書く（.env.example を参照）。compose は .env を自動で読む。
+
+# app と app-dynamodb で共通の設定（x- で始まるキーは compose に無視されるので、YAML のアンカーで使い回す）
+x-app: &app
+  build: .
+  volumes:
+    - ./digests:/output
 
 services:
   db:
@@ -26,16 +37,45 @@ services:
     ports:
       - "127.0.0.1:${DB_PORT:-5432}:5432"
 
+  dynamodb:
+    # 元のイメージ（amazon/dynamodb-local）にデータ用のディレクトリを足しただけのもの
+    build: docker/dynamodb-local
+    # -sharedDb: アクセスキーやリージョンが違っても同じデータを使う
+    #   （付けないと組み合わせごとに別の DB になり、「テーブルが見つからない」の原因になる）
+    # -dbPath: データをボリュームに置く（既定はメモリ上で、止めると消える）
+    command: ["-jar", "DynamoDBLocal.jar", "-sharedDb", "-dbPath", "./data"]
+    volumes:
+      - dynamodb-data:/home/dynamodblocal/data
+    healthcheck:
+      # 応答が返ればよい（認証なしのリクエストなので 400 が返るが、curl は -f なしなら成功扱い）
+      test: ["CMD", "curl", "-s", "-o", "/dev/null", "http://localhost:8000"]
+      interval: 2s
+      timeout: 5s
+      retries: 15
+    # 手元の CLI（uv run）や NoSQL Workbench から使えるように 127.0.0.1 に公開する。
+    # 8000 がほかと重なるときは .env に DYNAMODB_PORT=18000 などを書く。
+    ports:
+      - "127.0.0.1:${DYNAMODB_PORT:-8000}:8000"
+
   app:
-    build: .
+    <<: *app
     environment:
       DATABASE_URL: postgresql://tech_digest:${POSTGRES_PASSWORD}@db:5432/tech_digest
       QIITA_TOKEN: ${QIITA_TOKEN:-}
-    volumes:
-      - ./digests:/output
     depends_on:
       db:
         condition: service_healthy
 
+  app-dynamodb:
+    <<: *app
+    environment:
+      DYNAMODB_TABLE: tech-digest
+      DYNAMODB_ENDPOINT_URL: http://dynamodb:8000
+      QIITA_TOKEN: ${QIITA_TOKEN:-}
+    depends_on:
+      dynamodb:
+        condition: service_healthy
+
 volumes:
   db-data:
+  dynamodb-data:

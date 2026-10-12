@@ -1,4 +1,4 @@
-"""DynamoDB だけにある動き（日付ごとの件数、属性の削除、接続先の切り替え）のテスト。
+"""DynamoDB だけにある動き（日付ごとの件数、属性の削除、接続先の切り替え、テーブル作成）のテスト。
 
 SQL 版と共通の動き（重複排除・並び順）は test_storage_and_render.py で 3 つの DB に対して確かめる。
 """
@@ -6,10 +6,10 @@ SQL 版と共通の動き（重複排除・並び順）は test_storage_and_rend
 from datetime import UTC, date, datetime
 from pathlib import Path
 
-from tech_digest import storage
+from tech_digest import cli, storage
 from tech_digest.config import Settings
 from tech_digest.models import Article
-from tech_digest.storage.dynamodb import DaySummary, DynamoStore
+from tech_digest.storage.dynamodb import DaySummary, DynamoStore, create_table
 
 NOW = datetime(2026, 10, 12, tzinfo=UTC)
 DAY1 = date(2026, 10, 12)
@@ -88,3 +88,16 @@ def test_connect_prefers_dynamodb_when_table_is_set(dynamo_store):
     store.save([article("https://a")], DAY1, NOW)
     assert [a.url for a in dynamo_store.load(DAY1)] == ["https://a"]
     store.close()
+
+
+def test_create_table_does_nothing_when_table_exists(dynamo_store):
+    assert create_table(dynamo_store.client, dynamo_store.table) is False  # fixture で作成済み
+    assert create_table(dynamo_store.client, "another") is True
+
+
+def test_create_table_command_is_only_for_dynamodb_local(monkeypatch):
+    # AWS のテーブルは Terraform で作るので、DYNAMODB_ENDPOINT_URL がなければ断る
+    # （AWS には接続しない）
+    monkeypatch.setenv("DYNAMODB_TABLE", "tech-digest")
+    monkeypatch.delenv("DYNAMODB_ENDPOINT_URL", raising=False)
+    assert cli.main(["create-table"]) == 1

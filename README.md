@@ -117,6 +117,19 @@ docker compose down                # 止める（DB のデータはボリュー�
   - A5:SQL などで見る: `docker compose up -d db` で起動し、ホスト `localhost`・ポート `5432`・DB `tech_digest`・ユーザー `tech_digest`・パスワードは `.env` の `POSTGRES_PASSWORD`
   - ポートを変える: `.env` に `DB_PORT=15432` のように書く
 
+## compose で動かす（DynamoDB Local）
+
+Phase 3 で AWS に移す構成（DynamoDB）を、ローカルで試す。費用はかからない。
+
+```bash
+docker compose run --rm app-dynamodb create-table   # テーブルを作る（初回だけ）
+docker compose run --rm app-dynamodb                # dynamodb を起動し、準備できてから app を 1 回実行する
+docker compose down                                 # 止める（データはボリューム tech-digest_dynamodb-data に残る）
+```
+
+- dynamodb のポートは `127.0.0.1:8000` に公開している。uv で直接使うときは `DYNAMODB_ENDPOINT_URL=http://localhost:8000`
+- 詳しくは [docs/OPERATIONS.md](docs/OPERATIONS.md#dynamodb-local)
+
 ## 開発
 
 ```bash
