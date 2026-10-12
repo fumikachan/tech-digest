@@ -26,7 +26,9 @@ def ruff(*args: str) -> subprocess.CompletedProcess[str]:
 
 
 ruff("format")
-result = ruff("check", "--fix", "--quiet")
+# F401（未使用 import）は対象外にする。編集を複数回に分けると、
+# import を足した直後・使う前に自動修正で消されてしまうため。最後の `ruff check` で検出する。
+result = ruff("check", "--fix", "--quiet", "--ignore", "F401")
 if result.returncode != 0:
     print(f"ruff check で未解決の指摘があります:\n{result.stdout}{result.stderr}", file=sys.stderr)
     sys.exit(2)
