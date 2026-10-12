@@ -25,7 +25,7 @@ def fetch(settings: Settings, digest_date: date) -> list[str]:
     failed = []
     with (
         httpx.Client(timeout=30, headers={"User-Agent": USER_AGENT}) as client,
-        closing(storage.connect(settings.db_path)) as conn,
+        closing(storage.connect(settings)) as db,
     ):
         for source in SOURCES:
             try:
@@ -34,14 +34,14 @@ def fetch(settings: Settings, digest_date: date) -> list[str]:
                 logger.error("%s: 取得に失敗しました: %s", source.title, e)
                 failed.append(source.name)
                 continue
-            storage.save(conn, articles, digest_date, now=datetime.now(UTC))
+            storage.save(db, articles, digest_date, now=datetime.now(UTC))
             logger.info("%s: %d 件を保存しました", source.title, len(articles))
     return failed
 
 
 def build(settings: Settings, digest_date: date, limit: int) -> Path:
-    with closing(storage.connect(settings.db_path)) as conn:
-        articles = storage.load(conn, digest_date)
+    with closing(storage.connect(settings)) as db:
+        articles = storage.load(db, digest_date)
     markdown = render_markdown(digest_date, articles, SOURCES, limit)
 
     path = settings.output_dir / f"{digest_date.isoformat()}.md"

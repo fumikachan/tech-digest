@@ -5,7 +5,7 @@
 
 ## 現在地
 
-**Phase 1 の途中**: Dockerfile でアプリが動くようになった（SQLite）。次は compose + PostgreSQL
+**Phase 1 完了 → 次は Phase 2（GitHub Actions）**
 
 ## Phase 0: ローカル CLI ✅（2026-10-12）
 
@@ -15,22 +15,22 @@
 - [x] 外部データのエスケープ（XSS・リンク偽装の対策）
 - [x] テスト・型チェック・lint
 
-## Phase 1: Docker / compose
+## Phase 1: Docker / compose ✅（2026-10-12）
 
 学ぶこと: イメージとコンテナの違い、レイヤーキャッシュ、ボリューム、ネットワーク
 
 - [x] `Dockerfile`（マルチステージ、uv で依存を入れる、root 以外のユーザーで実行）
 - [x] `.dockerignore`（`.venv`、`data/`、`.env` をイメージに入れない）
-- [ ] `compose.yaml`（アプリ + PostgreSQL、DB はボリュームで永続化、healthcheck）
-- [ ] storage を PostgreSQL に対応（`DATABASE_URL` で SQLite と切り替え）
+- [x] `compose.yaml`（アプリ + PostgreSQL、DB はボリュームで永続化、healthcheck）
+- [x] storage を PostgreSQL に対応（`DATABASE_URL` で SQLite と切り替え）
 - [x] ダイジェストの出力先をボリュームにマウント（`docker run -v "$PWD/digests:/output"`）
-- [x] README に Docker での実行方法を追記（compose の手順は PostgreSQL 対応時に追加）
+- [x] README に Docker / compose での実行方法を追記
 
 ## Phase 2: GitHub Actions
 
 学ぶこと: CI パイプライン、Secrets、コンテナレジストリ
 
-- [ ] push / PR で lint・型チェック・テストを実行
+- [ ] push / PR で lint・型チェック・テストを実行（PostgreSQL はサービスコンテナで用意し、`TEST_DATABASE_URL` を渡す）
 - [ ] ブランチ保護に「CI が通らないとマージできない」を追加
 - [ ] Docker イメージを build して GHCR に push
 - [ ] `schedule:` で毎日実行してみる（無料でできる最初の定期実行）
