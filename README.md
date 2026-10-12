@@ -62,6 +62,8 @@ uv run tech-digest build --date 2026-10-12   # DB から指定日のダイジェ
 |---|---|---|
 | `DATABASE_URL` | なし | `postgresql://ユーザー:パスワード@ホスト:5432/DB名`。設定すると PostgreSQL を使う |
 | `TECH_DIGEST_DB_PATH` | `data/tech-digest.db` | `DATABASE_URL` がないときに使う SQLite の DB ファイル |
+| `DYNAMODB_TABLE` | なし | 設定すると DynamoDB のこのテーブルを使う（`DATABASE_URL` より優先）。リージョンと認証情報は boto3 の標準の方法（`AWS_REGION` など）で読む |
+| `DYNAMODB_ENDPOINT_URL` | なし | DynamoDB Local など、AWS 以外の DynamoDB につなぐときの URL |
 | `TECH_DIGEST_OUTPUT_DIR` | `digests` | ダイジェストの出力先 |
 | `QIITA_TOKEN` | なし | Qiita のアクセストークン（任意。なしだと 60 リクエスト/時の制限） |
 

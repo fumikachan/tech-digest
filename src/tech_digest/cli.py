@@ -36,14 +36,14 @@ def fetch(settings: Settings, digest_date: date) -> list[str]:
                 logger.error("%s: 取得に失敗しました: %s", source.title, e)
                 failed.append(source.name)
                 continue
-            storage.save(db, articles, digest_date, now=datetime.now(UTC))
+            db.save(articles, digest_date, now=datetime.now(UTC))
             logger.info("%s: %d 件を保存しました", source.title, len(articles))
     return failed
 
 
 def build(settings: Settings, digest_date: date, limit: int) -> Path:
     with closing(storage.connect(settings)) as db:
-        articles = storage.load(db, digest_date)
+        articles = db.load(digest_date)
     markdown = render_markdown(digest_date, articles, SOURCES, limit)
 
     path = settings.output_dir / f"{digest_date.isoformat()}.md"
@@ -55,7 +55,7 @@ def build(settings: Settings, digest_date: date, limit: int) -> Path:
 
 def export(settings: Settings, digest_date: date, out_dir: Path) -> Path:
     with closing(storage.connect(settings)) as db:
-        articles = storage.load(db, digest_date)
+        articles = db.load(digest_date)
     path = export_day(DailyDigest(digest_date, articles), out_dir)
     logger.info("%d 件を書き出しました: %s", len(articles), path)
     return path
