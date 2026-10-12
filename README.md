@@ -81,7 +81,8 @@ docker run --rm -v tech-digest-data:/data -v "$PWD/digests:/output" tech-digest
 ## compose で動かす（PostgreSQL）
 
 ```bash
-cp .env.example .env   # POSTGRES_PASSWORD にランダムな値を入れる（openssl rand -hex 16）
+# .env がなければ作り、パスワードにランダムな値を入れる（既にあれば何もしない）
+[ -e .env ] || { cp .env.example .env && sed -i "s/^POSTGRES_PASSWORD=$/POSTGRES_PASSWORD=$(openssl rand -hex 16)/" .env; }
 mkdir -p digests
 docker compose run --rm app        # db を起動し、準備できてから app を 1 回実行する
 docker compose down                # 止める（DB のデータはボリューム tech-digest_db-data に残る）
@@ -90,6 +91,8 @@ docker compose down                # 止める（DB のデータはボリュー�
 - DB の中を見る: `docker compose exec db psql -U tech_digest -c "select source, count(*) from articles group by source"`
 - アプリのコードを変えたら `docker compose build app` でイメージを作り直す
 - DB を消して最初からやり直す: `docker compose down -v`（**ボリュームごと削除する**）
+- `POSTGRES_PASSWORD` が使われるのは **DB のボリュームを初めて作るときだけ**。あとから `.env` だけ変えても DB 側は変わらない。変えるときは DB 側も合わせる:
+  `docker compose up -d --wait db && docker compose exec db psql -U tech_digest -c "ALTER USER tech_digest PASSWORD '新しいパスワード'"`
 - db のポートはホストに公開していない（app からは compose のネットワーク内でホスト名 `db` で接続する）
 
 ## 開発
