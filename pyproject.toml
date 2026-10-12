@@ -1,0 +1,30 @@
+[project]
+name = "tech-digest"
+version = "0.1.0"
+description = "技術ブログの新着記事を毎日自動で集めてまとめるダイジェストツール"
+readme = "README.md"
+authors = [
+    { name = "fumikachan", email = "224479454+fumikachan@users.noreply.github.com" }
+]
+requires-python = ">=3.13"
+dependencies = []
+
+[project.scripts]
+tech-digest = "tech_digest:main"
+
+[build-system]
+requires = ["uv_build>=0.13.0,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "ruff>=0.17.0",
+]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+# E/F: 基本エラー, I: import順, UP: 新しい構文への書き換え, B: バグになりやすい書き方
+select = ["E", "F", "I", "UP", "B"]
