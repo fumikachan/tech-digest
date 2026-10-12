@@ -33,3 +33,7 @@ wheels/
 # Phase 0 の出力
 data/
 digests/
+
+# サイト（tech-digest export / site の出力）
+archive/
+site/

@@ -7,8 +7,10 @@ from pathlib import Path
 import httpx
 
 from tech_digest import storage
+from tech_digest.archive import DailyDigest, export_day, load_days
 from tech_digest.config import Settings, today_jst
 from tech_digest.render import render_markdown
+from tech_digest.site import build_site
 from tech_digest.sources import SOURCES
 
 logger = logging.getLogger("tech_digest")
@@ -51,6 +53,20 @@ def build(settings: Settings, digest_date: date, limit: int) -> Path:
     return path
 
 
+def export(settings: Settings, digest_date: date, out_dir: Path) -> Path:
+    with closing(storage.connect(settings)) as db:
+        articles = storage.load(db, digest_date)
+    path = export_day(DailyDigest(digest_date, articles), out_dir)
+    logger.info("%d 件を書き出しました: %s", len(articles), path)
+    return path
+
+
+def site(data_dir: Path, out_dir: Path) -> None:
+    days = load_days(data_dir)
+    build_site(days, out_dir)
+    logger.info("サイトを作りました: %s（%d 日分）", out_dir, len(days))
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(
         prog="tech-digest", description="技術ブログの新着記事を集めてダイジェストにまとめる"
@@ -64,6 +80,14 @@ def main(argv: list[str] | None = None) -> int:
     run_parser = sub.add_parser("run", help="fetch と build を続けて実行する")
     for p in (build_parser, run_parser):
         p.add_argument("--limit", type=int, default=DEFAULT_LIMIT, help="取得元ごとの表示件数")
+    export_parser = sub.add_parser("export", help="DB から 1 日分の記事を JSON に書き出す")
+    export_parser.add_argument(
+        "--date", type=date.fromisoformat, help="ダイジェストの日付 YYYY-MM-DD（省略時は今日）"
+    )
+    export_parser.add_argument("--out", type=Path, default=Path("archive"), help="出力先")
+    site_parser = sub.add_parser("site", help="JSON の記録から静的サイトを作る")
+    site_parser.add_argument("--data", type=Path, default=Path("archive"), help="JSON の置き場所")
+    site_parser.add_argument("--out", type=Path, default=Path("site"), help="サイトの出力先")
     args = parser.parse_args(argv)
 
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
@@ -73,6 +97,12 @@ def main(argv: list[str] | None = None) -> int:
         return 1 if fetch(settings, today_jst()) else 0
     if args.command == "build":
         build(settings, args.date or today_jst(), args.limit)
+        return 0
+    if args.command == "export":
+        export(settings, args.date or today_jst(), args.out)
+        return 0
+    if args.command == "site":
+        site(args.data, args.out)
         return 0
 
     digest_date = today_jst()

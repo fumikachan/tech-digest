@@ -1,8 +1,13 @@
-# 毎朝 7:00（JST）にダイジェストを作り、Actions の「Artifacts」に保存する。
+# 毎朝 7:00（JST）に記事を集め、その日の記録を data ブランチに保存して、サイトを更新する。
 # 本格的な定期実行は Phase 3（AWS）で行う。これは無料でできる最初の定期実行。
 #
+# ジョブを分けている理由:
+#   collect（記事を集める）は外部サイトのデータと外部ライブラリを扱うので、読み取り権限だけで動かす。
+#   record（data ブランチに push）は git しか動かさないジョブにして、そこだけに書き込み権限を付ける。
+#   ライブラリが乗っ取られても、書き込みできるトークンに手が届かないようにするため。
+#
 # - DB は SQLite。actions/cache で次の実行に引き継ぎ、「初めて載った日」の記録を保つ
-#   （キャッシュは 7 日使われないと消えるが、毎日動けば残り続ける）
+#   （キャッシュは 7 日使われないと消える。消えても過去の記録は data ブランチの JSON に残る）
 # - QIITA_TOKEN は Settings → Secrets and variables → Actions に置く（任意）。
 #   GitHub のランナーは IP を共有しているので、トークンなしだと Qiita の制限（60 回/時）に当たりやすい
 # - 公開リポジトリで 60 日間コミットがないと、GitHub がスケジュール実行を自動で止める
@@ -21,14 +26,13 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  digest:
-    name: ダイジェストを作る
+  collect:
+    name: 記事を集める
     runs-on: ubuntu-24.04
     timeout-minutes: 10
     env:
       TECH_DIGEST_DB_PATH: data/tech-digest.db
       TECH_DIGEST_OUTPUT_DIR: digests
-      QIITA_TOKEN: ${{ secrets.QIITA_TOKEN }}
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
@@ -50,10 +54,13 @@ jobs:
           key: digest-db-${{ github.run_id }}
           restore-keys: digest-db-
 
-      - name: 取得してダイジェストを作る
+      # QIITA_TOKEN はこのステップにだけ渡す
+      - name: 記事を集める
+        env:
+          QIITA_TOKEN: ${{ secrets.QIITA_TOKEN }}
         run: uv run tech-digest run
 
-      # 取得元の一部が失敗しても（終了コード 1）、取れた分の DB とダイジェストは残す
+      # 取得元の一部が失敗しても（終了コード 1）、取れた分は記録して公開する
       - name: DB を保存
         if: ${{ !cancelled() }}
         uses: actions/cache/save@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
@@ -61,11 +68,59 @@ jobs:
           path: data
           key: digest-db-${{ github.run_id }}
 
-      - name: ダイジェストを Artifacts に保存
+      - name: その日の記録を JSON に書き出す
+        if: ${{ !cancelled() }}
+        run: uv run tech-digest export --out export
+
+      # 次のジョブ（record）に JSON を渡す
+      - name: JSON を受け渡す
         if: ${{ !cancelled() }}
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
-          name: digest-${{ github.run_id }}
-          path: digests/*.md
-          retention-days: 30
+          name: daily-json
+          path: export/*.json
+          retention-days: 7
           if-no-files-found: error
+
+  record:
+    name: data ブランチに記録する
+    needs: collect
+    if: ${{ !cancelled() }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    # data ブランチに push するので、このジョブだけ書き込み権限を付ける（main はルールセットで保護済み）。
+    # このジョブでは git 以外のプログラムを動かさない
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: data
+
+      - uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+        with:
+          name: daily-json
+          path: daily
+
+      - name: コミットして push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add daily
+          if git diff --cached --quiet; then
+            echo "変更なし"
+          else
+            git commit -m "Add digest $(TZ=Asia/Tokyo date +%F)"
+            git push
+          fi
+
+  pages:
+    name: サイトを更新
+    needs: record
+    if: ${{ !cancelled() }}
+    uses: ./.github/workflows/pages.yml
+    # 呼び出し先（pages.yml）が使う権限を渡す
+    permissions:
+      contents: read
+      pages: write
+      id-token: write

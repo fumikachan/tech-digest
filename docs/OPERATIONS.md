@@ -13,6 +13,7 @@ tech-digest をふだん動かすときのコマンド・接続方法・トラ�
 6. [Git と PR の流れ](#6-git-と-pr-の流れ)
 7. [データを消してやり直す](#7-データを消してやり直す)
 8. [困ったとき](#8-困ったとき)
+9. [サイト（GitHub Pages）](#9-サイトgithub-pages)
 
 ---
 
@@ -181,3 +182,17 @@ git branch -d feat/<内容>                   # 手元のブランチを消す
 | `uv sync --locked` でビルドが失敗する | `pyproject.toml` を変えたのに `uv.lock` が古い → `uv lock` して両方コミット |
 | エディタに「インポートを解決できません」 | pyright が古い設定のまま → VS Code で Claude Code のセッションを開き直す |
 | `git push` が拒否される（main） | main は保護されている。ブランチを作って PR を出す |
+| PR の Checks が「Expected — Waiting for status to be reported」のまま | PR のブランチに CI のワークフローがない（CI を入れる前に作ったブランチなど）→ PR 画面の **Update branch** を押す |
+
+## 9. サイト（GitHub Pages）
+
+公開先: https://fumikachan.github.io/tech-digest/
+
+| ワークフロー | いつ動く | やること |
+|---|---|---|
+| Daily digest | 毎朝 7:00 JST・手動 | 記事を集める → `data` ブランチに JSON を追加 → Pages を呼ぶ |
+| Pages | Daily digest の後・サイトのコードを main にマージしたとき・手動 | `data` ブランチの JSON からサイトを作って公開 |
+
+- 手動で更新する: Actions → **Daily digest**（記事も集める）または **Pages**（作り直すだけ）→ **Run workflow**
+- 手元で確認する: README の「サイトを手元で作る」
+- 過去の記録: `data` ブランチの `daily/YYYY-MM-DD.json`（main にはマージしない記録専用のブランチ）

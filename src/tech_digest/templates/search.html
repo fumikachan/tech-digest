@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}検索 - 技術ブログダイジェスト{% endblock %}
+{% block content %}
+<h1>検索</h1>
+<p class="note">直近 {{ search_days }} 日分の記事を、タイトルとタグから探します。</p>
+
+<div class="search" data-search data-index="{{ root }}search.json">
+  <noscript><p class="empty">検索には JavaScript が必要です。</p></noscript>
+  <div class="search-form" hidden>
+    <input type="search" data-search-input placeholder="例: Docker, Terraform, Python" aria-label="キーワード" autocomplete="off">
+    <select data-search-source aria-label="取得元">
+      <option value="">すべて</option>
+      {% for source in sources %}<option value="{{ source.name }}">{{ source.title }}</option>{% endfor %}
+    </select>
+    <select data-search-sort aria-label="並び順">
+      <option value="score">人気順</option>
+      <option value="date">新着順</option>
+    </select>
+  </div>
+  <p class="search-status" data-search-status aria-live="polite"></p>
+  <ol class="articles" data-search-results></ol>
+</div>
+{% endblock %}

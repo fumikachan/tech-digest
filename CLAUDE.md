@@ -23,6 +23,10 @@ Qiita・Zenn などの技術記事を日次で収集・整形・通知するバ�
 - `src/tech_digest/sources/` 取得元。`fetch(client, digest_date, settings) -> list[Article]` を持つモジュールを作り `SOURCES` に登録する。HTTP 部分と `parse()` を分け、テストは `parse()` と `httpx.MockTransport` で書く
 - `src/tech_digest/storage.py` DB。`DATABASE_URL` があれば PostgreSQL、なければ SQLite。SQL は両方で動く共通の書き方だけを使う。主キーは (source, url)、`digest_date` は初めて載った日で更新しない
 - `src/tech_digest/render.py` Markdown 生成
+- `src/tech_digest/archive.py` 1 日分の記事の JSON 書き出し・読み込み（data ブランチの `daily/` に置く）
+- `src/tech_digest/site.py` + `templates/` + `static/` 静的サイト（GitHub Pages）
+  - HTML は必ず Jinja2 テンプレート（自動エスケープ）で出す。URL は `render.safe_url` を通す
+  - JavaScript で外部の文字列を出すときは `textContent` だけ（`innerHTML` 禁止）。CSP で外部スクリプトとインラインスクリプトを禁止している
 - `tests/` テスト（ネットワークに出ない）
 - `infra/terraform/` インフラ定義（Phase 4 以降）
 

@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block title %}{{ day.isoformat() }} の技術ブログダイジェスト{% endblock %}
+{% block content %}
+<div class="day-header">
+  <h1>{{ day.year }}年{{ day.month }}月{{ day.day }}日<span class="count">{{ total }} 件</span></h1>
+  <nav class="pager" aria-label="日付の移動">
+    {% if older %}<a href="{{ root }}days/{{ older }}.html">← {{ older.month }}/{{ older.day }}</a>{% endif %}
+    {% if newer %}<a href="{{ root }}days/{{ newer }}.html">{{ newer.month }}/{{ newer.day }} →</a>{% endif %}
+  </nav>
+</div>
+
+{# 絞り込みと並べ替え。JavaScript が動くときだけ表示する（hidden を app.js が外す） #}
+<div class="controls" data-controls hidden>
+  <div class="filter" role="group" aria-label="取得元で絞り込み">
+    <button type="button" data-filter="all" aria-pressed="true">すべて</button>
+    {% for section in sections %}
+    <button type="button" data-filter="{{ section.source.name }}" aria-pressed="false">{{ section.source.title }}</button>
+    {% endfor %}
+  </div>
+  <label class="sort">並び順
+    <select data-sort>
+      <option value="score">人気順</option>
+      <option value="published">新着順</option>
+    </select>
+  </label>
+</div>
+
+{% for section in sections %}
+<section class="source-section" data-source="{{ section.source.name }}">
+  <h2>{{ section.source.title }}<span class="desc">{{ section.source.description }}・{{ section.items | length }} 件</span></h2>
+  {% if section.items %}
+  <ol class="articles" data-preview="{{ preview_items }}">
+    {% for item in section.items %}
+    <li class="article" data-score="{{ item.score if item.score is not none else -1 }}" data-published="{{ item.published_at }}">
+      {% if item.url %}
+      <a class="title" href="{{ item.url }}" rel="noopener noreferrer">{{ item.title }}</a>
+      {% else %}
+      <span class="title">{{ item.title }}</span>
+      {% endif %}
+      <div class="meta">
+        {% if item.score is not none and section.source.score_unit %}<span class="score">{{ item.score }} {{ section.source.score_unit }}</span>{% endif %}
+        {% if item.author %}<span class="author">{{ item.author }}</span>{% endif %}
+        <time datetime="{{ item.published_at }}">{{ item.published_label }}</time>
+        {% for tag in item.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+      </div>
+    </li>
+    {% endfor %}
+  </ol>
+  {% else %}
+  <p class="empty">新しい記事はありませんでした。</p>
+  {% endif %}
+</section>
+{% endfor %}
+{% endblock %}

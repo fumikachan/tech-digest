@@ -2,17 +2,22 @@
 
 技術ブログ（Qiita・Zenn・はてなブックマーク IT など）の新着記事を毎日自動で集めて、ダイジェストにまとめるバッチアプリ。
 
+**サイト: https://fumikachan.github.io/tech-digest/**（毎朝 7:00 JST に更新）
+
 アプリ自体は小さく保ち、Docker・CI/CD・AWS・Terraform・監視といったインフラを一通り学ぶための題材にしている。
 
-## 仕組み（予定）
+## 仕組み
 
 ```
-定期実行（毎朝）
-  └─ 各サイトの公式 API / RSS から前日の記事を取得
+GitHub Actions（毎朝 7:00 JST）
+  └─ 各サイトの公式 API / RSS から記事を取得
       └─ DB に保存（URL で重複を除外）
-          ├─ Markdown / HTML のダイジェストを生成 → Web で公開
-          └─ Slack / Discord に通知
+          └─ その日の記事を JSON にして data ブランチに保存
+              └─ data ブランチの JSON から静的サイトを作り、GitHub Pages に公開
 ```
+
+- サイトの機能: 日付ごとのアーカイブ、取得元での絞り込み、人気順・新着順の並べ替え、直近 30 日のキーワード検索
+- 予定: Phase 3〜5 で実行環境を AWS に移す。Slack / Discord への通知
 
 ## ロードマップ
 
@@ -61,6 +66,17 @@ uv run tech-digest build --date 2026-10-12   # DB から指定日のダイジェ
 | `QIITA_TOKEN` | なし | Qiita のアクセストークン（任意。なしだと 60 リクエスト/時の制限） |
 
 `.env` に書いた場合は `uv run --env-file .env tech-digest run` で読み込める。
+
+## サイトを手元で作る
+
+```bash
+uv run tech-digest export --out archive          # DB から今日の記事を archive/YYYY-MM-DD.json に書き出す
+uv run tech-digest site --data archive --out site  # archive/ の JSON からサイトを site/ に作る
+uv run python -m http.server -d site 8000          # ブラウザで http://localhost:8000 を開く
+```
+
+公開中のサイトの記録は `data` ブランチの `daily/` にある。手元で同じものを作るには:
+`git fetch origin data && git worktree add ../tech-digest-data data` して `--data ../tech-digest-data/daily` を指定する。
 
 ## Docker で動かす
 
