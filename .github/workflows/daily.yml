@@ -1,6 +1,11 @@
 # 毎朝 7:00（JST）に記事を集め、その日の記録を data ブランチに保存して、サイトを更新する。
 # 本格的な定期実行は Phase 3（AWS）で行う。これは無料でできる最初の定期実行。
 #
+# ジョブを分けている理由:
+#   collect（記事を集める）は外部サイトのデータと外部ライブラリを扱うので、読み取り権限だけで動かす。
+#   record（data ブランチに push）は git しか動かさないジョブにして、そこだけに書き込み権限を付ける。
+#   ライブラリが乗っ取られても、書き込みできるトークンに手が届かないようにするため。
+#
 # - DB は SQLite。actions/cache で次の実行に引き継ぎ、「初めて載った日」の記録を保つ
 #   （キャッシュは 7 日使われないと消える。消えても過去の記録は data ブランチの JSON に残る）
 # - QIITA_TOKEN は Settings → Secrets and variables → Actions に置く（任意）。
@@ -21,27 +26,17 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  digest:
-    name: 記事を集めて記録する
+  collect:
+    name: 記事を集める
     runs-on: ubuntu-24.04
     timeout-minutes: 10
-    # data ブランチに push するので、このジョブだけ書き込み権限を付ける（main はルールセットで保護済み）
-    permissions:
-      contents: write
     env:
       TECH_DIGEST_DB_PATH: data/tech-digest.db
       TECH_DIGEST_OUTPUT_DIR: digests
-      QIITA_TOKEN: ${{ secrets.QIITA_TOKEN }}
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
-
-      # 記録の置き場所。push するので、こちらだけ認証情報を残す
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-        with:
-          ref: data
-          path: archive-store
 
       - uses: astral-sh/setup-uv@c18668ad3cf93ea998bef934396af7bb5c839dc7 # v10.2.0
         with:
@@ -59,7 +54,10 @@ jobs:
           key: digest-db-${{ github.run_id }}
           restore-keys: digest-db-
 
+      # QIITA_TOKEN はこのステップにだけ渡す
       - name: 記事を集める
+        env:
+          QIITA_TOKEN: ${{ secrets.QIITA_TOKEN }}
         run: uv run tech-digest run
 
       # 取得元の一部が失敗しても（終了コード 1）、取れた分は記録して公開する
@@ -72,11 +70,39 @@ jobs:
 
       - name: その日の記録を JSON に書き出す
         if: ${{ !cancelled() }}
-        run: uv run tech-digest export --out archive-store/daily
+        run: uv run tech-digest export --out export
 
-      - name: data ブランチにコミット
+      # 次のジョブ（record）に JSON を渡す
+      - name: JSON を受け渡す
         if: ${{ !cancelled() }}
-        working-directory: archive-store
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: daily-json
+          path: export/*.json
+          retention-days: 7
+          if-no-files-found: error
+
+  record:
+    name: data ブランチに記録する
+    needs: collect
+    if: ${{ !cancelled() }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    # data ブランチに push するので、このジョブだけ書き込み権限を付ける（main はルールセットで保護済み）。
+    # このジョブでは git 以外のプログラムを動かさない
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: data
+
+      - uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+        with:
+          name: daily-json
+          path: daily
+
+      - name: コミットして push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -90,7 +116,7 @@ jobs:
 
   pages:
     name: サイトを更新
-    needs: digest
+    needs: record
     if: ${{ !cancelled() }}
     uses: ./.github/workflows/pages.yml
     # 呼び出し先（pages.yml）が使う権限を渡す
