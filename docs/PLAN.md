@@ -31,6 +31,7 @@
 学ぶこと: CI パイプライン、Secrets、コンテナレジストリ
 
 - [ ] push / PR で lint・型チェック・テストを実行
+- [ ] ブランチ保護に「CI が通らないとマージできない」を追加
 - [ ] Docker イメージを build して GHCR に push
 - [ ] `schedule:` で毎日実行してみる（無料でできる最初の定期実行）
 - [ ] Dependabot で依存の更新を自動化
@@ -75,7 +76,6 @@
 | AWS の実行基盤 | Lambda（安い、月数十円程度） / ECS Fargate + RDS（一般的、月 2,000〜4,000 円程度） | Phase 3 の前 |
 | AWS の DB | DynamoDB / S3 に SQLite / RDS PostgreSQL | Phase 3 の前 |
 | 通知先 | Slack / Discord | Phase 5 |
-| 公開範囲 | リポジトリを public にするか | いつでも |
 | 独自ドメイン | 取るか（年 1,000〜2,000 円程度） | Phase 5 |
 
 ## 決定事項
@@ -83,8 +83,14 @@
 - 2026-10-12: Phase 0 は記事一覧のみ。要約は Phase 2〜3 で追加し、方法は別途検討する
 - 2026-10-12: 記事取得は公式 API / RSS のみ（スクレイピングしない）
 - 2026-10-12: リポジトリは private で始める
+- 2026-10-12: 公開してはいけない情報がなければ public にする（全履歴を点検し、問題なしを確認済み）
+- 2026-10-12: 作業はブランチを作り、PR で main に取り込む。マージはユーザーが行う
 
 ## 申し送り（いつかやること）
+
+- [ ] リポジトリを public に切り替える（**ユーザーが実行**。Claude の自動モードでは公開操作が止められる）
+  `gh repo edit fumikachan/tech-digest --visibility public --accept-visibility-change-consequences`
+- [ ] public にした後、main のブランチ保護を設定する（PR 必須・直接 push 禁止。Phase 2 で CI 通過も必須にする）
 
 - [ ] 2つ目のプロジェクトを作るときに、`ENABLE_STOP_REVIEW` と `permissions.deny` をプロジェクト設定からユーザー設定（`~/.claude/settings.json`）へ移す
 - [ ] 定期実行を始める前に Qiita のアクセストークンを発行して `.env` に置く（60 → 1000 リクエスト/時）
