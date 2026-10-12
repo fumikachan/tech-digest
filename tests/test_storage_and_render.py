@@ -1,3 +1,4 @@
+import re
 from datetime import UTC, date, datetime
 
 from tech_digest import storage
@@ -60,3 +61,33 @@ def test_render_markdown_groups_by_source_and_limits():
     assert "ほか 1 件" in md
     assert "## Zenn（トレンド）\n\n新しい記事はありませんでした。" in md
     assert "1. [https://h1](https://h1) — 200 users" in md
+
+
+def test_render_escapes_untrusted_text_and_urls():
+    articles = [
+        Article(
+            source="hatena",
+            url="https://evil.example/x) [偽](https://phish.example",
+            title="<img src=x onerror=alert(1)>\n# 見出し *強調*",
+            published_at=datetime(2026, 10, 11, tzinfo=UTC),
+            author="<b>bob</b>",
+            score=1,
+            tags=("<script>",),
+        ),
+        Article(
+            source="hatena",
+            url="javascript:alert(1)",
+            title="スクリプト URL",
+            published_at=datetime(2026, 10, 11, tzinfo=UTC),
+            score=0,
+        ),
+    ]
+    md = render_markdown(DAY1, articles, SOURCES, limit=10)
+
+    assert not re.search(r"(?<!\\)<", md)  # エスケープされていない < がない（HTML タグにならない）
+    assert r"\<img src=x onerror=alert(1)\> # 見出し \*強調\*" in md  # 改行もつぶれる
+    assert r"\<b\>bob\</b\> · \<script\>" in md
+    # ) や空白がエンコードされ、リンクを途中で閉じて別のリンクを差し込めない
+    assert "(https://evil.example/x%29%20[%E5%81%BD]%28https://phish.example)" in md
+    assert "javascript:" not in md
+    assert "2. スクリプト URL — 0 users" in md  # 危険な URL はリンクにしない
