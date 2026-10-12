@@ -53,7 +53,8 @@ uv run tech-digest build --date 2026-10-12   # DB から指定日のダイジェ
 
 | 変数 | 既定値 | 説明 |
 |---|---|---|
-| `TECH_DIGEST_DB_PATH` | `data/tech-digest.db` | SQLite の DB ファイル |
+| `DATABASE_URL` | なし | `postgresql://ユーザー:パスワード@ホスト:5432/DB名`。設定すると PostgreSQL を使う |
+| `TECH_DIGEST_DB_PATH` | `data/tech-digest.db` | `DATABASE_URL` がないときに使う SQLite の DB ファイル |
 | `TECH_DIGEST_OUTPUT_DIR` | `digests` | ダイジェストの出力先 |
 | `QIITA_TOKEN` | なし | Qiita のアクセストークン（任意。なしだと 60 リクエスト/時の制限） |
 
@@ -77,11 +78,28 @@ docker run --rm -v tech-digest-data:/data -v "$PWD/digests:/output" tech-digest
 - コンテナ内のユーザーは UID 1000（WSL の最初のユーザーと同じ）。ホストの UID が違う場合は `docker build --build-arg APP_UID=$(id -u) -t tech-digest .`
 - DB を消して最初からやり直す: `docker volume rm tech-digest-data`
 
+## compose で動かす（PostgreSQL）
+
+```bash
+# .env がなければ作り、パスワードにランダムな値を入れる（既にあれば何もしない）
+[ -e .env ] || { cp .env.example .env && sed -i "s/^POSTGRES_PASSWORD=$/POSTGRES_PASSWORD=$(openssl rand -hex 16)/" .env; }
+mkdir -p digests
+docker compose run --rm app        # db を起動し、準備できてから app を 1 回実行する
+docker compose down                # 止める（DB のデータはボリューム tech-digest_db-data に残る）
+```
+
+- DB の中を見る: `docker compose exec db psql -U tech_digest -c "select source, count(*) from articles group by source"`
+- アプリのコードを変えたら `docker compose build app` でイメージを作り直す
+- DB を消して最初からやり直す: `docker compose down -v`（**ボリュームごと削除する**）
+- `POSTGRES_PASSWORD` が使われるのは **DB のボリュームを初めて作るときだけ**。あとから `.env` だけ変えても DB 側は変わらない。変えるときは DB 側も合わせる:
+  `docker compose up -d --wait db && docker compose exec db psql -U tech_digest -c "ALTER USER tech_digest PASSWORD '新しいパスワード'"`
+- db のポートはホストに公開していない（app からは compose のネットワーク内でホスト名 `db` で接続する）
+
 ## 開発
 
 ```bash
 uv sync                 # 依存のインストール
-uv run pytest           # テスト
+uv run pytest           # テスト（PostgreSQL のテストは TEST_DATABASE_URL があるときだけ実行）
 uv run pyright          # 型チェック
 uv run ruff check --fix && uv run ruff format   # lint / format
 ```

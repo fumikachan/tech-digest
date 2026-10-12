@@ -11,9 +11,9 @@ Qiita・Zenn などの技術記事を日次で収集・整形・通知するバ�
 ## よく使うコマンド
 - 依存追加: `uv add <pkg>`（開発用は `uv add --dev <pkg>`）
 - 実行: `uv run tech-digest run`（`fetch` / `build --date YYYY-MM-DD` で個別実行）
-- テスト: `uv run pytest`
+- テスト: `uv run pytest`（PostgreSQL でも試すときは `TEST_DATABASE_URL` を設定。一時的な DB は `docker run --rm -e POSTGRES_PASSWORD=test -p 127.0.0.1:55432:5432 postgres:18.6-trixie`）
 - 型チェック: `uv run pyright`
-- Docker: `docker build -t tech-digest .`（実行方法は README の「Docker で動かす」）
+- Docker: `docker build -t tech-digest .` / compose: `docker compose run --rm app`（詳細は README）
   - 依存を変えたら `uv.lock` も更新する（イメージは `uv sync --locked` で入れるので、ずれるとビルドが失敗する）
 - lint: `uv run ruff check --fix && uv run ruff format`
   - 編集時の hook は未使用 import（F401）を消さないので、作業の最後に必ず `ruff check` を通す
@@ -21,7 +21,7 @@ Qiita・Zenn などの技術記事を日次で収集・整形・通知するバ�
 ## 構成
 - `src/tech_digest/cli.py` サブコマンド（fetch / build / run）
 - `src/tech_digest/sources/` 取得元。`fetch(client, digest_date, settings) -> list[Article]` を持つモジュールを作り `SOURCES` に登録する。HTTP 部分と `parse()` を分け、テストは `parse()` と `httpx.MockTransport` で書く
-- `src/tech_digest/storage.py` SQLite。主キーは (source, url)、`digest_date` は初めて載った日で更新しない
+- `src/tech_digest/storage.py` DB。`DATABASE_URL` があれば PostgreSQL、なければ SQLite。SQL は両方で動く共通の書き方だけを使う。主キーは (source, url)、`digest_date` は初めて載った日で更新しない
 - `src/tech_digest/render.py` Markdown 生成
 - `tests/` テスト（ネットワークに出ない）
 - `infra/terraform/` インフラ定義（Phase 4 以降）

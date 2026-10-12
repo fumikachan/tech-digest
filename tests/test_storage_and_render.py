@@ -1,5 +1,8 @@
+import os
 import re
 from datetime import UTC, date, datetime
+
+import pytest
 
 from tech_digest import storage
 from tech_digest.models import Article
@@ -22,24 +25,41 @@ def article(url: str, score: int | None = None, source: str = "qiita", **kw) -> 
     )
 
 
-def test_save_is_idempotent_and_keeps_first_digest_date(tmp_path):
-    conn = storage.connect(tmp_path / "test.db")
-    storage.save(conn, [article("https://a", score=1)], DAY1, NOW)
-    # 翌日も同じ記事がトレンドに残っていた（スコアは増えた）
-    storage.save(conn, [article("https://a", score=9), article("https://b", score=2)], DAY2, NOW)
+@pytest.fixture(params=["sqlite", "postgres"])
+def db(request, tmp_path):
+    """同じテストを SQLite と PostgreSQL の両方で実行する。
 
-    day1 = storage.load(conn, DAY1)
-    day2 = storage.load(conn, DAY2)
+    PostgreSQL は TEST_DATABASE_URL があるときだけ（なければ skip）。中のデータは毎回消す。
+    """
+    if request.param == "sqlite":
+        database = storage.connect_sqlite(tmp_path / "test.db")
+    else:
+        url = os.environ.get("TEST_DATABASE_URL")
+        if not url:
+            pytest.skip("TEST_DATABASE_URL が未設定のため PostgreSQL のテストを省略")
+        database = storage.connect_postgres(url)
+        database.execute("TRUNCATE articles")
+        database.commit()
+    yield database
+    database.close()
+
+
+def test_save_is_idempotent_and_keeps_first_digest_date(db):
+    storage.save(db, [article("https://a", score=1)], DAY1, NOW)
+    # 翌日も同じ記事がトレンドに残っていた（スコアは増えた）
+    storage.save(db, [article("https://a", score=9), article("https://b", score=2)], DAY2, NOW)
+
+    day1 = storage.load(db, DAY1)
+    day2 = storage.load(db, DAY2)
     assert [a.url for a in day1] == ["https://a"]
     assert day1[0].score == 9  # スコアは最新に更新される
     assert [a.url for a in day2] == ["https://b"]  # 前日に載った記事は重複しない
 
 
-def test_load_orders_by_score_with_nulls_last(tmp_path):
-    conn = storage.connect(tmp_path / "test.db")
+def test_load_orders_by_score_with_nulls_last(db):
     articles = [article("https://low", 1), article("https://none"), article("https://high", 50)]
-    storage.save(conn, articles, DAY1, NOW)
-    assert [a.url for a in storage.load(conn, DAY1)] == [
+    storage.save(db, articles, DAY1, NOW)
+    assert [a.url for a in storage.load(db, DAY1)] == [
         "https://high",
         "https://low",
         "https://none",
