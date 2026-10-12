@@ -5,7 +5,7 @@
 
 ## 現在地
 
-**Phase 0 完了 → 次は Phase 1（Docker 化）**
+**Phase 1 の途中**: Dockerfile でアプリが動くようになった（SQLite）。次は compose + PostgreSQL
 
 ## Phase 0: ローカル CLI ✅（2026-10-12）
 
@@ -19,12 +19,12 @@
 
 学ぶこと: イメージとコンテナの違い、レイヤーキャッシュ、ボリューム、ネットワーク
 
-- [ ] `Dockerfile`（マルチステージ、uv で依存を入れる、root 以外のユーザーで実行）
-- [ ] `.dockerignore`（`.venv`、`data/`、`.env` をイメージに入れない）
+- [x] `Dockerfile`（マルチステージ、uv で依存を入れる、root 以外のユーザーで実行）
+- [x] `.dockerignore`（`.venv`、`data/`、`.env` をイメージに入れない）
 - [ ] `compose.yaml`（アプリ + PostgreSQL、DB はボリュームで永続化、healthcheck）
 - [ ] storage を PostgreSQL に対応（`DATABASE_URL` で SQLite と切り替え）
-- [ ] ダイジェストの出力先をボリュームにマウント
-- [ ] README に Docker での実行方法を追記
+- [x] ダイジェストの出力先をボリュームにマウント（`docker run -v "$PWD/digests:/output"`）
+- [x] README に Docker での実行方法を追記（compose の手順は PostgreSQL 対応時に追加）
 
 ## Phase 2: GitHub Actions
 
@@ -88,9 +88,8 @@
 
 ## 申し送り（いつかやること）
 
-- [ ] リポジトリを public に切り替える（**ユーザーが実行**。Claude の自動モードでは公開操作が止められる）
-  `gh repo edit fumikachan/tech-digest --visibility public --accept-visibility-change-consequences`
-- [ ] public にした後、main のブランチ保護を設定する（PR 必須・直接 push 禁止。Phase 2 で CI 通過も必須にする）
+- [x] リポジトリを public に切り替える（2026-10-12、ユーザーが実行）
+- [ ] main をルールセットで保護する（PR 必須・直接 push と削除と force push を禁止。**ユーザーが実行**。Claude の自動モードではリポジトリのルール変更が止められる）。Phase 2 で CI 通過も必須にする
 
 - [ ] 2つ目のプロジェクトを作るときに、`ENABLE_STOP_REVIEW` と `permissions.deny` をプロジェクト設定からユーザー設定（`~/.claude/settings.json`）へ移す
 - [ ] 定期実行を始める前に Qiita のアクセストークンを発行して `.env` に置く（60 → 1000 リクエスト/時）

@@ -13,6 +13,8 @@ Qiita・Zenn などの技術記事を日次で収集・整形・通知するバ�
 - 実行: `uv run tech-digest run`（`fetch` / `build --date YYYY-MM-DD` で個別実行）
 - テスト: `uv run pytest`
 - 型チェック: `uv run pyright`
+- Docker: `docker build -t tech-digest .`（実行方法は README の「Docker で動かす」）
+  - 依存を変えたら `uv.lock` も更新する（イメージは `uv sync --locked` で入れるので、ずれるとビルドが失敗する）
 - lint: `uv run ruff check --fix && uv run ruff format`
   - 編集時の hook は未使用 import（F401）を消さないので、作業の最後に必ず `ruff check` を通す
 
