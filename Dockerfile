@@ -1,10 +1,10 @@
 # syntax=docker/dockerfile:1
 
-# ベースイメージはパッチバージョンまで固定する（いつビルドしても同じ Python になるように）
-ARG PYTHON_IMAGE=python:3.13.16-slim-trixie
+# ベースイメージはパッチバージョンまで固定する（いつビルドしても同じ Python になるように）。
+# 2 つのステージで同じものを使う。ARG にまとめると Dependabot が読めず更新されないので、直接書く
 
 # ---- ビルド用ステージ: 依存とアプリを /app/.venv にインストールする ----
-FROM ${PYTHON_IMAGE} AS builder
+FROM python:3.13.16-slim-trixie AS builder
 
 COPY --from=ghcr.io/astral-sh/uv:0.13.0 /uv /bin/uv
 
@@ -29,7 +29,7 @@ RUN --mount=type=cache,target=/root/.cache/uv \
     uv sync --locked --no-dev --no-editable
 
 # ---- 実行用ステージ: .venv だけを持ってくる（uv やビルドの途中のファイルは入れない） ----
-FROM ${PYTHON_IMAGE}
+FROM python:3.13.16-slim-trixie
 
 # WSL の最初のユーザーと同じ UID にして、ホストのディレクトリをマウントしても書き込めるようにする
 ARG APP_UID=1000

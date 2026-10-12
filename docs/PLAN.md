@@ -32,9 +32,11 @@
 
 - [ ] push / PR で lint・型チェック・テストを実行（PostgreSQL はサービスコンテナで用意し、`TEST_DATABASE_URL` を渡す）
 - [ ] ブランチ保護に「CI が通らないとマージできない」を追加
-- [ ] Docker イメージを build して GHCR に push
-- [ ] `schedule:` で毎日実行してみる（無料でできる最初の定期実行）
-- [ ] Dependabot で依存の更新を自動化
+- [x] Docker イメージを build して GHCR に push（main へのマージ時、`publish.yml`）
+- [x] `schedule:` で毎日実行してみる（毎朝 7:00 JST、`daily.yml`。DB は actions/cache で引き継ぎ、ダイジェストは Artifacts）
+- [x] Dependabot で依存の更新を自動化（uv・Actions・Dockerfile・compose を毎週）
+- [ ] マージ後に Actions の画面から「Daily digest」を手動実行して動作確認
+- [ ] GitHub の Secrets に `QIITA_TOKEN` を登録（ランナーは IP を共有しているので、トークンなしだと制限に当たりやすい）
 - [ ] Claude Code に `github@claude-plugins-official` を追加
 - [ ] **要約の方法を決める**（下の「未決定事項」）
 
