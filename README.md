@@ -93,7 +93,9 @@ docker compose down                # 止める（DB のデータはボリュー�
 - DB を消して最初からやり直す: `docker compose down -v`（**ボリュームごと削除する**）
 - `POSTGRES_PASSWORD` が使われるのは **DB のボリュームを初めて作るときだけ**。あとから `.env` だけ変えても DB 側は変わらない。変えるときは DB 側も合わせる:
   `docker compose up -d --wait db && docker compose exec db psql -U tech_digest -c "ALTER USER tech_digest PASSWORD '新しいパスワード'"`
-- db のポートはホストに公開していない（app からは compose のネットワーク内でホスト名 `db` で接続する）
+- db のポートは `127.0.0.1:5432` に公開している（この PC からだけ接続できる）。app 自身は compose のネットワーク内でホスト名 `db` で接続する
+  - A5:SQL などで見る: `docker compose up -d db` で起動し、ホスト `localhost`・ポート `5432`・DB `tech_digest`・ユーザー `tech_digest`・パスワードは `.env` の `POSTGRES_PASSWORD`
+  - ポートを変える: `.env` に `DB_PORT=15432` のように書く
 
 ## 開発
 
