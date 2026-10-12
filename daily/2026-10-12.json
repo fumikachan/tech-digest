@@ -7,14 +7,14 @@
    "url": "https://toruoka.xyz/202610_security_key/",
    "title": "証券口座パスキーの安全性を高めよ！”物理キー”を本格導入した話",
    "author": null,
-   "score": 379,
+   "score": 384,
    "tags": [
     "セキュリティ",
     "security",
     "物理キー",
-    "パスキー",
     "認証",
     "物理",
+    "パスキー",
     "投資",
     "google"
    ],
@@ -25,17 +25,17 @@
    "url": "https://web.archive.org/web/20261011101825/https://lyttonblog.com/programming/ebook-pdf-ocr/",
    "title": "【完全版】電子書籍をPDF化・OCRする方法｜Kindle・Kobo・DMMなど5サービス対応の無料アプリ | Odds and Ends",
    "author": null,
-   "score": 277,
+   "score": 314,
    "tags": [
     "pdf",
-    "Kindle",
+    "kindle",
+    "本",
     "電子書籍",
     "書籍",
     "OCR",
     "markdown",
-    "本",
-    "python",
-    "webサービス"
+    "webサービス",
+    "python"
    ],
    "published_at": "2026-10-11T13:30:36+00:00"
   },
@@ -44,7 +44,7 @@
    "url": "https://www.techno-edge.net/article/2026/10/12/5574.html",
    "title": "なんでもリバースエンジニアリング。ソースコード非公開のアプリをAIに解析させ、類似機能を作らせるオープンソースツール「REA」（生成AIクローズアップ） | テクノエッジ TechnoEdge",
    "author": null,
-   "score": 225,
+   "score": 259,
    "tags": [
     "AI",
     "TECHNOEDGE",
@@ -61,15 +61,14 @@
    "url": "https://pc.watch.impress.co.jp/docs/column/yajiuma-mini-review/2147366.html",
    "title": "【やじうまミニレビュー】 こういうのでいいんだよ……のはずだった。Amazonベーシック格安USB4ケーブル",
    "author": null,
-   "score": 201,
+   "score": 206,
    "tags": [
     "USB",
     "amazon",
     "ハードウェア",
     "cable",
     "技術",
-    "PC",
-    "生活"
+    "PC"
    ],
    "published_at": "2026-10-11T22:07:57+00:00"
   },
@@ -78,13 +77,13 @@
    "url": "https://diary.hatenablog.jp/entry/2026/10/11/204055",
    "title": "Opus 5.5のおかげで3Dプリンターを活用できるようになった - Write and Run",
    "author": null,
-   "score": 165,
+   "score": 167,
    "tags": [
     "3Dプリンタ",
+    "AI",
     "CAD",
     "3D",
     "電子工作",
-    "AI",
     "人工知能"
    ],
    "published_at": "2026-10-11T15:00:42+00:00"
@@ -94,7 +93,7 @@
    "url": "https://posfie.com/@cashewNutsUmai/p/YXvMlOP",
    "title": "ウクライナ、「ロシアのGoogle」ヤンデックスのデータセンターを4日で3カ所破壊 ロシアのネットは大混乱、ボットも減った？",
    "author": null,
-   "score": 147,
+   "score": 160,
    "tags": [
     "ロシア",
     "IT",
@@ -111,7 +110,7 @@
    "url": "https://qiita.com/carol0226/items/bdb16dbd5c16a2c43ad5",
    "title": "Microsoft セキュリティ、これをやってください！～ 実践ベストプラクティス - Qiita",
    "author": null,
-   "score": 136,
+   "score": 144,
    "tags": [
     "Microsoft",
     "セキュリティ",
@@ -125,10 +124,21 @@
   },
   {
    "source": "hatena",
+   "url": "https://www.docswell.com/s/ipusiron/ZGN668-2026-08-15-213702",
+   "title": "人生やりたいことリストのすすめ　FIRE後の楽しみを可視化する | ドクセル",
+   "author": null,
+   "score": 118,
+   "tags": [
+    "人生"
+   ],
+   "published_at": "2026-10-12T05:25:28+00:00"
+  },
+  {
+   "source": "hatena",
    "url": "https://www.itmedia.co.jp/mobile/articles/2610/12/news011.html",
    "title": "個人情報の流出にユーザーはどう備える？　乗っ取りやクレカ不正利用を防ぐ「3段階」の対策ガイド",
    "author": null,
-   "score": 95,
+   "score": 106,
    "tags": [
     "セキュリティ",
     "security",
@@ -140,27 +150,54 @@
   },
   {
    "source": "hatena",
+   "url": "https://voluntas.ghost.io/migrate-opencode-to-pi/",
+   "title": "OpenCode から Pi へ切り替えた",
+   "author": null,
+   "score": 93,
+   "tags": [
+    "Pi",
+    "LLM"
+   ],
+   "published_at": "2026-10-12T07:48:10+00:00"
+  },
+  {
+   "source": "hatena",
    "url": "https://qiita.com/Koukyosyumei/items/8aaa44ff15a3b404fd8b",
    "title": "攻撃者はWebアプリのどこを狙う？ 初心者でも今すぐできるセキュリティチェックリスト - Qiita",
    "author": null,
-   "score": 86,
+   "score": 89,
    "tags": [
     "セキュリティ",
     "security",
     "資料",
     "設定",
+    "Qiita",
     "API",
-    "環境",
-    "ツール"
+    "環境"
    ],
    "published_at": "2026-10-09T00:05:54+00:00"
+  },
+  {
+   "source": "hatena",
+   "url": "https://togetter.com/li/2757239",
+   "title": "崩れまくりのAI生成ポスターが世に出るのを不思議に思ってたけど「コストを抑えたくて使ってるんだからチェックが疎かになるのは当然」と言われて妙に納得した話",
+   "author": null,
+   "score": 87,
+   "tags": [
+    "AI",
+    "togetter",
+    "人工知能",
+    "イラスト",
+    "デザイン"
+   ],
+   "published_at": "2026-10-12T07:26:15+00:00"
   },
   {
    "source": "hatena",
    "url": "https://zenn.dev/todesking/articles/5bc43f449ecdf6",
    "title": "スロップ表現100連発",
    "author": null,
-   "score": 75,
+   "score": 84,
    "tags": [
     "AI",
     "学び",
@@ -174,26 +211,16 @@
   },
   {
    "source": "hatena",
-   "url": "https://www.docswell.com/s/ipusiron/ZGN668-2026-08-15-213702",
-   "title": "人生やりたいことリストのすすめ　FIRE後の楽しみを可視化する | ドクセル",
-   "author": null,
-   "score": 73,
-   "tags": [
-    "人生"
-   ],
-   "published_at": "2026-10-12T05:25:28+00:00"
-  },
-  {
-   "source": "hatena",
-   "url": "https://voluntas.ghost.io/migrate-opencode-to-pi/",
-   "title": "OpenCode から Pi へ切り替えた",
+   "url": "https://speakerdeck.com/tetsuya28/jissen-sre-x-ai-abema-niokeru-aiops",
+   "title": "実践！ SRE × AI - ABEMA における AIOps -",
    "author": null,
    "score": 70,
    "tags": [
-    "Pi",
-    "LLM"
+    "SRE",
+    "AI",
+    "資料"
    ],
-   "published_at": "2026-10-12T07:48:10+00:00"
+   "published_at": "2026-10-12T05:30:08+00:00"
   },
   {
    "source": "hatena",
@@ -210,86 +237,13 @@
   },
   {
    "source": "hatena",
-   "url": "https://togetter.com/li/2757239",
-   "title": "崩れまくりのAI生成ポスターが世に出るのを不思議に思ってたけど「コストを抑えたくて使ってるんだからチェックが疎かになるのは当然」と言われて妙に納得した話",
-   "author": null,
-   "score": 67,
-   "tags": [
-    "AI",
-    "togetter",
-    "人工知能",
-    "イラスト",
-    "デザイン"
-   ],
-   "published_at": "2026-10-12T07:26:15+00:00"
-  },
-  {
-   "source": "hatena",
-   "url": "https://speakerdeck.com/tetsuya28/jissen-sre-x-ai-abema-niokeru-aiops",
-   "title": "実践！ SRE × AI - ABEMA における AIOps -",
-   "author": null,
-   "score": 59,
-   "tags": [
-    "SRE",
-    "AI",
-    "資料"
-   ],
-   "published_at": "2026-10-12T05:30:08+00:00"
-  },
-  {
-   "source": "hatena",
-   "url": "https://gigazine.net/news/20261012-stochastic-parrot/",
-   "title": "「言語モデルはテキストを理解していない」ことを意味する「確率的オウム」とは？",
-   "author": null,
-   "score": 54,
-   "tags": [
-    "AI",
-    "論文",
-    "文章",
-    "gigazine",
-    "言語"
-   ],
-   "published_at": "2026-10-12T03:06:58+00:00"
-  },
-  {
-   "source": "hatena",
-   "url": "https://note.com/yuiseki/n/nb675320ee5fe",
-   "title": "私は Claude Code ですが、人間と一緒にドローンを飛ばして現実世界を観測しました｜ゆいせき",
-   "author": null,
-   "score": 49,
-   "tags": [
-    "協働",
-    "ドローン",
-    "AI",
-    "地図",
-    "写真",
-    "人間"
-   ],
-   "published_at": "2026-10-12T07:49:22+00:00"
-  },
-  {
-   "source": "qiita",
-   "url": "https://qiita.com/leolui2004/items/226062f17e55202e8c47",
-   "title": "サイバーセキュリティを勉強するなら今？おすすめリソース紹介",
-   "author": "leolui2004",
-   "score": 47,
-   "tags": [
-    "Security",
-    "サイバーセキュリティ",
-    "AI",
-    "リソース"
-   ],
-   "published_at": "2026-10-11T06:13:37+00:00"
-  },
-  {
-   "source": "hatena",
    "url": "https://qiita.com/leolui2004/items/226062f17e55202e8c47",
    "title": "サイバーセキュリティを勉強するなら今？おすすめリソース紹介 - Qiita",
    "author": null,
-   "score": 43,
+   "score": 63,
    "tags": [
-    "学習",
     "セキュリティ",
+    "学習",
     "資料",
     "勉強",
     "ソフトウェア",
@@ -300,10 +254,42 @@
   },
   {
    "source": "hatena",
+   "url": "https://note.com/yuiseki/n/nb675320ee5fe",
+   "title": "私は Claude Code ですが、人間と一緒にドローンを飛ばして現実世界を観測しました｜ゆいせき",
+   "author": null,
+   "score": 62,
+   "tags": [
+    "協働",
+    "AI",
+    "ドローン",
+    "地図",
+    "写真",
+    "人間"
+   ],
+   "published_at": "2026-10-12T07:49:22+00:00"
+  },
+  {
+   "source": "hatena",
+   "url": "https://gigazine.net/news/20261012-stochastic-parrot/",
+   "title": "「言語モデルはテキストを理解していない」ことを意味する「確率的オウム」とは？",
+   "author": null,
+   "score": 55,
+   "tags": [
+    "AI",
+    "モデル",
+    "論文",
+    "文章",
+    "gigazine",
+    "言語"
+   ],
+   "published_at": "2026-10-12T03:06:58+00:00"
+  },
+  {
+   "source": "hatena",
    "url": "https://pi.dev/",
    "title": "Pi Coding Agent",
    "author": null,
-   "score": 43,
+   "score": 55,
    "tags": [
     "ai",
     "agent",
@@ -313,20 +299,63 @@
    "published_at": "2025-12-22T14:36:05+00:00"
   },
   {
+   "source": "qiita",
+   "url": "https://qiita.com/leolui2004/items/226062f17e55202e8c47",
+   "title": "サイバーセキュリティを勉強するなら今？おすすめリソース紹介",
+   "author": "leolui2004",
+   "score": 49,
+   "tags": [
+    "Security",
+    "サイバーセキュリティ",
+    "AI",
+    "リソース"
+   ],
+   "published_at": "2026-10-11T06:13:37+00:00"
+  },
+  {
+   "source": "hatena",
+   "url": "https://dev.classmethod.jp/articles/20261009-devio2026-ontology/",
+   "title": "「知識の地図を描く ─ オントロジーとは何か？」というタイトルで DevelopersIO 2026 Sapporo に登壇しました #devio2026 | DevelopersIO",
+   "author": null,
+   "score": 42,
+   "tags": [
+    "AI",
+    "ontology",
+    "データ",
+    "生成AI",
+    "地図",
+    "AWS"
+   ],
+   "published_at": "2026-10-10T19:15:38+00:00"
+  },
+  {
    "source": "hatena",
    "url": "https://www.afpbb.com/articles/-/3657090",
    "title": "ビル・ゲイツ氏、AI悪用のサイバー攻撃増加を警告 「今後1年で顕著に」",
    "author": null,
-   "score": 35,
+   "score": 37,
    "tags": [],
    "published_at": "2026-10-12T02:47:23+00:00"
+  },
+  {
+   "source": "hatena",
+   "url": "https://gigazine.net/news/20261012-geiger/",
+   "title": "無料で自分のPCにインストールされているAIエージェント・ハーネス・MCPサーバー・プラグイン・AI拡張機能をすべてスキャンして列挙してレポートしてくれる「Geiger」",
+   "author": null,
+   "score": 36,
+   "tags": [
+    "AI",
+    "gigazine",
+    "開発"
+   ],
+   "published_at": "2026-10-12T09:06:49+00:00"
   },
   {
    "source": "hatena",
    "url": "https://togetter.com/li/2757116",
    "title": "日本が急にハッキング被害の一斉標的にされたのは日本語がAIで解読されたことが原因のひとつなのか？…技術的にはずっとハッキングされていたが被害になったのはそれかも",
    "author": null,
-   "score": 32,
+   "score": 33,
    "tags": [
     "日本語",
     "ai",
@@ -337,65 +366,52 @@
   },
   {
    "source": "hatena",
-   "url": "https://dev.classmethod.jp/articles/20261009-devio2026-ontology/",
-   "title": "「知識の地図を描く ─ オントロジーとは何か？」というタイトルで DevelopersIO 2026 Sapporo に登壇しました #devio2026 | DevelopersIO",
+   "url": "https://kdy1.dev/2026-10-12-ai-ui",
+   "title": "How I Build UIs with AI",
    "author": null,
-   "score": 28,
+   "score": 12,
    "tags": [
-    "ontology",
-    "生成AI",
-    "データ",
+    "チュートリアル",
+    "GitHub",
+    "UI"
+   ],
+   "published_at": "2026-10-12T08:45:46+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/J-T_ky2g/items/36aaf36d9eef97672c3d",
+   "title": "抽象的なことを考える時、無意識に具体化しないためのメモ",
+   "author": "J-T_ky2g",
+   "score": 11,
+   "tags": [
+    "ポエム"
+   ],
+   "published_at": "2026-10-10T20:02:27+00:00"
+  },
+  {
+   "source": "hatena",
+   "url": "https://blog.cybozu.io/entry/logos-overview",
+   "title": "Mythos 対策プロジェクトの 2 ヶ月(概要編) - Cybozu Inside Out | サイボウズエンジニアのブログ",
+   "author": null,
+   "score": 11,
+   "tags": [
+    "security"
+   ],
+   "published_at": "2026-09-01T08:39:40+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/yakumo_09/items/6f3936d9f7255a4259d9",
+   "title": "【AWS】GitHub ActionsとAgentCore Evaluationsでエージェントの評価をCI/CDに組み込んでみた",
+   "author": "yakumo_09",
+   "score": 9,
+   "tags": [
     "AWS",
-    "AI",
-    "map"
+    "AgentCore",
+    "GitHubActions",
+    "StrandsAgents"
    ],
-   "published_at": "2026-10-10T19:15:38+00:00"
-  },
-  {
-   "source": "hatena",
-   "url": "https://gigazine.net/news/20261012-geiger/",
-   "title": "無料で自分のPCにインストールされているAIエージェント・ハーネス・MCPサーバー・プラグイン・AI拡張機能をすべてスキャンして列挙してレポートしてくれる「Geiger」",
-   "author": null,
-   "score": 24,
-   "tags": [
-    "AI",
-    "gigazine",
-    "開発"
-   ],
-   "published_at": "2026-10-12T09:06:49+00:00"
-  },
-  {
-   "source": "hatena",
-   "url": "https://developers.google.com/edge/foresight",
-   "title": "Google AI Edge Foresight  |  Google for Developers",
-   "author": null,
-   "score": 22,
-   "tags": [],
-   "published_at": "2026-10-09T05:23:17+00:00"
-  },
-  {
-   "source": "hatena",
-   "url": "https://ja.martincid.com/technology-ja/ledger%E3%81%AE%E6%9A%97%E5%8F%B7%E8%B3%87%E7%94%A3%E3%82%A6%E3%82%A9%E3%83%AC%E3%83%83%E3%83%88%E3%81%AB%E9%9A%A0%E3%81%97%E3%83%81/",
-   "title": "Ledgerの暗号資産ウォレットに隠しチップ、マレーシアの販売店経由",
-   "author": null,
-   "score": 13,
-   "tags": [
-    "Security"
-   ],
-   "published_at": "2026-10-12T00:41:58+00:00"
-  },
-  {
-   "source": "hatena",
-   "url": "https://ascii.jp/elem/000/004/441/4441775/",
-   "title": "安定版に進化したWSLコンテナーの仕組み",
-   "author": null,
-   "score": 13,
-   "tags": [
-    "docker",
-    "article",
-    "Windows"
-   ],
-   "published_at": "2026-10-11T05:41:05+00:00"
+   "published_at": "2026-10-11T12:51:19+00:00"
   },
   {
    "source": "hatena",
@@ -408,62 +424,39 @@
   },
   {
    "source": "hatena",
-   "url": "https://gigazine.net/news/20261011-removemacai/",
-   "title": "無料でmacOS 27のApple Intelligenceをオフにして空きディスク容量を増やす方法",
+   "url": "https://togetter.com/li/2757347",
+   "title": "プログラミングにAIを使うのは全然悪くないが、初心者が本格的に使って商売するのは違うのでは？AI生成したコードがエラーの場合、クライアントに責任を取れるのか？議論に",
    "author": null,
-   "score": 9,
-   "tags": [],
-   "published_at": "2026-10-11T04:33:34+00:00"
-  },
-  {
-   "source": "qiita",
-   "url": "https://qiita.com/J-T_ky2g/items/36aaf36d9eef97672c3d",
-   "title": "抽象的なことを考える時、無意識に具体化しないためのメモ",
-   "author": "J-T_ky2g",
-   "score": 9,
-   "tags": [
-    "ポエム"
-   ],
-   "published_at": "2026-10-10T20:02:27+00:00"
-  },
-  {
-   "source": "hatena",
-   "url": "https://github.com/bherbruck/solidcraft",
-   "title": "GitHub - bherbruck/solidcraft: SolidCraft: an open-source parametric 3D CAD application built in pure Rust. Desktop, web, and automation through MCP.",
-   "author": null,
-   "score": 8,
-   "tags": [],
-   "published_at": "2026-10-11T13:22:41+00:00"
-  },
-  {
-   "source": "qiita",
-   "url": "https://qiita.com/yakumo_09/items/6f3936d9f7255a4259d9",
-   "title": "【AWS】GitHub ActionsとAgentCore Evaluationsでエージェントの評価をCI/CDに組み込んでみた",
-   "author": "yakumo_09",
    "score": 7,
-   "tags": [
-    "AWS",
-    "AgentCore",
-    "GitHubActions",
-    "StrandsAgents"
-   ],
-   "published_at": "2026-10-11T12:51:19+00:00"
+   "tags": [],
+   "published_at": "2026-10-12T12:00:35+00:00"
   },
   {
    "source": "hatena",
-   "url": "https://www.gizmodo.jp/article/2610-ai-datacenter-protests-us/",
-   "title": "AIブームに地域住民が｢待った｣。2,000億ドルのデータセンター建設計画が足止め | ギズモード・ジャパン",
+   "url": "https://www.itmedia.co.jp/mobile/articles/2610/10/news011.html",
+   "title": "ダイソーで1100円の「GaN USB充電器」は折り畳みプラグで外出用に持ち歩きやすい　45W出力対応でPCでも使える",
+   "author": null,
+   "score": 7,
+   "tags": [],
+   "published_at": "2026-10-10T11:54:23+00:00"
+  },
+  {
+   "source": "hatena",
+   "url": "https://gigazine.net/news/20261012-apple-smart-home-homeview/",
+   "title": "AppleのスマートホームハブはA18チップ搭載＆壁掛けモデルも用意され「HomeView」という名称で11月出荷か",
    "author": null,
    "score": 6,
-   "tags": [],
-   "published_at": "2026-10-11T14:23:35+00:00"
+   "tags": [
+    "apple"
+   ],
+   "published_at": "2026-10-12T01:02:42+00:00"
   },
   {
    "source": "qiita",
    "url": "https://qiita.com/ys05181406/items/14b41ca99c3ae857f2d0",
    "title": "個人開発アプリを公開して2か月。100DLまでにやったこと、分かったこと",
    "author": "ys05181406",
-   "score": 4,
+   "score": 6,
    "tags": [
     "ポエム",
     "個人開発",
@@ -472,6 +465,24 @@
     "AI"
    ],
    "published_at": "2026-10-11T04:10:09+00:00"
+  },
+  {
+   "source": "hatena",
+   "url": "https://japan.cnet.com/article/35253438/",
+   "title": "金融庁、本人確認は「画像」から「ICチップ」へ　早期移行を要請　免許証の大規模流出を受け",
+   "author": null,
+   "score": 6,
+   "tags": [],
+   "published_at": "2026-10-10T11:05:26+00:00"
+  },
+  {
+   "source": "hatena",
+   "url": "https://gigazine.net/news/20261011-samsung-galaxy-z-fold8-ultra-fold8-flip8-appearance/",
+   "title": "折りたたみスマホ8世代分の進化を薄型ボディに凝縮した「Galaxy Z Fold8 Ultra」「Galaxy Z Fold8」「Galaxy Z Flip8」外観レビュー",
+   "author": null,
+   "score": 5,
+   "tags": [],
+   "published_at": "2026-10-11T14:48:23+00:00"
   },
   {
    "source": "qiita",
@@ -2227,6 +2238,21 @@
     "FileManagerExplorer"
    ],
    "published_at": "2026-10-11T11:29:50+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/Ozaki_Ryu_/items/128f74d937df777a7248",
+   "title": "イラストを1枚読み込むだけで、その形に開く花火を作った【Houdini / VEX】",
+   "author": "Ozaki_Ryu_",
+   "score": 0,
+   "tags": [
+    "HOUDINI",
+    "VEX",
+    "CG",
+    "3DCG",
+    "画像処理"
+   ],
+   "published_at": "2026-10-11T11:20:02+00:00"
   },
   {
    "source": "qiita",
@@ -5445,6 +5471,42 @@
    "score": null,
    "tags": [],
    "published_at": "2026-10-06T04:17:02+00:00"
+  },
+  {
+   "source": "zenn",
+   "url": "https://zenn.dev/radius5/articles/20261004-j3v7cl3f",
+   "title": "JevとClefを画像生成AIのプロダクトに組み込もう!",
+   "author": "Katsuyuki Karasawa",
+   "score": null,
+   "tags": [],
+   "published_at": "2026-10-05T08:26:58+00:00"
+  },
+  {
+   "source": "zenn",
+   "url": "https://zenn.dev/shimitaro/articles/eb45d8d63c7bd1",
+   "title": "オートパイロットは外せる人間を前提にしている — AI時代のエンジニア技能維持を航空業界に学ぶ",
+   "author": "しみたろ",
+   "score": null,
+   "tags": [],
+   "published_at": "2026-10-05T08:06:00+00:00"
+  },
+  {
+   "source": "zenn",
+   "url": "https://zenn.dev/emuni/articles/ooui-agent-skill",
+   "title": "オブジェクト指向UIデザインをAgent Skillにして、Claudeが作るUIはどう変わるかの検証",
+   "author": "mkurokaw",
+   "score": null,
+   "tags": [],
+   "published_at": "2026-10-05T06:09:20+00:00"
+  },
+  {
+   "source": "zenn",
+   "url": "https://zenn.dev/mizchi/articles/ai-coding-loop-formal",
+   "title": "俺のAIプログラミング手法(2026/10/05)",
+   "author": "mizchi",
+   "score": null,
+   "tags": [],
+   "published_at": "2026-10-05T04:59:07+00:00"
   }
  ]
 }
