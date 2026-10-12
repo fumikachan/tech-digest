@@ -7,6 +7,7 @@ Qiita・Zenn などの技術記事を日次で収集・整形・通知するバ�
 - Python 3.13、パッケージ管理は uv（`pip` は使わない）
 - lint / format: ruff（編集後に hook で自動実行される）
 - テスト: pytest
+- フロント（`web/`）: TypeScript + Vite、テストは vitest。Node は nvm で入れた 24（`web/.nvmrc`）、パッケージは npm（`web/.npmrc` でインストール時のスクリプトを止めている）
 
 ## よく使うコマンド
 - 依存追加: `uv add <pkg>`（開発用は `uv add --dev <pkg>`）
@@ -16,6 +17,8 @@ Qiita・Zenn などの技術記事を日次で収集・整形・通知するバ�
 - Docker: `docker build -t tech-digest .` / compose: `docker compose run --rm app`（詳細は README）
   - DynamoDB Local: `docker compose run --rm app-dynamodb create-table`（初回）→ `docker compose run --rm app-dynamodb`
   - 依存を変えたら `uv.lock` も更新する（イメージは `uv sync --locked` で入れるので、ずれるとビルドが失敗する）
+- フロント: `cd web && npm ci`（依存の追加は `npm install --save-dev <pkg>@<版>`）→ `npm run dev` / `npm run typecheck` / `npm test` / `npm run build`
+  - nvm はシェルの関数なので、コマンドから使うときは先に `. ~/.nvm/nvm.sh` で読み込む
 - lint: `uv run ruff check --fix && uv run ruff format`
   - 編集時の hook は未使用 import（F401）を消さないので、作業の最後に必ず `ruff check` を通す
 
@@ -31,6 +34,9 @@ Qiita・Zenn などの技術記事を日次で収集・整形・通知するバ�
 - `src/tech_digest/site.py` + `templates/` + `static/` 静的サイト（GitHub Pages）
   - HTML は必ず Jinja2 テンプレート（自動エスケープ）で出す。URL は `render.safe_url` を通す
   - JavaScript で外部の文字列を出すときは `textContent` だけ（`innerHTML` 禁止）。CSP で外部スクリプトとインラインスクリプトを禁止している
+- `web/` SPA（API から読む。AWS に API ができるまでは公開しない）。ハッシュルーティング（`#/days/...`）
+  - 外部の文字列は `dom.ts` の `h()` でテキストとしてだけ入れる（`innerHTML` 禁止）。外部の URL は `externalLink` を通す
+  - API の型は `src/api.ts`。API を変えたら合わせて直す
 - `tests/` テスト（ネットワークに出ない）
 - `infra/terraform/` インフラ定義（Phase 4 以降）
 

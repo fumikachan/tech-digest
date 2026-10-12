@@ -135,6 +135,25 @@ curl "localhost:8080/search?q=aws&sort=date"
 - 止めるときは Ctrl+C。ポートは `--port 18080` で変えられる
 - エンドポイントとレスポンスの形は [API_DESIGN.md](API_DESIGN.md#api) を参照
 
+### 画面（SPA）をローカルで動かす
+
+`web/` の SPA を Vite の開発サーバーで動かす。`/api/...` は上の API（ポート 8080）に中継される。
+
+```bash
+# 1 つ目のターミナル: DynamoDB Local と API
+docker compose up -d --wait dynamodb
+DYNAMODB_TABLE=tech-digest DYNAMODB_ENDPOINT_URL=http://localhost:8000 uv run python -m tech_digest.api.devserver
+
+# 2 つ目のターミナル: 画面
+cd web
+nvm use          # web/.nvmrc の Node（24）を使う
+npm ci           # 初回と、package-lock.json が変わったとき
+npm run dev      # http://127.0.0.1:5173 を Windows のブラウザで開く
+```
+
+- コードを保存すると、ブラウザが自動で更新される
+- 「API に接続できませんでした」と出るときは、1 つ目のターミナルの API が止まっている
+
 ### テーブル（SQLite / PostgreSQL）
 
 `articles` テーブル 1 つだけ。
@@ -180,6 +199,12 @@ PR を出す前にすべて通す。GitHub Actions でも同じものが動く�
 uv run ruff check --fix && uv run ruff format   # lint と整形
 uv run pyright                                  # 型チェック
 uv run pytest                                   # テスト（PostgreSQL の分は skip される。DynamoDB は moto で常に動く）
+```
+
+`web/` を変えたとき:
+
+```bash
+cd web && npm run typecheck && npm test && npm run build
 ```
 
 PostgreSQL のテストも手元で動かすとき:
@@ -231,6 +256,8 @@ git branch -d feat/<内容>                   # 手元のブランチを消す
 | A5:SQL で接続できない | db が止まっている → `docker compose ps` で確認し `docker compose up -d db` |
 | `port is already allocated`（5432） | ほかのソフトが 5432 を使っている → `.env` に `DB_PORT=15432` と書き、A5:SQL のポートも合わせる |
 | `port is already allocated`（8000） | ほかのソフトが 8000 を使っている → `.env` に `DYNAMODB_PORT=18000` と書き、uv で直接使うときの `DYNAMODB_ENDPOINT_URL` も合わせる |
+| `nvm: command not found` | nvm を入れる前に開いたターミナル → 新しいターミナルを開くか `. ~/.nvm/nvm.sh` |
+| `npm ci` が失敗する（lock と合わない） | `package.json` を手で変えた → `npm install` で `package-lock.json` を作り直し、両方コミット |
 | `ResourceNotFoundException`（DynamoDB Local） | テーブルがない → `docker compose run --rm app-dynamodb create-table` |
 | `digests/` に書き込めない（Permission denied） | `digests/` を Docker に作らせると root の持ち物になる → `sudo chown -R $USER: digests` |
 | コードを変えたのに compose の結果が変わらない | イメージが古い → `docker compose build app` |

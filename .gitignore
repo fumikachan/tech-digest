@@ -37,3 +37,5 @@ digests/
 # サイト（tech-digest export / site の出力）
 archive/
 site/
+
+node_modules/

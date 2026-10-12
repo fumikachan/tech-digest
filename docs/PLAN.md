@@ -5,7 +5,7 @@
 
 ## 現在地
 
-**Phase 2 完了・サイトを GitHub Pages で公開中** → Phase 3-1（AWS を使わずにローカルで作る）。次は `web/` の SPA（TypeScript + Vite）
+**Phase 2 完了・サイトを GitHub Pages で公開中** → Phase 3-1（AWS を使わずにローカルで作る）。次は収集バッチの Lambda ハンドラー
 
 ## Phase 0: ローカル CLI ✅（2026-10-12）
 
@@ -57,8 +57,8 @@ Lambda と DynamoDB は VPC の外に置く（VPC 内の Lambda が外部 API �
 - [x] compose に DynamoDB Local を追加し、ローカルでテーブルを作るコマンドを用意する（2026-10-13、`app-dynamodb`・`create-table`）
 - [x] API のハンドラーを作る（`src/tech_digest/api/`。フレームワークを使わず、API Gateway のイベントを直接扱う）。テストは偽のイベントを渡す（2026-10-13）
 - [x] ハンドラーを包む開発用サーバーで、ローカルから API を呼べるようにする（2026-10-13、`python -m tech_digest.api.devserver`）
-- [ ] `web/` に SPA を作る（TypeScript + Vite。外部の文字列は `textContent` だけ。ローカルでは Vite のプロキシでローカルの API を呼ぶ）
-- [ ] CI に `web/` のジョブ（型チェック・ビルド）を追加し、Dependabot に npm を追加
+- [x] `web/` に SPA を作る（TypeScript + Vite。外部の文字列は `textContent` だけ。ローカルでは Vite のプロキシでローカルの API を呼ぶ）（2026-10-13）
+- [x] CI に `web/` のジョブ（型チェック・テスト・ビルド）を追加し、Dependabot に npm を追加（2026-10-13）
 - [ ] 収集バッチを Lambda のハンドラーから呼べるようにする（中身は `tech-digest fetch` と同じ）
 
 公開中の GitHub Pages のサイトは、AWS の API ができるまで今のまま（静的サイト）にしておく。先に SPA に置き換えると、呼ぶ API がないので表示されなくなる。
@@ -122,10 +122,11 @@ Lambda と DynamoDB は VPC の外に置く（VPC 内の Lambda が外部 API �
 - 2026-10-12: API とフロントは別のリポジトリにせず、tech-digest の中でディレクトリを分ける（`src/tech_digest/api/`、`web/`）。書く側（バッチ）と読む側（API・サイト）が DynamoDB のキー設計と記事の形を共有するので、1 つの PR でまとめて変えられるようにする
 - 2026-10-13: AWS を使う前に、デプロイ以外をローカルで作る（Phase 3-1）。費用をかけずに進めるため
 - 2026-10-13: テストの DynamoDB は moto、手元で動かすときは DynamoDB Local（compose）。今の「普段のテストは SQLite、PostgreSQL はコンテナ」と同じ考え方
-- 2026-10-13: `web/` の SPA は TypeScript + Vite で作る
+- 2026-10-13: `web/` の SPA は TypeScript + Vite で作る。Node は nvm で入れる（24 LTS、`web/.nvmrc`）
 
 ## 申し送り（いつかやること）
 
+- [ ] main のルールセットの必須チェックに「web（型チェック・テスト・ビルド）」を追加する（**ユーザーが実行**。Settings → Rules → Rulesets）
 - [ ] GitHub Pages を有効にする（Settings → Pages → Source を「GitHub Actions」。**ユーザーが実行**）
 - [ ] DB のキャッシュが消えたとき、data ブランチの JSON から DB を復元できるようにする（今は消えると、トレンドの記事が翌日もう一度載る）。Phase 3 で DynamoDB に移れば不要になる
 

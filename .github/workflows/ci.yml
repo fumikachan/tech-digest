@@ -64,6 +64,38 @@ jobs:
       - name: テスト（pytest）
         run: uv run pytest -rs
 
+  web:
+    name: web（型チェック・テスト・ビルド）
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: web
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      # Node のバージョンは web/.nvmrc（手元の nvm と同じ）に合わせる
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version-file: web/.nvmrc
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+
+      # package-lock.json のとおりに入れる（ずれていたら失敗する。uv sync --locked と同じ）
+      - name: 依存のインストール
+        run: npm ci
+
+      - name: 型チェック（tsc）
+        run: npm run typecheck
+
+      - name: テスト（vitest）
+        run: npm test
+
+      - name: ビルド（vite）
+        run: npm run build
+
   docker:
     name: Docker イメージのビルド
     runs-on: ubuntu-24.04
