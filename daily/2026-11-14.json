@@ -1,0 +1,7053 @@
+{
+ "version": 1,
+ "date": "2026-11-14",
+ "articles": [
+  {
+   "source": "hatena",
+   "url": "https://ktlog.net/posts/claude-code-ai-ecosystem",
+   "title": "Claude Codeのおすすめ環境を全体図で解説。ハーネス・スキル・MCPの仕組みと実例",
+   "author": null,
+   "score": 377,
+   "tags": [
+    "Claude",
+    "AI",
+    "MCP",
+    "API",
+    "AI利用開発",
+    "Claude Code",
+    "code",
+    "IT"
+   ],
+   "published_at": "2026-11-13T05:21:58+00:00"
+  },
+  {
+   "source": "hatena",
+   "url": "https://speakerdeck.com/falken/boku-no-claude-code-no-tsukaikata",
+   "title": "ぼくのClaude Codeの使い方",
+   "author": null,
+   "score": 293,
+   "tags": [
+    "Claude",
+    "AI",
+    "開発",
+    "slide",
+    "development"
+   ],
+   "published_at": "2026-11-12T15:11:52+00:00"
+  },
+  {
+   "source": "hatena",
+   "url": "https://atmarkit.itmedia.co.jp/ait/articles/2611/13/news013.html",
+   "title": "総務省が新しい無料オンライン講座「統計解析プログラミング」を1月に開講　Pythonでのデータ分析が4週間で学べる",
+   "author": null,
+   "score": 274,
+   "tags": [
+    "統計",
+    "python",
+    "データ",
+    "勉強",
+    "プログラミング",
+    "学習"
+   ],
+   "published_at": "2026-11-13T00:15:26+00:00"
+  },
+  {
+   "source": "hatena",
+   "url": "https://togetter.com/li/2770045",
+   "title": "Microsoft 365の障害で上司が事業部の部長から「こうなる事を予想して事前に対処しておくのがシステム部だろうが！」と言われ、反抗して早退…連絡の受け手は必然的に私に",
+   "author": null,
+   "score": 194,
+   "tags": [
+    "microsoft",
+    "システム",
+    "togetter",
+    "障害",
+    "仕事",
+    "トラブル",
+    "経営"
+   ],
+   "published_at": "2026-11-13T09:58:17+00:00"
+  },
+  {
+   "source": "hatena",
+   "url": "https://togetter.com/li/2770106",
+   "title": "学生が発表で使ったスライドがAIを使っていたので使用ソフトを尋ねたら「全部AIです」と言われた、Figmaとかだと思ったらツールごと全部AIとHTMLで作ってた",
+   "author": null,
+   "score": 184,
+   "tags": [
+    "AI",
+    "ツール",
+    "仕事",
+    "IT",
+    "ソフト",
+    "人工知能"
+   ],
+   "published_at": "2026-11-13T13:27:08+00:00"
+  },
+  {
+   "source": "hatena",
+   "url": "https://k-tai.watch.impress.co.jp/docs/news/2156449.html",
+   "title": "マネックス証券、不正アクセスでメールアドレス最大113万件と本人確認書類1600件弱が漏洩のおそれ",
+   "author": null,
+   "score": 154,
+   "tags": [
+    "セキュリティ",
+    "privacy",
+    "security",
+    "経済",
+    "ニュース>へー"
+   ],
+   "published_at": "2026-11-13T12:34:09+00:00"
+  },
+  {
+   "source": "hatena",
+   "url": "https://nowokay.hatenablog.com/entry/2026/11/13/101644",
+   "title": "Fable 5.2は物理モデリング音源の実装も作曲もすごい - きしだのHatena",
+   "author": null,
+   "score": 103,
+   "tags": [
+    "AI",
+    "音楽",
+    "DTM",
+    "Synth",
+    "Claude",
+    "楽器",
+    "音",
+    "プログラミング"
+   ],
+   "published_at": "2026-11-13T14:22:52+00:00"
+  },
+  {
+   "source": "hatena",
+   "url": "https://zenn.dev/karamage/articles/5c3f8370b2b370",
+   "title": "【pstack】AIに敵対的レビューをさせるな。トークンは検証に使え",
+   "author": null,
+   "score": 79,
+   "tags": [
+    "AI",
+    "開発",
+    "プログラミング"
+   ],
+   "published_at": "2026-11-13T06:02:40+00:00"
+  },
+  {
+   "source": "hatena",
+   "url": "https://joisino.hatenablog.com/entry/searchrecbook",
+   "title": "『検索システム』『推薦システム』とLLM時代の検索推薦 - ｼﾞｮｲｼﾞｮｲｼﾞｮｲ",
+   "author": null,
+   "score": 77,
+   "tags": [
+    "llm",
+    "検索エンジン",
+    "search",
+    "AI",
+    "検索",
+    "人工知能",
+    "あとでよむ"
+   ],
+   "published_at": "2026-11-13T10:50:54+00:00"
+  },
+  {
+   "source": "hatena",
+   "url": "https://gigazine.net/news/20261113-firefox-vpn/",
+   "title": "Firefoxの内蔵VPNを無料＆データ通信量無制限で全ユーザーに提供するとMozillaが発表、2027年1月31日まで",
+   "author": null,
+   "score": 62,
+   "tags": [
+    "Firefox",
+    "ブラウザ"
+   ],
+   "published_at": "2026-11-13T09:17:59+00:00"
+  },
+  {
+   "source": "hatena",
+   "url": "https://piyolog.hatenadiary.jp/entry/2026/11/13/162738",
+   "title": "良品計画への不正アクセスについてまとめてみた - piyolog",
+   "author": null,
+   "score": 48,
+   "tags": [
+    "security",
+    "セキュリティ"
+   ],
+   "published_at": "2026-11-13T07:47:29+00:00"
+  },
+  {
+   "source": "hatena",
+   "url": "https://www.itmedia.co.jp/news/article/2611/13/2000003200/",
+   "title": "データセンターの排熱でエビ養殖、NTT系が実験　育ったら食べられる？　担当者に聞いてみた",
+   "author": null,
+   "score": 47,
+   "tags": [
+    "通信",
+    "ICT"
+   ],
+   "published_at": "2026-11-13T11:33:08+00:00"
+  },
+  {
+   "source": "hatena",
+   "url": "https://speakerdeck.com/littlehands/ai-kudou-keiei-suraido-20261112-0eeda77b-3c60-4af9-b059-2eb1ff3ef2c1",
+   "title": "人間＋AIを「チーム」としてプロセスを再設計する",
+   "author": null,
+   "score": 46,
+   "tags": [
+    "AI",
+    "programming"
+   ],
+   "published_at": "2026-11-13T14:24:54+00:00"
+  },
+  {
+   "source": "hatena",
+   "url": "https://blog.lai.so/2026-11-13/",
+   "title": "#26 Home Repo パターン",
+   "author": null,
+   "score": 45,
+   "tags": [
+    "agent",
+    "パターン",
+    "AI",
+    "設計"
+   ],
+   "published_at": "2026-11-13T09:55:47+00:00"
+  },
+  {
+   "source": "hatena",
+   "url": "https://mainichi.jp/articles/20261111/k00/00m/040/331000c",
+   "title": "テラ・クライシス：AIが設計　菌を殺す未知のウイルス　開いた「パンドラの箱」 | 毎日新聞",
+   "author": null,
+   "score": 41,
+   "tags": [
+    "AI",
+    "生物",
+    "研究",
+    "科学",
+    "サイエンス",
+    "開発",
+    "ネタ"
+   ],
+   "published_at": "2026-11-13T00:53:55+00:00"
+  },
+  {
+   "source": "hatena",
+   "url": "https://gigazine.net/news/20261113-ai-users-have-long-worktime-than-non-ai-users/",
+   "title": "AIユーザーの平均労働時間は非AIユーザーより最大で90分長いことが判明",
+   "author": null,
+   "score": 38,
+   "tags": [
+    "AI",
+    "Biz"
+   ],
+   "published_at": "2026-11-13T07:26:33+00:00"
+  },
+  {
+   "source": "hatena",
+   "url": "https://www.aihero.dev/the-home-repo-pattern",
+   "title": "The Home Repo Pattern",
+   "author": null,
+   "score": 35,
+   "tags": [
+    "AI",
+    "programming",
+    "考え方"
+   ],
+   "published_at": "2026-11-12T12:22:50+00:00"
+  },
+  {
+   "source": "hatena",
+   "url": "https://news.web.nhk/newsweb/na/nd-20261114de75755",
+   "title": "マイクロソフト 接続障害「広範囲にわたる復旧がみられる」 | NHKニュース",
+   "author": null,
+   "score": 34,
+   "tags": [
+    "PC"
+   ],
+   "published_at": "2026-11-13T21:47:23+00:00"
+  },
+  {
+   "source": "hatena",
+   "url": "https://future-architect.github.io/articles/20261113a/",
+   "title": "aws-emulatorにTerraformでリソースを作成できるか試してみる | フューチャー技術ブログ",
+   "author": null,
+   "score": 30,
+   "tags": [
+    "AWS"
+   ],
+   "published_at": "2026-11-13T06:21:05+00:00"
+  },
+  {
+   "source": "hatena",
+   "url": "https://www.47news.jp/15227159.html",
+   "title": "【速報】マネックス証券、マイナカード画像漏えいか",
+   "author": null,
+   "score": 28,
+   "tags": [
+    "セキュリティ",
+    "株",
+    "投資",
+    "AI",
+    "これはひどい",
+    "news"
+   ],
+   "published_at": "2026-11-13T15:36:10+00:00"
+  },
+  {
+   "source": "hatena",
+   "url": "https://speakerdeck.com/goyoki/shift-left-approach-for-team-improvement",
+   "title": "高品質と高スピードを支える品質のシフトレフトのアプローチ",
+   "author": null,
+   "score": 25,
+   "tags": [],
+   "published_at": "2026-11-13T00:56:24+00:00"
+  },
+  {
+   "source": "hatena",
+   "url": "https://mantan-web.jp/article/20261112dog00m200059000a.html",
+   "title": "楽園追放 心のレゾナンス：12年ぶり続編の挑戦　3DCGの現在地、AIと人間らしさ　水島精二監督インタビュー - MANTANWEB（まんたんウェブ）",
+   "author": null,
+   "score": 22,
+   "tags": [
+    "インタビュー",
+    "アニメ",
+    "anime"
+   ],
+   "published_at": "2026-11-13T22:02:09+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/tsutorm/items/c9ab1e1c64474c341d77",
+   "title": "「ざっくり工数どのくらい？」に「ざっくり工数このくらい」で答えてはいけない",
+   "author": "tsutorm",
+   "score": 13,
+   "tags": [
+    "ポエム",
+    "プロジェクト管理",
+    "見積もり",
+    "工数",
+    "たとえで理解"
+   ],
+   "published_at": "2026-11-13T02:03:33+00:00"
+  },
+  {
+   "source": "hatena",
+   "url": "https://news.web.nhk/newsweb/na/nd-20261113de75652",
+   "title": "マイクロソフトの障害 在宅勤務の人はどう対応した？ | NHKニュース",
+   "author": null,
+   "score": 12,
+   "tags": [
+    "考え方",
+    "仕事"
+   ],
+   "published_at": "2026-11-13T11:08:58+00:00"
+  },
+  {
+   "source": "hatena",
+   "url": "https://togetter.com/li/2770247",
+   "title": "かつて、noteのようなブログもTwitterのような短文投稿もDiscordのようなコミュニティ運営もすべてまとめてできる、夢のようなサービスがあったのじゃ",
+   "author": null,
+   "score": 11,
+   "tags": [
+    "mixi"
+   ],
+   "published_at": "2026-11-14T01:06:19+00:00"
+  },
+  {
+   "source": "hatena",
+   "url": "https://gigazine.net/news/20261113-indie-game-used-ai-bad-review/",
+   "title": "ゲームのコードのわずか0.1％未満にAIを使用したことを公表しただけで400件以上の低評価レビューが殺到",
+   "author": null,
+   "score": 11,
+   "tags": [],
+   "published_at": "2026-11-13T10:30:24+00:00"
+  },
+  {
+   "source": "hatena",
+   "url": "https://ensapia-tokyo.com/news/topics/id=21412/",
+   "title": "オンラインゲームポータルサイト『ハンゲ（hange）』不正アクセスについて(第4報) | ENSAPIA Tokyo株式会社",
+   "author": null,
+   "score": 10,
+   "tags": [
+    "!!"
+   ],
+   "published_at": "2026-11-13T08:38:59+00:00"
+  },
+  {
+   "source": "hatena",
+   "url": "https://beyondloom.com/blog/postscript.html",
+   "title": "Let’s Write a PostScript Interpreter",
+   "author": null,
+   "score": 8,
+   "tags": [],
+   "published_at": "2026-11-13T13:12:14+00:00"
+  },
+  {
+   "source": "hatena",
+   "url": "https://graphql.org/blog/2026-11-12-announcing-the-graphql-over-http-spec/",
+   "title": "Announcing the GraphQL over HTTP specification | GraphQL",
+   "author": null,
+   "score": 8,
+   "tags": [
+    "news"
+   ],
+   "published_at": "2026-11-12T23:48:44+00:00"
+  },
+  {
+   "source": "hatena",
+   "url": "https://togetter.com/li/2770134",
+   "title": "「あの人は館長の次くらいに偉い」国会図書館でバイトしていた頃、仕事をしてる姿を見たことがない人がいた→COBOLの話題から始まる往年の技術者の話",
+   "author": null,
+   "score": 6,
+   "tags": [],
+   "published_at": "2026-11-13T16:00:06+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/yyoshida15/items/4ea6a0752ff2ba942dff",
+   "title": "CRA報告対応② Dependency-Trackで脆弱性の検知を自動化する(Pleasanter連携)",
+   "author": "yyoshida15",
+   "score": 6,
+   "tags": [
+    "Pleasanter",
+    "Dependency-Track",
+    "Slack",
+    "cra"
+   ],
+   "published_at": "2026-11-13T00:22:46+00:00"
+  },
+  {
+   "source": "hatena",
+   "url": "https://togetter.com/li/2770072",
+   "title": "大阪でCopilotの初心者向け研修の講師をやる予定なのに障害で使えず…他のAIは使用禁止、代替ツールなし「お気の毒すぎる」「これは泣ける」→フル座学で研修を乗り切った",
+   "author": null,
+   "score": 5,
+   "tags": [],
+   "published_at": "2026-11-13T13:27:39+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/maskot1977/items/6d3f5c504360cf7858c4",
+   "title": "耳で聞く！Python で学ぶ マクロ経済学 入門 45",
+   "author": "maskot1977",
+   "score": 5,
+   "tags": [
+    "Python",
+    "マクロ経済学",
+    "ChatGPT",
+    "Gemini",
+    "YouTube"
+   ],
+   "published_at": "2026-11-13T05:06:38+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/ryosuke_ohori/items/17995524b433cf04fd55",
+   "title": "Claude Fable 5.2はOpusの単価2倍、でも1タスクは約半額!? Mythos5.2との違いと使いどころ",
+   "author": "ryosuke_ohori",
+   "score": 5,
+   "tags": [
+    "ClaudeCode",
+    "Claude",
+    "Anthropic",
+    "LLM",
+    "Python"
+   ],
+   "published_at": "2026-11-13T04:26:32+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/maskot1977/items/76cb2a92efe0433b1de4",
+   "title": "耳で聞く！ システム設計 視点の 行動経済学 5",
+   "author": "maskot1977",
+   "score": 5,
+   "tags": [
+    "システム設計",
+    "行動経済学",
+    "ChatGPT",
+    "Gemini",
+    "YouTube"
+   ],
+   "published_at": "2026-11-13T01:56:06+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/Takashi_Masumori/items/c2b9270a9a13a316b618",
+   "title": "Copilot in SharePoint で、リストとライブラリの作成はどこまで楽になったか試してみた",
+   "author": "Takashi_Masumori",
+   "score": 5,
+   "tags": [
+    "なんでもCopilot",
+    "copilot",
+    "Microsoft365",
+    "SharePoint"
+   ],
+   "published_at": "2026-11-12T23:50:41+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/mmsbox/items/5f1486a1887f21218ee0",
+   "title": "初めてのチーム開発で効いたのは「同じものを見る」こと——ハッカソン2位の工夫と、ぶつかって学んだこと",
+   "author": "mmsbox",
+   "score": 3,
+   "tags": [
+    "チーム開発",
+    "Rails",
+    "GitHub",
+    "初心者"
+   ],
+   "published_at": "2026-11-13T06:33:23+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/roripika/items/bdeb5537efc1f27af726",
+   "title": "Unityを選ぶ企業は赤字体質である。",
+   "author": "roripika",
+   "score": 3,
+   "tags": [
+    "Unity",
+    "Godot",
+    "C++",
+    "CI",
+    "ゲーム開発"
+   ],
+   "published_at": "2026-11-13T03:29:15+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/ponta8240/items/06e4a9360abdc68a5c48",
+   "title": "Finder の代わりに使える macOS ファイルマネージャー「Macorn」を作りました。フォルダはそのまま、整理はいくつもの次元で",
+   "author": "ponta8240",
+   "score": 3,
+   "tags": [
+    "macOS",
+    "Swift",
+    "個人開発",
+    "OSS",
+    "finder"
+   ],
+   "published_at": "2026-11-12T22:16:58+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/lehukuku0120/items/6d4bcb83608e653a3e24",
+   "title": "地理空間情報と詰将棋に見るLLMの課題　―空間・状態・制約を扱う過程に共通点はあるか―",
+   "author": "lehukuku0120",
+   "score": 2,
+   "tags": [
+    "地理空間情報",
+    "将棋",
+    "LLM",
+    "GIS"
+   ],
+   "published_at": "2026-11-13T10:59:14+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/r-jw/items/bd4721fccc457bf8e64a",
+   "title": "バックアップ HDD の「静かな死」を防ぐ仕組み ― smartctl でヘルスチェック",
+   "author": "r-jw",
+   "score": 2,
+   "tags": [
+    "RaspberryPi",
+    "smartctl",
+    "HDD",
+    "Python",
+    "自宅サーバー"
+   ],
+   "published_at": "2026-11-13T07:15:13+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/metappi/items/b2319478cd692c9b492f",
+   "title": "本番(prod)サーバーに自動処理を組んだのでまとめ",
+   "author": "metappi",
+   "score": 2,
+   "tags": [
+    "自動処理",
+    "Laravel",
+    "PHP"
+   ],
+   "published_at": "2026-11-13T04:23:59+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/ktdatascience/items/5130b6a457d762fe1113",
+   "title": "Claude CodeとCodexのスキルを二重管理しないためにsymlinkで共有した話",
+   "author": "ktdatascience",
+   "score": 2,
+   "tags": [
+    "ClaudeCode",
+    "codex",
+    "AgentSkills",
+    "初心者",
+    "コーディングエージェント"
+   ],
+   "published_at": "2026-11-13T02:42:34+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/suwa_nobu/items/40e9eba3a7d99a2a485b",
+   "title": "Claude API の Message Threads で、会話の履歴を自分で持たなくてよくなるのか。公式を読むと、スレッドは5分で切れ、写しは自分で持ち続ける前提だった",
+   "author": "suwa_nobu",
+   "score": 2,
+   "tags": [
+    "AI",
+    "生成AI",
+    "Claude",
+    "AIエージェント",
+    "Anthropic"
+   ],
+   "published_at": "2026-11-12T23:59:25+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/Nana_777/items/25f3d9c5449a62cdc50f",
+   "title": "【AWS】AgentCore runtimeをV1からV2へ移行しよう【AgentCore】",
+   "author": "Nana_777",
+   "score": 2,
+   "tags": [
+    "AWS",
+    "AgentCore",
+    "AIエージェント",
+    "移行",
+    "CloudFormation"
+   ],
+   "published_at": "2026-11-12T23:44:03+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/openyanagi/items/ed4e431267bace10d0a6",
+   "title": "二層 k-ε モデル",
+   "author": "openyanagi",
+   "score": 1,
+   "tags": [
+    "OpenFOAM",
+    "simpleFoam",
+    "kEpsilon",
+    "twoLayerTreatment",
+    "二層モデル"
+   ],
+   "published_at": "2026-11-13T14:02:03+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/hasegawa--2025/items/f7d47279881332c809e8",
+   "title": "Claude Code が英語で返事したら、Stop hook で日本語に書き直させる（30 行の Python と無限ループの防ぎ方）",
+   "author": "hasegawa--2025",
+   "score": 1,
+   "tags": [
+    "ClaudeCode",
+    "AI",
+    "生成AI",
+    "Python",
+    "個人開発"
+   ],
+   "published_at": "2026-11-13T13:54:24+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/htani0817/items/2e22b2370c99e5b254fe",
+   "title": "Claude Code から Qiita に投稿できる MCP サーバーを自作した（書き込みは既定で dry-run）",
+   "author": "htani0817",
+   "score": 1,
+   "tags": [
+    "MCP",
+    "ClaudeCode",
+    "QiitaAPI",
+    "Node.js",
+    "JavaScript"
+   ],
+   "published_at": "2026-11-13T13:47:01+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/mizzz-ivr/items/5193b1fda78b838a557b",
+   "title": "GitHub Actionsのセルフホストrunner、立てた後に踏んだ3つの罠と対策【孤児ジョブ編】",
+   "author": "mizzz-ivr",
+   "score": 1,
+   "tags": [
+    "GitHubActions",
+    "AWS",
+    "Terraform",
+    "CI",
+    "個人開発"
+   ],
+   "published_at": "2026-11-13T13:26:28+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/fukukei23/items/b436a0f3cd5c872973b2",
+   "title": "ドメイン駆動設計（DDD）を初めて学ぶ人のための実践ガイド",
+   "author": "fukukei23",
+   "score": 1,
+   "tags": [
+    "AI",
+    "VibeCoding",
+    "LLM"
+   ],
+   "published_at": "2026-11-13T13:07:21+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/girigiri-se/items/aac750fa0473e16865d3",
+   "title": "AIと一緒にブラウザ格闘ゲームを作ったら、ビジュアルで挫折して棒人間になった話",
+   "author": "girigiri-se",
+   "score": 1,
+   "tags": [
+    "AI",
+    "生成AI",
+    "TypeScript",
+    "Phaser",
+    "ゲーム開発"
+   ],
+   "published_at": "2026-11-13T13:00:41+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/hayahide23/items/484ef66edb42f033c583",
+   "title": "Claude Codeで学園祭の入場QRシステムを作った ― サーバーなし・無料でCloudflare Workersに載せるまで",
+   "author": "hayahide23",
+   "score": 1,
+   "tags": [
+    "ClaudeCode",
+    "CloudflareWorkers",
+    "Hono",
+    "D1",
+    "TypeScript"
+   ],
+   "published_at": "2026-11-13T12:19:00+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/shion4614/items/6a3eb7971b1fd9093b2d",
+   "title": "音合わせをBPMで決め打ちしたら60秒で0.7秒ずれた。AIに渡すべきは\"数字\"じゃなくて\"測ったもの\"だった",
+   "author": "shion4614",
+   "score": 1,
+   "tags": [
+    "ClaudeCode",
+    "生成AI",
+    "librosa",
+    "モーショングラフィックス",
+    "動画制作"
+   ],
+   "published_at": "2026-11-13T11:02:17+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/iguzen/items/09d1a5f0a92d90fc9cc9",
+   "title": "Claude Code のスキルで PR レビューを段階に分けて、cmux で並列に回す",
+   "author": "iguzen",
+   "score": 1,
+   "tags": [
+    "ClaudeCode",
+    "cmux",
+    "コードレビュー",
+    "GitHub",
+    "生成AI"
+   ],
+   "published_at": "2026-11-13T10:53:03+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/qa_risa/items/8f6b00678337c0a870d2",
+   "title": "【初学者向け】Playwright × TypeScriptでE2Eテストを書いてみた",
+   "author": "qa_risa",
+   "score": 1,
+   "tags": [
+    "Playwright",
+    "TypeScript",
+    "E2Eテスト",
+    "テスト自動化",
+    "QA"
+   ],
+   "published_at": "2026-11-13T09:50:19+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/samek86/items/0ee547d2d485955966d5",
+   "title": "Windowsのファイル作業を速くするために、Maguroでやっていること",
+   "author": "samek86",
+   "score": 1,
+   "tags": [
+    "個人開発",
+    "Rust",
+    "Windows",
+    "Win32",
+    "ファイルマネージャー"
+   ],
+   "published_at": "2026-11-13T09:44:02+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/pitaspot/items/e2d87bfa2d6802494407",
+   "title": "Cursorの拡張機能「Claude Code for VS Code」にバックドア：2.1.312と2.1.313が対象",
+   "author": "pitaspot",
+   "score": 1,
+   "tags": [
+    "Security",
+    "ClaudeCode",
+    "AI",
+    "サプライチェーン攻撃"
+   ],
+   "published_at": "2026-11-13T09:04:14+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/hshimomu/items/56618894a7e07af50d74",
+   "title": "Proxmox × Cisco：Open vSwitchのRSTPで起動・ネットワーク変更時の約30秒待ちを短縮する",
+   "author": "hshimomu",
+   "score": 1,
+   "tags": [
+    "proxmox",
+    "OpenVSwitch",
+    "Cisco",
+    "RSTP",
+    "MSTP"
+   ],
+   "published_at": "2026-11-13T09:02:51+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/YukiSaku_2FC/items/3d8ff8a157f93c8fa642",
+   "title": "Copilot Studioでエージェントを作って3か月たったので振り返ってみた",
+   "author": "YukiSaku_2FC",
+   "score": 1,
+   "tags": [
+    "CopilotStudio",
+    "AI",
+    "ノーコード",
+    "ClaudeCode",
+    "初心者"
+   ],
+   "published_at": "2026-11-13T08:59:16+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/AIHubMix/items/d8711cb61e42f44c1a8d",
+   "title": "Gemini 4 Carbon vs Hydrogen vs Argon：どのタスクにどのモデルを使うか",
+   "author": "AIHubMix",
+   "score": 1,
+   "tags": [
+    "LLM",
+    "生成AI",
+    "Gemini",
+    "API"
+   ],
+   "published_at": "2026-11-13T08:50:59+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/harrowharrow16/items/7b50ec14129c73423a94",
+   "title": "SPSS Modelerのニューラルネットワークモデルを外部プログラムで実装する",
+   "author": "harrowharrow16",
+   "score": 1,
+   "tags": [
+    "SPSS",
+    "SPSS_Modeler",
+    "ニューラルネットワーク",
+    "Python",
+    "IBMBob"
+   ],
+   "published_at": "2026-11-13T08:31:23+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/rino_yume/items/7d1bd910503842c3ea91",
+   "title": "Python・Go・Java・Rust・JavaScriptでREST APIを作るなら？設計と実装を比較してみる",
+   "author": "rino_yume",
+   "score": 1,
+   "tags": [
+    "RestAPI",
+    "Python",
+    "Go",
+    "JavaScript",
+    "Java"
+   ],
+   "published_at": "2026-11-13T08:20:14+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/n-yoshida-dev/items/d77465a0c4217871f8b7",
+   "title": "Claude Code がセッションの最初に TODO.md の進捗を表で返すプラグイン",
+   "author": "n-yoshida-dev",
+   "score": 1,
+   "tags": [
+    "ClaudeCode",
+    "Claude",
+    "個人開発",
+    "タスク管理",
+    "生成AI"
+   ],
+   "published_at": "2026-11-13T08:03:27+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/nttdata-ccs-techblog/items/71f81eba6a4bcf4de1df",
+   "title": "「この余白を2mmに」で直るチラシデザイン。Claude Codeと入稿まで。",
+   "author": "nttdata-ccs-techblog",
+   "score": 1,
+   "tags": [
+    "ClaudeCode",
+    "MCP",
+    "illustrator",
+    "Python",
+    "DTP"
+   ],
+   "published_at": "2026-11-13T08:00:27+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/TanedaAkihide/items/4c20a2ccd2b556eea8f1",
+   "title": "高卒・SES経験約1年のエンジニアが、外資系AI企業に転職するまで",
+   "author": "TanedaAkihide",
+   "score": 1,
+   "tags": [
+    "転職",
+    "AIエンジニア",
+    "キャリア",
+    "ses",
+    "ポエム"
+   ],
+   "published_at": "2026-11-13T07:36:58+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/Suisei498/items/b088ffcd12ede6f91c56",
+   "title": "Claude Code のセッションを10個並べ、予約タスクに起こしてもらって回している — 3週間で起こし係104本",
+   "author": "Suisei498",
+   "score": 1,
+   "tags": [
+    "ClaudeCode",
+    "AIエージェント",
+    "自動化",
+    "個人開発",
+    "生成AI"
+   ],
+   "published_at": "2026-11-13T07:34:48+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/MC_Engineer_Mtfuji/items/bef09d7c9e1288f38ad3",
+   "title": "TypeScriptの有用性を、実際に動かして確かめてみた",
+   "author": "MC_Engineer_Mtfuji",
+   "score": 1,
+   "tags": [
+    "TypeScript",
+    "JavaScript",
+    "フロントエンド"
+   ],
+   "published_at": "2026-11-13T07:20:36+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/studio_enlinks/items/22c771ac0c40b099dbdc",
+   "title": "日本人の名字生き残りシミュレーターを作ろうとしたが有料データしかない件～予算ないねん～",
+   "author": "studio_enlinks",
+   "score": 1,
+   "tags": [
+    "オープンデータ",
+    "wikidata",
+    "統計",
+    "ゲーム開発",
+    "LLM"
+   ],
+   "published_at": "2026-11-13T07:19:21+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/r-jw/items/444654a890fef9d25852",
+   "title": "Nginx Proxy Manager から Caddy に乗り換えたら、設定ファイルが 1 つになって Git に入った — 自宅サーバーのリバースプロキシを選び直す",
+   "author": "r-jw",
+   "score": 1,
+   "tags": [
+    "Caddy",
+    "nginx",
+    "RaspberryPi",
+    "Docker",
+    "自宅サーバー"
+   ],
+   "published_at": "2026-11-13T07:15:10+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/Hideki_Tamae/items/734580b3ad70751da24f",
+   "title": "0。16日間で9個中4個が入れ替わったコネクタの接続状態を、9日後にもう一度数えたら、変化した数はこの数字だった",
+   "author": "Hideki_Tamae",
+   "score": 1,
+   "tags": [
+    "AI",
+    "MCP",
+    "agenticai",
+    "automation",
+    "ClaudeCode"
+   ],
+   "published_at": "2026-11-13T06:33:33+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/dsnfuji/items/b336519b40aa1203177b",
+   "title": "【追悼】『Pythonの禅』の作者 Tim Peters 氏逝去。私たちが毎日触れている「あのコード」の裏側",
+   "author": "dsnfuji",
+   "score": 1,
+   "tags": [
+    "Python",
+    "TimSort",
+    "訃報",
+    "エンジニア文化",
+    "PEP20"
+   ],
+   "published_at": "2026-11-13T05:45:43+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/ron_32000/items/8388168bea4051bc7932",
+   "title": "AIに丸投げしたコードは、レビューでだいたいバレる",
+   "author": "ron_32000",
+   "score": 1,
+   "tags": [
+    "AI",
+    "生成AI",
+    "コードレビュー",
+    "Python",
+    "ポエム"
+   ],
+   "published_at": "2026-11-13T05:19:30+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/riku1220/items/2a67202f12c714bbb948",
+   "title": "【AI超入門④-⑥】過学習とは？学習曲線で見る「学習しすぎ」の見つけ方",
+   "author": "riku1220",
+   "score": 1,
+   "tags": [
+    "AI",
+    "機械学習",
+    "入門"
+   ],
+   "published_at": "2026-11-13T04:26:39+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/leiaworks/items/9b927e0a5da6ef2490ba",
+   "title": "Claude Code に毎回読ませる指示が58日で83倍になっていたので、git の履歴から字数を数えた",
+   "author": "leiaworks",
+   "score": 1,
+   "tags": [
+    "ClaudeCode",
+    "Python",
+    "Git",
+    "個人開発"
+   ],
+   "published_at": "2026-11-13T03:56:55+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/studio-takumi/items/a2baaeaefb227a3a8342",
+   "title": "CARTA Treasure 2026に参加してきたゾ",
+   "author": "studio-takumi",
+   "score": 1,
+   "tags": [
+    "インターン",
+    "AI",
+    "フロントエンド"
+   ],
+   "published_at": "2026-11-13T03:54:06+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/autonomura/items/15e2fdda0840f4a9c7e2",
+   "title": "QuarkusのCycloneDX ExtensionでSBOMを生成・埋め込み、実行中のアプリから取得してみた",
+   "author": "autonomura",
+   "score": 1,
+   "tags": [
+    "Quarkus",
+    "SBOM",
+    "CycloneDX",
+    "Java",
+    "Security"
+   ],
+   "published_at": "2026-11-13T03:40:48+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/blueflame-lab/items/e04e7010306b79eb8f41",
+   "title": "commit前のテストを約24分から約11分に短くした話（Vitest・husky）",
+   "author": "blueflame-lab",
+   "score": 1,
+   "tags": [
+    "Vitest",
+    "husky",
+    "テスト",
+    "GitHubActions",
+    "jsdom"
+   ],
+   "published_at": "2026-11-13T03:34:17+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/ktdatascience/items/2e52969a445c07cd3ff4",
+   "title": "AWS SAAに737点で合格。Udemyの講座を流し見して、模擬試験に集中した話",
+   "author": "ktdatascience",
+   "score": 1,
+   "tags": [
+    "AWS",
+    "Udemy",
+    "資格",
+    "SAA-C03",
+    "初心者"
+   ],
+   "published_at": "2026-11-13T03:07:04+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/taka_yayoi/items/1f1219cd56116755dd19",
+   "title": "Databricks Genie ZeroOps(ベータ)を試す: 失敗したジョブの原因特定から修正までをエージェントに任せる",
+   "author": "taka_yayoi",
+   "score": 1,
+   "tags": [
+    "Databricks",
+    "Genie",
+    "ZeroOps",
+    "AIエージェント",
+    "データエンジニアリング"
+   ],
+   "published_at": "2026-11-13T02:56:55+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/ktdatascience/items/768376983991842d186c",
+   "title": "Claude Codeがファイルを見つけられない？ 表記ゆれ辞書をAGENTS.mdに置いた話",
+   "author": "ktdatascience",
+   "score": 1,
+   "tags": [
+    "ClaudeCode",
+    "codex",
+    "ripgrep",
+    "AI",
+    "初心者"
+   ],
+   "published_at": "2026-11-13T02:41:15+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/kentasatomi/items/06ccfbf7f6a2a24883ff",
+   "title": "Claude Codeに同じ調査を繰り返させないためのメモの残し方",
+   "author": "kentasatomi",
+   "score": 1,
+   "tags": [
+    "ClaudeCode",
+    "AI",
+    "開発効率化"
+   ],
+   "published_at": "2026-11-13T02:34:48+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/kazutoyamaura/items/c6c77ee9f989d0bd5e4f",
+   "title": "Claude Opus 5.5 と Fable 5.2、結局どっちを使う？違いと使い分けを整理した",
+   "author": "kazutoyamaura",
+   "score": 1,
+   "tags": [
+    "ClaudeCode",
+    "Anthropic",
+    "生成AI",
+    "AI",
+    "Claude"
+   ],
+   "published_at": "2026-11-13T02:22:18+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/hataraku_hito/items/5238605b4b21c58558f4",
+   "title": "インシデントの起票からクローズまで：ServiceNowのワークフローをロールプレイで体験してみた",
+   "author": "hataraku_hito",
+   "score": 1,
+   "tags": [
+    "ServiceNow",
+    "初心者",
+    "入門",
+    "ITSM",
+    "Brazil"
+   ],
+   "published_at": "2026-11-13T02:03:10+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/kakusan2022/items/7ebec0c867e3a6e13b3a",
+   "title": "Muse に頼んでサイトの文章を直す：Sakupa での更新の頼み方",
+   "author": "kakusan2022",
+   "score": 1,
+   "tags": [
+    "MCP",
+    "Sakupa",
+    "AIエージェント",
+    "生成AI",
+    "静的サイト"
+   ],
+   "published_at": "2026-11-13T01:54:22+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/mashumarrow/items/cbe203f6d24bdda086a6",
+   "title": "railsでIPアドレス制限",
+   "author": "mashumarrow",
+   "score": 1,
+   "tags": [
+    "Rails"
+   ],
+   "published_at": "2026-11-13T01:50:11+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/umezu_y/items/a5a86c005f8c66cecbad",
+   "title": "Claude Code を「時間割」で回す ― 1日10件以上を並行しても、目の前の1件に集中できる",
+   "author": "umezu_y",
+   "score": 1,
+   "tags": [
+    "ClaudeCode",
+    "Claude",
+    "生成AI",
+    "タスク管理",
+    "生産性向上"
+   ],
+   "published_at": "2026-11-13T01:35:23+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/rino_yume/items/9edc1deb6456bd348881",
+   "title": "Docker + OpenLayers + Turf.js + FlatGeobuf + FastAPI + PostGIS + Celery で作る汎用WebGIS基盤2 ー データモデル設計",
+   "author": "rino_yume",
+   "score": 1,
+   "tags": [
+    "Docker",
+    "FastAPI",
+    "PostGIS",
+    "Openlayers",
+    "webGIS"
+   ],
+   "published_at": "2026-11-13T01:25:27+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/yorimichi_labo/items/8a1f99f7b429829b4417",
+   "title": "常駐 Claude Code を kill する前に、tmuxで遺言を書かせる",
+   "author": "yorimichi_labo",
+   "score": 1,
+   "tags": [
+    "ClaudeCode",
+    "tmux",
+    "launchd",
+    "ShellScript",
+    "macOS"
+   ],
+   "published_at": "2026-11-13T01:17:29+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/Seria_GovCloud/items/74003a57b1dfa860fad1",
+   "title": "2026年11月11日～12日付GCASアップデート",
+   "author": "Seria_GovCloud",
+   "score": 1,
+   "tags": [
+    "GCAS",
+    "GCASDevStack",
+    "ガバメントクラウド",
+    "AWS"
+   ],
+   "published_at": "2026-11-13T00:42:13+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/mc-hat/items/d96489dfce343a072063",
+   "title": "ComfyUIのインストールとMOSS-Imageでの画像作成",
+   "author": "mc-hat",
+   "score": 1,
+   "tags": [
+    "画像生成AI",
+    "comfyui",
+    "MOSS-Image",
+    "画像内日本語描画"
+   ],
+   "published_at": "2026-11-13T00:40:06+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/yythzy/items/a1f85d7b18d8feea2cb3",
+   "title": "AWS 未経験でも大丈夫:AWS Emulator でアカウントなし・0 円のまま S3 と DynamoDB を動かす",
+   "author": "yythzy",
+   "score": 1,
+   "tags": [
+    "AWS",
+    "初心者",
+    "Docker",
+    "DynamoDB",
+    "S3"
+   ],
+   "published_at": "2026-11-13T00:39:02+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/blinkgroup_jp/items/ef1dcbae6fbe553bb4d4",
+   "title": "AIエージェントに社内システムを操作させる前に確認すべきセキュリティ項目と実装パターン",
+   "author": "blinkgroup_jp",
+   "score": 1,
+   "tags": [
+    "AI",
+    "Security",
+    "Python",
+    "LLM",
+    "OAuth"
+   ],
+   "published_at": "2026-11-13T00:22:04+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/mc-hat/items/f48fd5ae35d4933e9803",
+   "title": "画像生成AIの現状比較",
+   "author": "mc-hat",
+   "score": 1,
+   "tags": [
+    "画像生成AI",
+    "comfyui",
+    "MOSS-Image",
+    "GPT-Image",
+    "NanoBanana"
+   ],
+   "published_at": "2026-11-13T00:20:07+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/kai_kou/items/83d306e07f59beddc48d",
+   "title": "Claude Fable 5.2入門、API呼び出しと価格・高速モードの使い分け",
+   "author": "kai_kou",
+   "score": 1,
+   "tags": [
+    "Anthropic",
+    "Claude",
+    "ClaudeAPI",
+    "LLM",
+    "AI"
+   ],
+   "published_at": "2026-11-13T00:10:12+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/takumi_engineer/items/8a1412ee75fb47465276",
+   "title": "引き継ぎ先不明の社内システムの証明書期限をPython標準ライブラリで棚卸しする",
+   "author": "takumi_engineer",
+   "score": 1,
+   "tags": [
+    "Python",
+    "SSL",
+    "証明書",
+    "運用",
+    "棚卸し"
+   ],
+   "published_at": "2026-11-13T00:00:08+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/davinichi/items/fe3ac1cbd3c9863fc3d9",
+   "title": "WindowsとCygwinでEV3RT v1.1のuImageをビルドした記録",
+   "author": "davinichi",
+   "score": 1,
+   "tags": [
+    "EV3RT",
+    "Cygwin",
+    "Windows",
+    "組み込み",
+    "環境構築"
+   ],
+   "published_at": "2026-11-12T23:58:47+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/rino_yume/items/77a453e302dff545db2c",
+   "title": "ハーネスエンジニアリング実践編 r001 ― Docker Composeで開発・検証基盤を整える",
+   "author": "rino_yume",
+   "score": 1,
+   "tags": [
+    "AIエージェント",
+    "ハーネスエンジニアリング",
+    "Docker",
+    "Python",
+    "pytest"
+   ],
+   "published_at": "2026-11-12T23:55:29+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/satouyoshiaki/items/a55535c38ba3f951c52b",
+   "title": "X（Twitter）の公開投稿を AI に読ませるスキル（SKILL.md）を配布",
+   "author": "satouyoshiaki",
+   "score": 1,
+   "tags": [
+    "AIエージェント",
+    "Muse",
+    "スキル",
+    "X",
+    "自動化"
+   ],
+   "published_at": "2026-11-12T23:52:19+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/kentaro_kawamura/items/2d1a2f8196d0b89c0cbe",
+   "title": "【Gemini Flashシリーズの最新モデル】Gemini 4 Hydrogenとは？使ってみた結果と3.8 Flash比較・料金・Google Cloud対応",
+   "author": "kentaro_kawamura",
+   "score": 1,
+   "tags": [
+    "AI",
+    "生成AI",
+    "GoogleCloud"
+   ],
+   "published_at": "2026-11-12T23:35:06+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/joinclass/items/a9175cadfd0820f3c916",
+   "title": "Playwrightの「ストーリー録画」でレビューを「動画を見るだけ」にする — recordVideoの実装と落とし穴",
+   "author": "joinclass",
+   "score": 1,
+   "tags": [
+    "Playwright",
+    "JavaScript",
+    "自動化",
+    "ClaudeCode",
+    "AI"
+   ],
+   "published_at": "2026-11-12T23:30:07+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/picnic/items/4703fa6a9f705974b8f4",
+   "title": "Claude Code v2.1.323 解説：未知モデル1M扱い・MCP v1削除・権限穴の修正",
+   "author": "picnic",
+   "score": 1,
+   "tags": [
+    "Claude",
+    "Anthropic",
+    "ClaudeCode",
+    "MCP",
+    "AI"
+   ],
+   "published_at": "2026-11-12T23:29:29+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/sen-ltd/items/8a1c1d71d6b50adaa6f7",
+   "title": "Tchoukaillon（一列マンカラの一人遊び）— 1995 年の論文の TeX にコメントアウトで残った表を計算し直すと、大きな値 4 つのうち 3 つは s(n+1) だった",
+   "author": "sen-ltd",
+   "score": 1,
+   "tags": [
+    "TypeScript",
+    "アルゴリズム",
+    "数学",
+    "ゲーム",
+    "個人開発"
+   ],
+   "published_at": "2026-11-12T23:24:24+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/NTTDkyushu_CRM_CyberSec/items/8687822b927ce5992d68",
+   "title": "Dreamforce 2026、「何かすごそう」で終わらせない。Salesforceは何を「標準」にしようとしているのか",
+   "author": "NTTDkyushu_CRM_CyberSec",
+   "score": 1,
+   "tags": [
+    "Salesforce",
+    "Agentforce",
+    "生成AI",
+    "AIエージェント",
+    "Dreamforce"
+   ],
+   "published_at": "2026-11-12T23:03:30+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/NTTDATA-kyushu-DI/items/eceba38a88344246b952",
+   "title": "「SQLが書ければ何とかなる」と思っていたSAP案件で、生成AIとの働き方を学んだ話",
+   "author": "NTTDATA-kyushu-DI",
+   "score": 1,
+   "tags": [
+    "生成AI",
+    "SAP",
+    "copilot",
+    "dwh",
+    "AIエージェント"
+   ],
+   "published_at": "2026-11-12T23:02:39+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/rightcross-ae86/items/45ee68e11c71364a1dfe",
+   "title": "【日本株分析プラットフォーム】過去の株価の自動修正が、出来高の1株の違いで止まった話(後半): 過去の計画と併合補正(2026-11-13)",
+   "author": "rightcross-ae86",
+   "score": 1,
+   "tags": [
+    "個人開発"
+   ],
+   "published_at": "2026-11-12T22:58:31+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/mellowlaunch/items/c6ad8d4c8428fb5511e7",
+   "title": "⚡Snowflake × Databricks⚡ 2027年のAI競争は「オントロジー」で決まる？Business Ontology vs Genie Ontology",
+   "author": "mellowlaunch",
+   "score": 1,
+   "tags": [
+    "Snowflake",
+    "Databricks",
+    "ontology",
+    "オントロジー"
+   ],
+   "published_at": "2026-11-12T22:36:35+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/msmakesgames/items/98575ca0177f19699a73",
+   "title": "野球ゲームの引退カードで、投手と野手の成績を分けて表示する",
+   "author": "msmakesgames",
+   "score": 1,
+   "tags": [
+    "JavaScript",
+    "ゲーム開発",
+    "個人開発"
+   ],
+   "published_at": "2026-11-12T22:29:12+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/itaraiguma/items/e45cfbafcdaa44ad515f",
+   "title": "GA4のイベント数が1回の操作で2倍・3倍になっていないか確かめる ─ 「イベントを作成」の同名ルールの見つけ方と、過去の件数の補正",
+   "author": "itaraiguma",
+   "score": 1,
+   "tags": [
+    "GoogleAnalytics",
+    "GA4",
+    "データ分析",
+    "個人開発"
+   ],
+   "published_at": "2026-11-12T22:22:18+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/tyamada22/items/a0aa5ca6de294b63b82e",
+   "title": "【第12回】海外へ配る言葉を整える――対応言語・地域別表現・アプリ名を見直す",
+   "author": "tyamada22",
+   "score": 1,
+   "tags": [
+    "Android",
+    "Gemini",
+    "ChatGPT",
+    "個人開発",
+    "ローカライズ"
+   ],
+   "published_at": "2026-11-12T21:31:55+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/homhom44/items/0c1ffa5a55683e560423",
+   "title": "Claude Code のインストール後に \"claude: command not found\" / \"~/.local/bin is not in your PATH\" と出たときの PATH の通し方(zsh・bash)",
+   "author": "homhom44",
+   "score": 1,
+   "tags": [
+    "ClaudeCode",
+    "Claude",
+    "Anthropic",
+    "トラブルシューティング",
+    "Zsh"
+   ],
+   "published_at": "2026-11-12T21:31:30+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/worksiai/items/d98f8f32a86e18bda623",
+   "title": "MCPのキャンセルはクライアントの待機を止めても、ツールの実行までは止めないことがある",
+   "author": "worksiai",
+   "score": 1,
+   "tags": [
+    "MCP",
+    "AIエージェント",
+    "テスト",
+    "debug",
+    "LLM"
+   ],
+   "published_at": "2026-11-12T21:14:27+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/quotidia/items/f45fe0688216d162eb90",
+   "title": "ユナイテッド航空のAIエージェント制限の要点：サイトも代理店経由も対象、理由は漏えいと意図しない購入と規制",
+   "author": "quotidia",
+   "score": 1,
+   "tags": [
+    "AI",
+    "ChatGPT",
+    "生成AI",
+    "LLM",
+    "AIエージェント"
+   ],
+   "published_at": "2026-11-12T21:01:07+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/supportapp3/items/2099ee53f2f8724b1431",
+   "title": "git の URL に書いたトークンを外す手順：set-url で消す→credential helper に移す（store は平文ファイル、cache はメモリ）→transfer.credentialsInUrl=die で再発を止める（git 2.47で確認）",
+   "author": "supportapp3",
+   "score": 1,
+   "tags": [
+    "Git",
+    "GitHub",
+    "Security",
+    "AIエージェント",
+    "初心者"
+   ],
+   "published_at": "2026-11-12T20:17:05+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/akihidem/items/7041b4f3a0c0c3d337c2",
+   "title": "11/12 の公式ドキュメント更新：cron 無効化の挙動と auto モードの削除判定",
+   "author": "akihidem",
+   "score": 1,
+   "tags": [
+    "ClaudeCode",
+    "AI開発",
+    "速報",
+    "公式ドキュメント"
+   ],
+   "published_at": "2026-11-12T17:56:32+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/akihidem/items/008a50c755deec441c97",
+   "title": "プラグイン化したカスタムスキルを本番で配る: 全セッションへの常時コスト・配布の層・止め方を押さえる",
+   "author": "akihidem",
+   "score": 1,
+   "tags": [
+    "ClaudeCode",
+    "AI開発",
+    "実践"
+   ],
+   "published_at": "2026-11-12T17:55:01+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/Rakete/items/459c8714be7527a07f24",
+   "title": "CMSの設計を根本から考え直す：人間とAIを同じユーザーとして扱う、自由で柔軟なCMS「Birkly」",
+   "author": "Rakete",
+   "score": 1,
+   "tags": [
+    "PHP",
+    "CMS",
+    "OSS",
+    "設計",
+    "AI"
+   ],
+   "published_at": "2026-11-12T17:45:10+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/DevMasatoman/items/fcf1f7ee77da30748114",
+   "title": "Claude Code の fork() の使いどき — 並列エージェント設計の判断基準",
+   "author": "DevMasatoman",
+   "score": 1,
+   "tags": [
+    "ClaudeCode",
+    "AI",
+    "個人開発",
+    "エージェント"
+   ],
+   "published_at": "2026-11-12T17:16:49+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/aizwellenstan/items/b8ccd479025398e17c0a",
+   "title": "macOSでGoogle Chromeのバックグラウンドアップデーター権限を削除する方法",
+   "author": "aizwellenstan",
+   "score": 1,
+   "tags": [
+    "Chrome",
+    "Mac"
+   ],
+   "published_at": "2026-11-12T16:56:35+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/Sin9_Ha/items/06c430fccce0c17c4194",
+   "title": "CodeRabbitはGitHubとCLI、結局どっちで使うのがいいのか（どちらでもいい）",
+   "author": "Sin9_Ha",
+   "score": 1,
+   "tags": [
+    "CodeRabbit",
+    "GitHubActions",
+    "個人開発",
+    "AIエージェント",
+    "コードレビュー"
+   ],
+   "published_at": "2026-11-12T16:03:06+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/maya-bot/items/af095a789d1b2288ac38",
+   "title": "ビルドなし・HTML1ファイルで作る謎解きサイト：GitHub Pagesで動く「零課事件簿」の仕組み",
+   "author": "maya-bot",
+   "score": 1,
+   "tags": [
+    "JavaScript",
+    "GithubPages",
+    "HTML",
+    "AI",
+    "個人開発"
+   ],
+   "published_at": "2026-11-12T16:02:01+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/kandu/items/73bfa5a8d2aedd3c0dd4",
+   "title": "【個人開発】第1回：Cloudflareで独自ドメインのメール受信環境を構築する！～ドメイン取得からWorkersでの受信確認まで～",
+   "author": "kandu",
+   "score": 1,
+   "tags": [
+    "cloudflare",
+    "CloudflareWorkers",
+    "dns",
+    "メールサーバー",
+    "個人開発"
+   ],
+   "published_at": "2026-11-12T15:41:27+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/weltraumreisende/items/eecbec897141e9e9da65",
+   "title": "Rの実行環境の記録　sessionInfo()",
+   "author": "weltraumreisende",
+   "score": 1,
+   "tags": [
+    "R",
+    "sessionInfo",
+    "library",
+    "version"
+   ],
+   "published_at": "2026-11-12T15:25:56+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/sha44444/items/da33c15b8cb406b34a37",
+   "title": "バイブコーディングの判断表を使った、その次は？ 仕様駆動開発（SDD）は壁打ちから始める",
+   "author": "sha44444",
+   "score": 1,
+   "tags": [
+    "生成AI",
+    "ClaudeCode",
+    "仕様駆動開発",
+    "バイブコーディング",
+    "チェックリスト"
+   ],
+   "published_at": "2026-11-12T15:05:23+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/hey_miii/items/5691f30844297f89f6a7",
+   "title": "CodexからGitHub Issueを作るまで：MacでGitHub CLIを認証する手順",
+   "author": "hey_miii",
+   "score": 0,
+   "tags": [
+    "codex",
+    "GithubCLI",
+    "GitHub",
+    "macOS"
+   ],
+   "published_at": "2026-11-13T14:59:43+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/CookieBox26/items/93d4077b7c84e26f46fb",
+   "title": "Transformer の学習を安定化する試みの分類 (どんな動機で / 何を改修したか)",
+   "author": "CookieBox26",
+   "score": 0,
+   "tags": [
+    "Obsidian"
+   ],
+   "published_at": "2026-11-13T14:59:16+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/osakana0_0b/items/4e8dd1f9ec159ecd3009",
+   "title": "Dockerホスト側にプロキシをたてる。*.example.com AzureLinux",
+   "author": "osakana0_0b",
+   "score": 0,
+   "tags": [
+    "Docker",
+    "SELinux",
+    "AzureLinux",
+    "traefik"
+   ],
+   "published_at": "2026-11-13T14:58:30+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/b9game11/items/26080f87792917c4ba59",
+   "title": "高トラフィックなリアルタイムWebプラットフォームにおける状態同期の設計",
+   "author": "b9game11",
+   "score": 0,
+   "tags": [
+    "Web"
+   ],
+   "published_at": "2026-11-13T14:56:49+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/kvmdrai/items/a85d9e0b31e4f1f36b86",
+   "title": "コンテナDRで押さえるべき10のポイント（Proxmox VE、oVirt、OLVM）",
+   "author": "kvmdrai",
+   "score": 0,
+   "tags": [
+    "proxmox",
+    "oVirt",
+    "kubernetes",
+    "lxc",
+    "Olvm"
+   ],
+   "published_at": "2026-11-13T14:55:25+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/www_gplwppass_com/items/c4fb908a8ebf8e13a2d7",
+   "title": "Rank Math SEO Pro 実務レビューと2026年最新WordPress SEO設計論：複数サイト運用で私がYoastから移行した理由",
+   "author": "www_gplwppass_com",
+   "score": 0,
+   "tags": [
+    "WordPress"
+   ],
+   "published_at": "2026-11-13T14:46:14+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/MiltonLibby/items/5b26e1e76f9557c2bec3",
+   "title": "MANHG",
+   "author": "MiltonLibby",
+   "score": 0,
+   "tags": [
+    "Docker"
+   ],
+   "published_at": "2026-11-13T14:43:19+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/manabian/items/3ee877950d9cfea19ace",
+   "title": "Snowsight の GUI でデータをロードすると COPY INTO が実行されることの確認",
+   "author": "manabian",
+   "score": 0,
+   "tags": [
+    "Snowflake"
+   ],
+   "published_at": "2026-11-13T14:38:58+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/whitemarshall/items/6cadec0996d1c2afa4ab",
+   "title": "DeepSeek Harnessの12プラグインを検証単位で整理する：導入前チェックとGenUI実測",
+   "author": "whitemarshall",
+   "score": 0,
+   "tags": [
+    "deepseek",
+    "AI",
+    "ChatGPT"
+   ],
+   "published_at": "2026-11-13T14:38:19+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/isanakamishiro2/items/9215b4a1d94b89f90c0a",
+   "title": "Databricks Genie OneのArtifactsでスライドを作ってみる",
+   "author": "isanakamishiro2",
+   "score": 0,
+   "tags": [
+    "Databricks",
+    "GenieOne",
+    "LLM",
+    "AIエージェント"
+   ],
+   "published_at": "2026-11-13T14:36:55+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/Joy0321/items/053c00414746ab4bee9a",
+   "title": "社内LTの録音を audio to text して、登壇者が口頭だけ言ったリンクを集める",
+   "author": "Joy0321",
+   "score": 0,
+   "tags": [
+    "Python",
+    "文字起こし",
+    "勉強会",
+    "正規表現",
+    "ドキュメント"
+   ],
+   "published_at": "2026-11-13T14:34:13+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/Haruki-N/items/7acbe318a456db1ff15d",
+   "title": "ECS Managed Instances のクロスインスタンス統合と Spot 統合",
+   "author": "Haruki-N",
+   "score": 0,
+   "tags": [
+    "AWS",
+    "ECS",
+    "ECS-ManagedInstances",
+    "コスト最適化"
+   ],
+   "published_at": "2026-11-13T14:30:06+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/lihan66670/items/7dedc9d875c58f808007",
+   "title": "黄果短剧榜",
+   "author": "lihan66670",
+   "score": 0,
+   "tags": [
+    "huangguotop.com"
+   ],
+   "published_at": "2026-11-13T14:26:08+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/kobayashi_0226/items/a3bc4e9563140acae195",
+   "title": "Terraform AWS Providerにコントリビュートしてみた",
+   "author": "kobayashi_0226",
+   "score": 0,
+   "tags": [
+    "Terraform",
+    "AWS"
+   ],
+   "published_at": "2026-11-13T14:20:40+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/12405/items/6a47a569ea1ecf682d85",
+   "title": "Microsoft 365でSLA違反の返金（クレジット）を申請する方法",
+   "author": "12405",
+   "score": 0,
+   "tags": [
+    "Office365"
+   ],
+   "published_at": "2026-11-13T14:16:30+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/hourensousotei/items/388615d4f9feedb13e23",
+   "title": "Gemini 4 Hydrogenがデフォルトで高にならない問題",
+   "author": "hourensousotei",
+   "score": 0,
+   "tags": [
+    "Gemini",
+    "Antigravity",
+    "Gemini4",
+    "AI",
+    "生成AI"
+   ],
+   "published_at": "2026-11-13T14:16:11+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/haruhiro907/items/2416f995db30df622e60",
+   "title": "2日で作った iPhone 風カメラアプリ「Quiet Camera」開発記録（Kotlin / Compose / CameraX）",
+   "author": "haruhiro907",
+   "score": 0,
+   "tags": [
+    "Kotlin",
+    "Android",
+    "CameraX",
+    "JetpackCompose",
+    "個人開発"
+   ],
+   "published_at": "2026-11-13T14:07:40+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/Unknown777hello/items/e83ac6d9718feec93383",
+   "title": "【Unknown777 C# 勉強記録 #1　Qiita75回】",
+   "author": "Unknown777hello",
+   "score": 0,
+   "tags": [
+    "Windows",
+    "Python",
+    "C#",
+    "勉強記録",
+    "Unknown777"
+   ],
+   "published_at": "2026-11-13T14:05:52+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/Waipe/items/7053685a45ebfdbe8714",
+   "title": "【第062回】板の文脈に合わせた人間味！専門用語・スラング・多彩な引用を使い分けるペルソナリアリズム",
+   "author": "Waipe",
+   "score": 0,
+   "tags": [
+    "掲示板",
+    "スレッドフロート",
+    "AI",
+    "バイブコーディング",
+    "チャットボット"
+   ],
+   "published_at": "2026-11-13T14:01:39+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/yuki_1012_1101/items/0e36028f80c9538bc55e",
+   "title": "【AWS】【DevOps Agent】どこまで障害を調査できる？10種類の障害を意図的に起こして検証してみた",
+   "author": "yuki_1012_1101",
+   "score": 0,
+   "tags": [
+    "AWS",
+    "DevOpsAgent",
+    "AIエージェント",
+    "SRE",
+    "運用"
+   ],
+   "published_at": "2026-11-13T14:00:23+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/engchina/items/526f5b5fb7255b696235",
+   "title": "【Production Ready RAG】検索・回答の改善をどう確かめる？テストセットと品質評価を合成データで試してみた",
+   "author": "engchina",
+   "score": 0,
+   "tags": [
+    "rag",
+    "生成AI",
+    "LLM",
+    "Python",
+    "評価"
+   ],
+   "published_at": "2026-11-13T13:55:27+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/kouki_miura/items/bc0616e99c3c08b21ee5",
+   "title": "SSL/TLS証明書のドメイン認証方式を理解する",
+   "author": "kouki_miura",
+   "score": 0,
+   "tags": [
+    "SSL",
+    "TLS",
+    "acme",
+    "http-01",
+    "dns-01"
+   ],
+   "published_at": "2026-11-13T13:55:15+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/yoxi957/items/c6b0ae31fb4cea8c49a4",
+   "title": "Vidu Q4 Deep Dive: Multiple Subjects in One Shot",
+   "author": "yoxi957",
+   "score": 0,
+   "tags": [
+    "AI",
+    "Video",
+    "vidu"
+   ],
+   "published_at": "2026-11-13T13:47:55+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/Osane/items/c749d5e4a6bea53c7ef7",
+   "title": "Minecraftのgamerule allowmobs falseを使うな",
+   "author": "Osane",
+   "score": 0,
+   "tags": [
+    "minecraft",
+    "MinecraftEE",
+    "コマンドブロック"
+   ],
+   "published_at": "2026-11-13T13:24:37+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/mitasu_lab/items/efbff73e9cf733d8febe",
+   "title": "ゲーム翻訳のPOファイル（gettext）翻訳チェックで見落としやすい5つの点",
+   "author": "mitasu_lab",
+   "score": 0,
+   "tags": [
+    "ローカライズ",
+    "ゲーム",
+    "翻訳",
+    "Gettext",
+    "多言語対応"
+   ],
+   "published_at": "2026-11-13T13:23:09+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/naunari/items/8cf252cc89eae309644d",
+   "title": "エンジニアが知っておきたい該非判定の世界 ～プロジェクトが止まり上から詰められ強引に突破した実話を添えて～",
+   "author": "naunari",
+   "score": 0,
+   "tags": [
+    "コンプライアンス",
+    "プロジェクトマネジメント",
+    "海外",
+    "法務",
+    "該非判定"
+   ],
+   "published_at": "2026-11-13T13:22:14+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/hiroshi_btree/items/25916e673dea3cb7899b",
+   "title": "NEXT.JSでshadecn/uiを使う",
+   "author": "hiroshi_btree",
+   "score": 0,
+   "tags": [
+    "Next.js",
+    "React",
+    "microCMS",
+    "shadcn"
+   ],
+   "published_at": "2026-11-13T13:21:30+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/ai_hack_lab/items/5c752ed0ff08d393ffe5",
+   "title": "【Python×Anthropic】Claude 3.5 Sonnetで長文ドキュメントや議事録から「超重要アクション」を一撃抽出するローカル要約パイプライン",
+   "author": "ai_hack_lab",
+   "score": 0,
+   "tags": [
+    "Python",
+    "ChatGPT",
+    "Claude",
+    "AI",
+    "副業"
+   ],
+   "published_at": "2026-11-13T13:20:40+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/htani0817/items/63360cbfe1b91fe745df",
+   "title": "【2026年11月】Claude Fable 5.2がリリース！20%値下げ・Fast mode対応・API破壊的変更4つまとめ",
+   "author": "htani0817",
+   "score": 0,
+   "tags": [
+    "Claude",
+    "Anthropic",
+    "AI",
+    "LLM",
+    "API"
+   ],
+   "published_at": "2026-11-13T13:18:39+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/sandolpin14/items/b2c9ccbf3c967d97fd4c",
+   "title": "Mapboxでサイキョー!!な地図アプリを作ろう [1] 地図の基本",
+   "author": "sandolpin14",
+   "score": 0,
+   "tags": [
+    "mapbox",
+    "アプリ開発"
+   ],
+   "published_at": "2026-11-13T13:16:16+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/theowalker406/items/c781b5717ef764a1e72c",
+   "title": "Who Owns the Payment Page Evidence in P&C Insurance Billing Software? ",
+   "author": "theowalker406",
+   "score": 0,
+   "tags": [
+    "Insurtech,",
+    "ソフトウェア"
+   ],
+   "published_at": "2026-11-13T13:14:26+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/turkey_jp/items/db9b71f37e98f8c6b98c",
+   "title": "プロンプトは「呪文」ではなく「プロセス最適化」だ —— 歴25年の有機合成化学者が語る、LLMを再現性高く制御する思考法",
+   "author": "turkey_jp",
+   "score": 0,
+   "tags": [
+    "LLM",
+    "プロンプト",
+    "化学",
+    "再現性"
+   ],
+   "published_at": "2026-11-13T13:10:30+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/CodeLeaf/items/b129c61b994386d294de",
+   "title": "Java入門:小数点以下の桁数を揃えて表示する方法3選",
+   "author": "CodeLeaf",
+   "score": 0,
+   "tags": [
+    "Java",
+    "小数点",
+    "数値変換",
+    "桁数",
+    "Format"
+   ],
+   "published_at": "2026-11-13T13:10:00+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/orca-forge/items/0eb174174255e017f595",
+   "title": "nginxで別のログイン画面が出る原因は既定vhost",
+   "author": "orca-forge",
+   "score": 0,
+   "tags": [
+    "nginx",
+    "dns",
+    "TLS",
+    "サーバー運用"
+   ],
+   "published_at": "2026-11-13T13:04:22+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/astsec/items/2b440c2e063520aa05cb",
+   "title": "Hidden in plainsight解答メモ",
+   "author": "astsec",
+   "score": 0,
+   "tags": [
+    "Forensics",
+    "CTF",
+    "picoCTF"
+   ],
+   "published_at": "2026-11-13T12:59:59+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/ubinity/items/9278fcebda056f405dfa",
+   "title": "【Linux/SRE】USB 3.0 外付けHDDがhdparmで休眠しない問題の完全解決：UASプロトコル、SAT変換とSCSI START_STOP_UNITによるスピンダウン制御",
+   "author": "ubinity",
+   "score": 0,
+   "tags": [
+    "devops",
+    "SRE"
+   ],
+   "published_at": "2026-11-13T12:57:58+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/OfficeSolutionAILabs/items/a17f98b4b8bd8ca285eb",
+   "title": "【導入事例】BluSlash様における「Alteryx to Microsoft Fabric Migration」の全貌：データ基盤の完全クラウド統合とコスト最適化の軌跡",
+   "author": "OfficeSolutionAILabs",
+   "score": 0,
+   "tags": [
+    "Alteryx",
+    "Microsoft",
+    "AlteryxtoMicrosoftFabric"
+   ],
+   "published_at": "2026-11-13T12:56:47+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/matsukawa/items/7d2ea825c5b2cbe3fa0b",
+   "title": "【第9回】知見総括編：AIエージェントと挑んだ家庭用エネルギー自律制御の全ノウハウと実践ガイド",
+   "author": "matsukawa",
+   "score": 0,
+   "tags": [
+    "AI駆動開発",
+    "HEMS",
+    "太陽光発電",
+    "蓄電池"
+   ],
+   "published_at": "2026-11-13T12:56:25+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/matsukawa/items/a49673990342c28652fc",
+   "title": "【第8回】自動化＆経済性レポーティング編：燃調費Web同期・FIT売電開始と設備投資回収レポート・Discord通知",
+   "author": "matsukawa",
+   "score": 0,
+   "tags": [
+    "AI駆動開発",
+    "HEMS",
+    "太陽光発電",
+    "蓄電池"
+   ],
+   "published_at": "2026-11-13T12:54:54+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/matsukawa/items/b430c23ca2bf0c751282",
+   "title": "【第7回】実生活・家電モデリング編：全館空調24h熱負荷・EV/浴室乾燥機分離・SwitchBot BLE連携と蓄電池保護",
+   "author": "matsukawa",
+   "score": 0,
+   "tags": [
+    "AI駆動開発",
+    "HEMS",
+    "太陽光発電",
+    "蓄電池"
+   ],
+   "published_at": "2026-11-13T12:53:06+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/yythzy/items/22fbde22ebbbf09efe12",
+   "title": "AWS Emulator の Lambda は本物の Node.js ではなかった:電子署名アプリで分かった 6 つの落とし穴",
+   "author": "yythzy",
+   "score": 0,
+   "tags": [
+    "AWS",
+    "初心者",
+    "lambda",
+    "kms",
+    "電子署名"
+   ],
+   "published_at": "2026-11-13T12:39:49+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/Love_Apple/items/d4f91fb710adb93442ce",
+   "title": "サーバーメンテナンスにおける「管理者」と「開発者」の違いとは？現役エンジニアが実務経験から考える責任範囲と技術的役割",
+   "author": "Love_Apple",
+   "score": 0,
+   "tags": [
+    "サーバー管理",
+    "AI",
+    "Linux",
+    "PHP",
+    "devops"
+   ],
+   "published_at": "2026-11-13T12:36:25+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/matsukawa/items/d00294aac51ce5d365c7",
+   "title": "【第6回】太陽光発電の物理モデリングと3大気象アンサンブル：予報誤差とモデル誤差の因果分離",
+   "author": "matsukawa",
+   "score": 0,
+   "tags": [
+    "AI駆動開発",
+    "HEMS",
+    "太陽光発電",
+    "蓄電池"
+   ],
+   "published_at": "2026-11-13T12:36:15+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/CookieBox26/items/3d1c7e8c35b405630838",
+   "title": "Obsidian で特定フォルダ以下のノートにだけCSSを適用する方法 (Auto Class プラグイン)",
+   "author": "CookieBox26",
+   "score": 0,
+   "tags": [
+    "Obsidian"
+   ],
+   "published_at": "2026-11-13T12:35:18+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/mahaya123/items/13e2a7ff635d3b9495d6",
+   "title": "キルヒホッフの法則から学ぶ、行列・クラメルの公式・素因数分解による高速計算",
+   "author": "mahaya123",
+   "score": 0,
+   "tags": [
+    "算数",
+    "数学",
+    "連立方程式",
+    "電気回路"
+   ],
+   "published_at": "2026-11-13T12:29:02+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/zhuchengnotes/items/f525995d627096d09754",
+   "title": "Spare RO and NF Elements Are Controlled Inventory, Not Forgotten Boxes",
+   "author": "zhuchengnotes",
+   "score": 0,
+   "tags": [
+    "Membrane",
+    "Ro",
+    "nf",
+    "water-treatment"
+   ],
+   "published_at": "2026-11-13T12:27:18+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/Takuya__/items/cc7f0bd092fa6dddc704",
+   "title": "プロンプトインジェクション対策「LLMON」を Mac で試してみた",
+   "author": "Takuya__",
+   "score": 0,
+   "tags": [
+    "プロンプトインジェクション",
+    "AIエージェント",
+    "LLM",
+    "生成AI",
+    "Security"
+   ],
+   "published_at": "2026-11-13T12:25:34+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/P-man_Brown/items/fb1c369067f698e9f932",
+   "title": "【Zed】Gitのリモート情報を自動取得するauto_fetchの設定方法",
+   "author": "P-man_Brown",
+   "score": 0,
+   "tags": [
+    "ZedEditor"
+   ],
+   "published_at": "2026-11-13T12:20:38+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/tosiooooooo/items/00fe13ad972028799150",
+   "title": "AWS Certified Generative AI Developer – Professional（AIP-C01）チートシート",
+   "author": "tosiooooooo",
+   "score": 0,
+   "tags": [
+    "AWS認定試験",
+    "AIP-C01"
+   ],
+   "published_at": "2026-11-13T12:18:23+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/mitasu_lab/items/4a8a88d9cadf7f34544f",
+   "title": "全角=2では足りない：ゲーム翻訳の「表示幅」チェックが難しい3つの理由",
+   "author": "mitasu_lab",
+   "score": 0,
+   "tags": [
+    "ローカライズ",
+    "LQA",
+    "ゲーム",
+    "翻訳",
+    "個人開発"
+   ],
+   "published_at": "2026-11-13T12:18:04+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/lastmileops/items/a3e7ecef6efecbc2e3ee",
+   "title": "ヘルプデスクの「DNSを見たい」に、SSHまで渡さなくていい",
+   "author": "lastmileops",
+   "score": 0,
+   "tags": [
+    "Bash",
+    "Python",
+    "Linux",
+    "運用",
+    "自動化"
+   ],
+   "published_at": "2026-11-13T12:13:18+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/Wenlo/items/bbc22412929df66fe754",
+   "title": "Pythonの4つの状態で、集中セッションのチェックイン画面を作る",
+   "author": "Wenlo",
+   "score": 0,
+   "tags": [
+    "Python",
+    "iPhone",
+    "状態遷移",
+    "UI",
+    "初心者"
+   ],
+   "published_at": "2026-11-13T12:09:43+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/Xim2jp/items/dd0ed422737ae00eef7f",
+   "title": "Lambdaのコストと速度をチューニングする ― 自社フォームのログで確かめたメモリ・Graviton・コールドスタート",
+   "author": "Xim2jp",
+   "score": 0,
+   "tags": [
+    "AWS",
+    "lambda",
+    "serverless",
+    "CloudWatch",
+    "コスト削減"
+   ],
+   "published_at": "2026-11-13T12:09:38+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/matsumo2019/items/bfc4377954733382b368",
+   "title": "NKPで「Web＋DB＋永続ボリューム」の基本アプリを動かす その1",
+   "author": "matsumo2019",
+   "score": 0,
+   "tags": [
+    "nutanix",
+    "NKP"
+   ],
+   "published_at": "2026-11-13T12:08:27+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/locallab/items/3140e1015a710178c369",
+   "title": "Claude Code + OpenRouter で月額コストをほぼゼロにする5つの設定",
+   "author": "locallab",
+   "score": 0,
+   "tags": [
+    "Claude",
+    "AI",
+    "OpenRouter"
+   ],
+   "published_at": "2026-11-13T12:01:02+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/yanwang/items/a19d8e47d5e116624ecc",
+   "title": "PDFを外部共有する前にAuthorとXMPを確認する手順",
+   "author": "yanwang",
+   "score": 0,
+   "tags": [
+    "PDF"
+   ],
+   "published_at": "2026-11-13T12:00:09+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/langhuanamacha/items/d8de565ceb2a6aa49144",
+   "title": "お天気アプリ＃３６",
+   "author": "langhuanamacha",
+   "score": 0,
+   "tags": [
+    "JavaScript"
+   ],
+   "published_at": "2026-11-13T11:58:03+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/hervekom37/items/2b6ca2f35774f370508b",
+   "title": "AIコーディングセッション間でコンテキストを維持する方法",
+   "author": "hervekom37",
+   "score": 0,
+   "tags": [
+    "AI",
+    "AIエージェント",
+    "AIAgent"
+   ],
+   "published_at": "2026-11-13T11:57:50+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/kishimin/items/dc8a1216f1fe08492769",
+   "title": "mojicaでAI × TDDしてみた。レビューが思ったより大変だった話",
+   "author": "kishimin",
+   "score": 0,
+   "tags": [
+    "TDD",
+    "AI",
+    "個人開発"
+   ],
+   "published_at": "2026-11-13T11:44:48+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/LiamCarter/items/1c2993f9889c57b0f8f7",
+   "title": "BYOKはオフラインではない：翻訳拡張の公開文書からデータフローを読み解く",
+   "author": "LiamCarter",
+   "score": 0,
+   "tags": [
+    "プライバシー",
+    "ブラウザ拡張",
+    "API"
+   ],
+   "published_at": "2026-11-13T11:44:01+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/akivajp/items/1ec6390052ed33fb53a9",
+   "title": "トラックポイントの中クリックとスクロールを両立する「nubmiddle」を作った話",
+   "author": "akivajp",
+   "score": 0,
+   "tags": [
+    "Windows11",
+    "thinkpad",
+    "トラックポイント",
+    "Rust",
+    "OSS"
+   ],
+   "published_at": "2026-11-13T11:41:05+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/Waipe/items/68aa3ee22431947d2160",
+   "title": "【第061回】1つのLLMに依存しない！Google Gemini & Groqを抽象レイヤーで切り替えるハイブリッドAI設計",
+   "author": "Waipe",
+   "score": 0,
+   "tags": [
+    "掲示板",
+    "スレッドフロート",
+    "AI",
+    "バイブコーディング",
+    "チャットボット"
+   ],
+   "published_at": "2026-11-13T11:31:19+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/gplpal/items/a18e958423ef27f6f882",
+   "title": "【2026年版】Travel Tour (TravelWP) WordPressテーマ徹底レビュー｜導入手順と不具合対策",
+   "author": "gplpal",
+   "score": 0,
+   "tags": [
+    "WordPress"
+   ],
+   "published_at": "2026-11-13T11:28:56+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/takayuki_0127/items/67244f26ca04309585ff",
+   "title": "産業連関表で「経済効果」を numpy で計算する：訪日客の消費1兆円を、マージン分け・輸入の除外・1次／2次波及・雇用まで書く",
+   "author": "takayuki_0127",
+   "score": 0,
+   "tags": [
+    "Python",
+    "numpy",
+    "pandas",
+    "統計",
+    "オープンデータ"
+   ],
+   "published_at": "2026-11-13T11:26:02+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/gplpal/items/33d515ef2b30bf969287",
+   "title": "【2026年版】SmilePure WordPressテーマ徹底レビュー｜歯科・医療サイトの導入手順と不具合対策",
+   "author": "gplpal",
+   "score": 0,
+   "tags": [
+    "WordPress"
+   ],
+   "published_at": "2026-11-13T11:25:41+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/kieutrang_h/items/32e40a7e70a3980ebff8",
+   "title": "Google Cloudの請求額が増え続けるのはなぜ？コスト削減だけでは解決できない、企業が考えるべきクラウド戦略",
+   "author": "kieutrang_h",
+   "score": 0,
+   "tags": [
+    "GoogleCloud",
+    "tech",
+    "AI"
+   ],
+   "published_at": "2026-11-13T11:25:03+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/Necoze/items/513b9678a7339316b718",
+   "title": "テストの「本当に性か」を問うミューテーションテストから、レトロ3Dゲーム開発の最先端まで：技術トレンドの断片的な考察",
+   "author": "Necoze",
+   "score": 0,
+   "tags": [
+    "品質保証",
+    "ゲーム開発",
+    "Security",
+    "データ駆動",
+    "ソフトウェアテスト"
+   ],
+   "published_at": "2026-11-13T11:24:47+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/mrmrmr/items/70afb363106cf072d585",
+   "title": "【小学5年生でもわかる】ベイズ推定ってなに？",
+   "author": "mrmrmr",
+   "score": 0,
+   "tags": [
+    "G検定",
+    "DeepLearning",
+    "機械学習",
+    "初心者向け"
+   ],
+   "published_at": "2026-11-13T11:22:26+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/ebhow/items/8a27f58a892f20e1c732",
+   "title": "API の JSON や Web の表を、Excel で崩れない CSV にする（ネスト展開・改行・先頭ゼロ）",
+   "author": "ebhow",
+   "score": 0,
+   "tags": [
+    "JSON",
+    "CSV",
+    "Excel",
+    "Python",
+    "jq"
+   ],
+   "published_at": "2026-11-13T11:20:55+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/yoossh/items/08dfdfcc925e63d844b1",
+   "title": "GitHub Copilot Coding Agentで始めるエージェント型ワークフロー入門",
+   "author": "yoossh",
+   "score": 0,
+   "tags": [
+    "GitHubCopilot",
+    "CodingAgent"
+   ],
+   "published_at": "2026-11-13T11:18:07+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/trailfusion_ai/items/c3875a37597ab3189170",
+   "title": "画像の一括取得で音声を待たせない：優先度・429・再試行の設計",
+   "author": "trailfusion_ai",
+   "score": 0,
+   "tags": [
+    "reactnative",
+    "TypeScript",
+    "performance"
+   ],
+   "published_at": "2026-11-13T11:15:50+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/amru195704/items/df6acc003865eb4bd028",
+   "title": "Shift-JIS と UTF-8 の CSV を diff すると全行が「違う」になる理由と、10GB（約1億行）で測った「変換してから比べる」コスト",
+   "author": "amru195704",
+   "score": 0,
+   "tags": [
+    "文字コード",
+    "Shift_JIS",
+    "CSV",
+    "diff",
+    "iconv"
+   ],
+   "published_at": "2026-11-13T11:09:45+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/EastCloud/items/c0fc8d7b8050ff093431",
+   "title": "ガバメントクラウドのR2要件とは？5つのモダン化要件から設計する",
+   "author": "EastCloud",
+   "score": 0,
+   "tags": [
+    "さくらのクラウド"
+   ],
+   "published_at": "2026-11-13T10:53:16+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/hamaguchi0318/items/34b8bb786c57bc5441a0",
+   "title": "Power BI で、折れ線グラフの日付の間隔が等間隔にならないときの直し方(X軸の「型」: 連続とカテゴリ別)",
+   "author": "hamaguchi0318",
+   "score": 0,
+   "tags": [
+    "PowerBI",
+    "グラフ",
+    "日付"
+   ],
+   "published_at": "2026-11-13T10:50:46+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/anslationai/items/de880205a3dcffaa13eb",
+   "title": "The Importance of AI-Powered Translation in Global Communication",
+   "author": "anslationai",
+   "score": 0,
+   "tags": [
+    "AI",
+    "translation",
+    "MachineLearning",
+    "webdevelopment",
+    "Technology"
+   ],
+   "published_at": "2026-11-13T10:50:37+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/stellahartvogoo/items/1e4f184970c0d43c8790",
+   "title": "Image to Video for Product Listings: A Practical Spec Sheet and Checklist",
+   "author": "stellahartvogoo",
+   "score": 0,
+   "tags": [
+    "AI",
+    "画像生成AI",
+    "動画生成",
+    "ec"
+   ],
+   "published_at": "2026-11-13T10:50:20+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/sator_imaging/items/43947c8e71020495e803",
+   "title": "🤖「Unityを選ぶ企業は赤字体質である。」に対する反論",
+   "author": "sator_imaging",
+   "score": 0,
+   "tags": [
+    "Unity",
+    "UnrealEngine",
+    "Godot",
+    "CI",
+    "ゲーム開発"
+   ],
+   "published_at": "2026-11-13T10:39:24+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/ham-nao/items/ba22362551ec2b535675",
+   "title": "【Terraform×AWS】ECRのライフサイクルポリシーとイメージスキャンを設定する",
+   "author": "ham-nao",
+   "score": 0,
+   "tags": [
+    "Terraform",
+    "AWS",
+    "ECR",
+    "Docker",
+    "Security"
+   ],
+   "published_at": "2026-11-13T10:36:44+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/ham-nao/items/307817604094815d032a",
+   "title": "【Terraform×GitHub Actions】ドリフトを毎日検知して、手作業の変更に気づく仕組みを作る",
+   "author": "ham-nao",
+   "score": 0,
+   "tags": [
+    "Terraform",
+    "GitHubActions",
+    "AWS",
+    "IaC",
+    "CI"
+   ],
+   "published_at": "2026-11-13T10:36:01+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/Sidejob/items/aa7be4816e19db2b13e2",
+   "title": "Power Platform 2026年10月・11月アップデート確認：企業AI担当者が整理した変化3点（速報・2026年11月）",
+   "author": "Sidejob",
+   "score": 0,
+   "tags": [
+    "PowerPlatform",
+    "PowerAutomate",
+    "MicrosoftCopilot",
+    "企業AI",
+    "速報"
+   ],
+   "published_at": "2026-11-13T10:30:03+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/prozensoft/items/1c8a5c43b746717058c4",
+   "title": "How a Super App Combines Rides, Delivery and Bookings Into One Business",
+   "author": "prozensoft",
+   "score": 0,
+   "tags": [
+    "SuperApp",
+    "startup",
+    "MobileApp"
+   ],
+   "published_at": "2026-11-13T10:29:15+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/orange006/items/f28ea71dec3f4030e35f",
+   "title": "【Salesforce】言葉で専用画面を作る「Quick Pages」とは？できることと制約を整理",
+   "author": "orange006",
+   "score": 0,
+   "tags": [
+    "Salesforce"
+   ],
+   "published_at": "2026-11-13T10:25:29+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/Yusg_6/items/1c7c594c7896a8b46c90",
+   "title": "CodeSceneの品質ゲートを比較し、個人開発に必要な設定を選ぶ",
+   "author": "Yusg_6",
+   "score": 0,
+   "tags": [
+    "Codescene"
+   ],
+   "published_at": "2026-11-13T10:22:45+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/jiahuih561/items/f94017f542f6d25cc8d2",
+   "title": "SNS運用のAIエージェントは、何を覚え、どこで止まるべきか",
+   "author": "jiahuih561",
+   "score": 0,
+   "tags": [
+    "AIエージェント",
+    "生成AI",
+    "SNS",
+    "SNS運用",
+    "個人開発"
+   ],
+   "published_at": "2026-11-13T10:18:52+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/Tachiuo/items/7ab16b98d09ae56d82f1",
+   "title": "LLM Wikiの未リンク関係と空白候補を6つの仮説で検証した",
+   "author": "Tachiuo",
+   "score": 0,
+   "tags": [
+    "LLM",
+    "LLMWiki",
+    "AI",
+    "ベクトル検索",
+    "Obsidian"
+   ],
+   "published_at": "2026-11-13T10:16:24+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/Kevin_Wang/items/f9f283e3338729507cbf",
+   "title": "23時47分、再現動画が送れない！動画圧縮を「なんとなく」から手順化した話",
+   "author": "Kevin_Wang",
+   "score": 0,
+   "tags": [
+    "ffmpeg",
+    "動画",
+    "Web",
+    "動画圧縮",
+    "パフォーマンス"
+   ],
+   "published_at": "2026-11-13T10:14:13+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/konaito/items/f196a74397ad13f77276",
+   "title": "pull型AI、cron型AIの感動はもう終わった。次はpush型AIだ",
+   "author": "konaito",
+   "score": 0,
+   "tags": [
+    "AI",
+    "LLM",
+    "AIエージェント",
+    "ChatGPT",
+    "個人開発"
+   ],
+   "published_at": "2026-11-13T10:07:53+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/tempfreemail/items/115a63bd806ff2980cf0",
+   "title": "Testing email verification flows without real user data",
+   "author": "tempfreemail",
+   "score": 0,
+   "tags": [
+    "email",
+    "テスト"
+   ],
+   "published_at": "2026-11-13T10:04:49+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/inunekosakana/items/f82b5a651d425602d3cc",
+   "title": "RHELのセキュリティパッチ適用前に確認することクソ適当memo（引き継ぎがない人向け）",
+   "author": "inunekosakana",
+   "score": 0,
+   "tags": [
+    "RHEL"
+   ],
+   "published_at": "2026-11-13T10:03:25+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/geolin878/items/256c20270fda297f8ddb",
+   "title": "搜尋排名依舊有價值，但已經不是唯一的獲客入口",
+   "author": "geolin878",
+   "score": 0,
+   "tags": [
+    "geo",
+    "SEO",
+    "AI"
+   ],
+   "published_at": "2026-11-13T10:01:13+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/MultCloud/items/7c176d85f5834862cb8a",
+   "title": "QNAPとiCloudを同期する方法2選｜NASとiCloudを連携してデータを管理",
+   "author": "MultCloud",
+   "score": 0,
+   "tags": [
+    "Qnap",
+    "NAS",
+    "iCloud",
+    "データ同期",
+    "クラウド同期"
+   ],
+   "published_at": "2026-11-13T09:59:54+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/yoya/items/da8fe537d4c91109c898",
+   "title": "macOS のミュージックappへフォルダ階層ごと取り込む方法",
+   "author": "yoya",
+   "score": 0,
+   "tags": [
+    "macOS",
+    "ミュージック",
+    "フォルダ",
+    "取り込み"
+   ],
+   "published_at": "2026-11-13T09:53:10+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/sho_matsu/items/417c03ea41b36d76e406",
+   "title": "業務都合で1日だけ参加。それでもAWS JumpStartで学べたこと",
+   "author": "sho_matsu",
+   "score": 0,
+   "tags": [
+    "AWS",
+    "インフラ",
+    "初心者",
+    "イベントレポート"
+   ],
+   "published_at": "2026-11-13T09:52:36+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/YYYGame/items/eee82cb5008c6b86c834",
+   "title": "【Unity URP】どの角度でも破綻しない「頂点スライスグリッチ」の数式と、Alphaを0にすると真っ黒になる罠の解決法",
+   "author": "YYYGame",
+   "score": 0,
+   "tags": [
+    "Unity",
+    "Shader",
+    "シェーダー",
+    "ホログラム"
+   ],
+   "published_at": "2026-11-13T09:48:06+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/him90716/items/42e86d6f6741cf804bea",
+   "title": "LinkedIn Sales Navigator Scraper: Build a Lead List Without Your Login",
+   "author": "him90716",
+   "score": 0,
+   "tags": [
+    "WebScraping"
+   ],
+   "published_at": "2026-11-13T09:42:58+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/Eizi_dazo/items/49ec4aeaa5e6746641ce",
+   "title": "AR開発ミリしらでギター練習アプリをつくってみた",
+   "author": "Eizi_dazo",
+   "score": 0,
+   "tags": [
+    "AR",
+    "初心者",
+    "Unity",
+    "MetaQuest",
+    "ギター"
+   ],
+   "published_at": "2026-11-13T09:40:25+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/staehim617/items/c109f06273b38451dab4",
+   "title": "LinkedIn Sales Navigator Scraper: Build a Lead List Without Your Login",
+   "author": "staehim617",
+   "score": 0,
+   "tags": [
+    "WebScraping"
+   ],
+   "published_at": "2026-11-13T09:39:50+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/takase_hiroyuki/items/0aec8918ddd1706d6275",
+   "title": "【Vol. 04】Porteus Linux (x86_64) における日本語入力環境（uim-anthy UTF-8）の構築・自律稼働：umask 022 規格と CHK-014：ステージング領域の全体サニタイズ規律",
+   "author": "takase_hiroyuki",
+   "score": 0,
+   "tags": [
+    "Linux",
+    "Porteus",
+    "Slackware",
+    "squashfs",
+    "porteus-ja-uim"
+   ],
+   "published_at": "2026-11-13T09:39:29+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/maromaro2026/items/46f6de2c0c1bca068604",
+   "title": "Webサービス・メール・DNSの仕組みと関連プロトコルをまとめてみた",
+   "author": "maromaro2026",
+   "score": 0,
+   "tags": [
+    "HTTP",
+    "SMTP",
+    "dns",
+    "情報処理技術者試験",
+    "初心者"
+   ],
+   "published_at": "2026-11-13T09:35:49+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/amako/items/4607b9aed0aa73c49e93",
+   "title": "ほぼわかりOracle AI World 2026 第6回｜AI Can Build It, But Can You Trust It? Data Is the Key",
+   "author": "amako",
+   "score": 0,
+   "tags": [
+    "oracle",
+    "oraclecloud",
+    "OracleDatabase",
+    "AI",
+    "Kyndryl"
+   ],
+   "published_at": "2026-11-13T09:35:27+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/staehim617/items/2af86fb50b14a92b1830",
+   "title": "How to Find Email from LinkedIn Without Logging In",
+   "author": "staehim617",
+   "score": 0,
+   "tags": [
+    "WebScraping"
+   ],
+   "published_at": "2026-11-13T09:34:47+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/Martina_1230/items/5089fb7551b403367582",
+   "title": "Where Should This Building Rotate? A Pivot Handoff Checklist",
+   "author": "Martina_1230",
+   "score": 0,
+   "tags": [
+    "Asset",
+    "modeling",
+    "3D",
+    "3DCG"
+   ],
+   "published_at": "2026-11-13T09:34:46+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/seven_qwq027/items/0414fd19c683b758a45e",
+   "title": "JavaScriptでPNG画像のメタデータを調べる方法｜EXIF・XMP・C2PAの仕組み",
+   "author": "seven_qwq027",
+   "score": 0,
+   "tags": [
+    "JavaScript"
+   ],
+   "published_at": "2026-11-13T09:33:24+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/goofmint/items/29b32d082a84240e30b7",
+   "title": "CodeRabbit JetBrains pluginがベータリリースしました！",
+   "author": "goofmint",
+   "score": 0,
+   "tags": [
+    "CodeRabbit",
+    "JetBrains",
+    "IDE",
+    "コードレビュー"
+   ],
+   "published_at": "2026-11-13T09:32:56+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/Takamatsu15/items/dc7b39dd527401f4a3a6",
+   "title": "【Python×Excel業務改善】openpyxlで読み込んだExcelの欠損データを判定する",
+   "author": "Takamatsu15",
+   "score": 0,
+   "tags": [
+    "Python",
+    "Excel",
+    "Openpyxl"
+   ],
+   "published_at": "2026-11-13T09:32:09+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/him90716/items/df52693e4c12cc135ad3",
+   "title": "How to Find Email from LinkedIn Without Logging In",
+   "author": "him90716",
+   "score": 0,
+   "tags": [
+    "WebScraping"
+   ],
+   "published_at": "2026-11-13T09:28:26+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/IPPeak/items/033c214c5fbd295383af",
+   "title": "プロキシを利用して競合他社のFacebook広告を監視する方法",
+   "author": "IPPeak",
+   "score": 0,
+   "tags": [
+    "プロキシ",
+    "Facebook"
+   ],
+   "published_at": "2026-11-13T09:24:53+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/AninditaKumar/items/07156c2be463bdb1e31e",
+   "title": "Cohesity COH285 Exam Guide: NetBackup and NetBackup Appliances Configuration, Monitoring, Tuning and Troubleshooting",
+   "author": "AninditaKumar",
+   "score": 0,
+   "tags": [
+    "Cohesity",
+    "NetBackup",
+    "バックアップ",
+    "資格",
+    "Linux"
+   ],
+   "published_at": "2026-11-13T09:21:24+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/boraemon2000/items/e81aa28154bf5418d6c4",
+   "title": "担当者が変わっても毎日デプロイを続ける――自動化と手動復旧を引き継ぐ運用資料の作り方",
+   "author": "boraemon2000",
+   "score": 0,
+   "tags": [
+    "AI",
+    "GitHub",
+    "デプロイナウ",
+    "自動化",
+    "プロジェクト管理"
+   ],
+   "published_at": "2026-11-13T09:21:15+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/nakanokensetsu/items/66e136acefd5a54b2f1d",
+   "title": "12GBのGPU2枚で27BのLLMを24人同時に使う ― Ternary-Bonsai-2-27B を vLLM で動かす手順(WSL2)",
+   "author": "nakanokensetsu",
+   "score": 0,
+   "tags": [
+    "vLLM",
+    "LLM",
+    "WSL2",
+    "量子化",
+    "CUDA"
+   ],
+   "published_at": "2026-11-13T09:15:49+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/anago__/items/48dada2c50752e5514c8",
+   "title": "PMとして、エンジニアの質問への自動返信をClaudeで仕組みにしたら、確認が1日2回で済むようになった話",
+   "author": "anago__",
+   "score": 0,
+   "tags": [
+    "AI",
+    "Claude",
+    "pm",
+    "マネジメント",
+    "ドキュメント"
+   ],
+   "published_at": "2026-11-13T09:15:05+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/Kagesyu/items/8e73ac495a2447df6666",
+   "title": "CCNA合格に向けての学習part35(ポートセキュリティの概要編)",
+   "author": "Kagesyu",
+   "score": 0,
+   "tags": [
+    "Network"
+   ],
+   "published_at": "2026-11-13T09:13:21+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/TaiheiKanno/items/e2b23ddc309ebd140357",
+   "title": "GKEへアプリをデプロイする方法: Workload Identity構成とNode Service Account構成を比較",
+   "author": "TaiheiKanno",
+   "score": 0,
+   "tags": [
+    "GoogleCloud",
+    "GKE",
+    "kubernetes",
+    "WorkloadIdentity",
+    "ServiceAccount"
+   ],
+   "published_at": "2026-11-13T09:12:51+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/hasegawa--2025/items/49259b0a5fd736c2b374",
+   "title": "ブラウザだけで X に投稿できる MP4 を作り、ffprobe と PSNR で E2E テストする（WebCodecs + Mediabunny + Playwright）",
+   "author": "hasegawa--2025",
+   "score": 0,
+   "tags": [
+    "webcodecs",
+    "JavaScript",
+    "Playwright",
+    "ffmpeg",
+    "個人開発"
+   ],
+   "published_at": "2026-11-13T09:09:13+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/himajisan/items/a88e6e9faff6c22e8793",
+   "title": "写真1枚からバックラッシュを測る ― AIが「黒い所」を取り違えた話",
+   "author": "himajisan",
+   "score": 0,
+   "tags": [
+    "車",
+    "3Dプリンタ",
+    "画像解析",
+    "Claude",
+    "AI"
+   ],
+   "published_at": "2026-11-13T09:04:29+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/mrrclb48z/items/0dcabffb6d0847112f7a",
+   "title": "大人向け。円と正三角形「数学チャレンジ問題 CD=?」様を、sympy で計算と作図。",
+   "author": "mrrclb48z",
+   "score": 0,
+   "tags": [
+    "sympy",
+    "入試問題"
+   ],
+   "published_at": "2026-11-13T09:04:02+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/Shiro_Shihi/items/3fde43ac85f41733d031",
+   "title": "COUNT(email)は登録者数ではない。SQLiteで確かめるNULL・空文字・日付境界",
+   "author": "Shiro_Shihi",
+   "score": 0,
+   "tags": [
+    "SQL",
+    "SQLite"
+   ],
+   "published_at": "2026-11-13T09:00:27+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/seedance_jack/items/54c96f5e63f26050395d",
+   "title": "既存テイクを壊さない：テキスト差分で AI 動画を改訂するワークフロー",
+   "author": "seedance_jack",
+   "score": 0,
+   "tags": [
+    "ai-video",
+    "Workflow",
+    "プロンプト",
+    "video-editing"
+   ],
+   "published_at": "2026-11-13T08:56:44+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/nanoapi/items/0b840e577f37e27d9029",
+   "title": "非同期タスク API ひとつで AI 動画・画像を生成する（NanoAPI クイックスタート）",
+   "author": "nanoapi",
+   "score": 0,
+   "tags": [
+    "API",
+    "AI",
+    "生成AI",
+    "Python",
+    "動画生成"
+   ],
+   "published_at": "2026-11-13T08:56:35+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/Machida-03/items/3c3794e8f5730976f2f2",
+   "title": "AIエージェントに機能の追加を何度か頼んで、セキュリティの判断がそろうか試してみた",
+   "author": "Machida-03",
+   "score": 0,
+   "tags": [
+    "セキュリティ対策",
+    "FastAPI",
+    "AI",
+    "初心者"
+   ],
+   "published_at": "2026-11-13T08:55:11+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/AIHubMix/items/19e4cb0ad9698cffb681",
+   "title": "Gemini 4 Hydrogen の thinking_level：4段階の選び方と400エラー",
+   "author": "AIHubMix",
+   "score": 0,
+   "tags": [
+    "LLM",
+    "生成AI",
+    "Gemini",
+    "API"
+   ],
+   "published_at": "2026-11-13T08:50:53+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/AIHubMix/items/140251a8b323c8e78d97",
+   "title": "Gemini 4 Hydrogen vs Gemini 3.8 Flash：乗り換える価値はあるか？",
+   "author": "AIHubMix",
+   "score": 0,
+   "tags": [
+    "LLM",
+    "生成AI",
+    "Gemini",
+    "API",
+    "Python"
+   ],
+   "published_at": "2026-11-13T08:50:46+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/NAS6mixfoolv/items/cb05314b9d6310516967",
+   "title": "Xシェア機能を実装する ― Xアプリで投稿本文が消える問題を中間リダイレクトで回避する",
+   "author": "NAS6mixfoolv",
+   "score": 0,
+   "tags": [
+    "JavaScript",
+    "Twitter",
+    "X",
+    "WebAPI",
+    "Security"
+   ],
+   "published_at": "2026-11-13T08:50:19+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/okeee0315/items/fc55113ce1d091a2c515",
+   "title": "Nature Remo の値も SORACOM Harvest に足すために、センサーの読み取りと送信を分けた",
+   "author": "okeee0315",
+   "score": 0,
+   "tags": [
+    "SORACOM",
+    "RaspberryPi",
+    "NatureRemo",
+    "IoT",
+    "Python"
+   ],
+   "published_at": "2026-11-13T08:49:08+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/felix-jp-studio/items/0a58af78efa2f64ddf3f",
+   "title": "予算オーバー防止の第一歩！GitHub Actions で無料枠と請求アラートを先に設定すべき理由",
+   "author": "felix-jp-studio",
+   "score": 0,
+   "tags": [
+    "GitHubActions",
+    "CI",
+    "Cloud",
+    "billing",
+    "初心者"
+   ],
+   "published_at": "2026-11-13T08:31:34+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/Alyssa-liu575/items/f69fb84617cd81ca5906",
+   "title": "FPV Drone Flight Controllers: How They Work and How to Choose the Right One",
+   "author": "Alyssa-liu575",
+   "score": 0,
+   "tags": [
+    "fpv",
+    "controller",
+    "drone"
+   ],
+   "published_at": "2026-11-13T08:30:48+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/shipitx/items/9c32c1eb298d4b6f3227",
+   "title": "画像1枚からAI動画を作ったら動きが崩れた話 ― 原因の切り分けとモーション転送という解決策",
+   "author": "shipitx",
+   "score": 0,
+   "tags": [
+    "AI",
+    "motion",
+    "Video"
+   ],
+   "published_at": "2026-11-13T08:30:40+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/Machida-03/items/d93d3a8524ddeb35d4e6",
+   "title": "AIエージェントにエラーの修正を任せたら、守りを外されるのか試してみた",
+   "author": "Machida-03",
+   "score": 0,
+   "tags": [
+    "セキュリティ対策",
+    "FastAPI",
+    "AI",
+    "初心者"
+   ],
+   "published_at": "2026-11-13T08:29:31+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/ta98s/items/3866599ead66f3c64e07",
+   "title": "バイブコーディング時代に、開発の受託は生き残るのか？ 実際に動かして確かめてみた",
+   "author": "ta98s",
+   "score": 0,
+   "tags": [
+    "AI",
+    "バイブコーディング",
+    "受託開発",
+    "内製化",
+    ".NET"
+   ],
+   "published_at": "2026-11-13T08:21:41+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/kk01298/items/aea658ec787ca54c3834",
+   "title": "(Hermes Agent) OpenAI API の BASE_URL を TTS とチャットで分けた件",
+   "author": "kk01298",
+   "score": 0,
+   "tags": [
+    "HermesAgent",
+    "nginx",
+    "TTS",
+    "OpenaiAPI"
+   ],
+   "published_at": "2026-11-13T08:18:39+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/nenkajp/items/00aa4aef55759a12058c",
+   "title": "勤務時間計算はなぜ意外と難しい？日跨ぎ・休憩・丸め・深夜勤務をJavaScriptで正しく扱う",
+   "author": "nenkajp",
+   "score": 0,
+   "tags": [
+    "JavaScript",
+    "勤怠管理",
+    "Web開発"
+   ],
+   "published_at": "2026-11-13T08:17:01+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/med-000/items/e0573cf68c4e33fed30b",
+   "title": "spa試してみた",
+   "author": "med-000",
+   "score": 0,
+   "tags": [
+    "SPA",
+    "Ubuntu"
+   ],
+   "published_at": "2026-11-13T08:14:20+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/Rakete/items/d5e6e2adcdf214eece70",
+   "title": "AIにCMSの操作を任せるなら、権限管理も人間と同じにするべきだと思う — BirklyのAI統合設計",
+   "author": "Rakete",
+   "score": 0,
+   "tags": [
+    "CMS",
+    "AI",
+    "MCP",
+    "PHP",
+    "Security"
+   ],
+   "published_at": "2026-11-13T08:08:52+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/mqqrkzmrb/items/61a74dc09e79a1b5e64d",
+   "title": "跳繩節拍器怎麼設定才能提升節奏穩定性？專注跳繩特有節拍原則",
+   "author": "mqqrkzmrb",
+   "score": 0,
+   "tags": [
+    "節拍器"
+   ],
+   "published_at": "2026-11-13T08:07:53+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/whitemarshall/items/67a6808d2562f256d8b7",
+   "title": "Codex CLIでサードパーティモデルを使う：API確認からProfile起動まで",
+   "author": "whitemarshall",
+   "score": 0,
+   "tags": [
+    "OpenAI",
+    "AI",
+    "PowerShell",
+    "CLI"
+   ],
+   "published_at": "2026-11-13T08:05:54+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/mqqrkzmrb/items/d4f580be4b85d8d309fa",
+   "title": "爆珠濾嘴推薦｜JIHO吉好14種風味、三用設計與使用特色",
+   "author": "mqqrkzmrb",
+   "score": 0,
+   "tags": [
+    "爆珠濾嘴"
+   ],
+   "published_at": "2026-11-13T08:05:30+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/masatomoto-cmyk/items/029c8b3caf063c42baa5",
+   "title": "【手で書いて覚える個人開発 #11】if と比較：条件で処理を分ける",
+   "author": "masatomoto-cmyk",
+   "score": 0,
+   "tags": [
+    "初心者",
+    "JavaScript",
+    "Node.js"
+   ],
+   "published_at": "2026-11-13T07:59:54+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/fuku0526/items/98146b7193300f72ce1f",
+   "title": "COMPANY V8移行は「つなぎ方」で決まる。HULFT Squareデータ連携基盤を2か月で整える方法",
+   "author": "fuku0526",
+   "score": 0,
+   "tags": [
+    "COMPAY",
+    "EOL",
+    "HULFTSquare",
+    "データ連携",
+    "モダナイゼーション"
+   ],
+   "published_at": "2026-11-13T07:59:49+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/r-jw/items/eaae1f351b7c6364dd3b",
+   "title": "SonarQube for IDE（旧 SonarLint）が Python コードで見つける 5 つの問題",
+   "author": "r-jw",
+   "score": 0,
+   "tags": [
+    "SonarQube",
+    "SonarLint",
+    "SAST",
+    "静的解析",
+    "Python"
+   ],
+   "published_at": "2026-11-13T07:59:02+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/r-jw/items/dd858902e12318a5d16f",
+   "title": "SonarQube を作る SonarSource 社を、ベンダー評価の 5 つの観点で読み解く",
+   "author": "r-jw",
+   "score": 0,
+   "tags": [
+    "SonarQube",
+    "SonarSource",
+    "静的解析",
+    "DevSecOps",
+    "コード品質"
+   ],
+   "published_at": "2026-11-13T07:58:35+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/r-jw/items/8b2bdffb71454de2a035",
+   "title": "SonarLint を Connected Mode でサーバーにつなぐと何が変わるのか",
+   "author": "r-jw",
+   "score": 0,
+   "tags": [
+    "SonarQube",
+    "SonarLint",
+    "静的解析",
+    "DevSecOps",
+    "SAST"
+   ],
+   "published_at": "2026-11-13T07:58:08+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/r-jw/items/5fb8cb336bff43ec4550",
+   "title": "SonarQube Remediation Agent は溜まったイシューをどう直すのか",
+   "author": "r-jw",
+   "score": 0,
+   "tags": [
+    "SonarQube",
+    "AIエージェント",
+    "技術的負債",
+    "静的解析",
+    "LLM"
+   ],
+   "published_at": "2026-11-13T07:57:41+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/r-jw/items/3d42937e0181b6fd3a81",
+   "title": "SonarQube のコンテナスキャンで、CI からイメージの脆弱性を止める",
+   "author": "r-jw",
+   "score": 0,
+   "tags": [
+    "SonarQube",
+    "Docker",
+    "container",
+    "脆弱性",
+    "Security"
+   ],
+   "published_at": "2026-11-13T07:57:13+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/webbingstudio@github/items/798c1c2fd1269a2cb3f4",
+   "title": "はじめてのPHPDoc ― AIと学ぶ「型の書き方」",
+   "author": "webbingstudio@github",
+   "score": 0,
+   "tags": [
+    "PHP",
+    "PHPDoc",
+    "AI活用"
+   ],
+   "published_at": "2026-11-13T07:56:58+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/r-jw/items/1c2497f023d6faa1543d",
+   "title": "IDOR はなぜ SAST で見つからないのか：SonarQube Hunter Agent が認可の抜けを探す",
+   "author": "r-jw",
+   "score": 0,
+   "tags": [
+    "SonarQube",
+    "Security",
+    "SAST",
+    "IDOR",
+    "AIエージェント"
+   ],
+   "published_at": "2026-11-13T07:56:47+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/TwinkleModel/items/4255395d3462e22b3472",
+   "title": "Gemini Decision 1 と Decider v1.3：Agent の手前に「まず判断する」層を置く",
+   "author": "TwinkleModel",
+   "score": 0,
+   "tags": [
+    "AI",
+    "LLM",
+    "API",
+    "Gemini",
+    "ChatGPT"
+   ],
+   "published_at": "2026-11-13T07:54:26+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/wenbohaoch67/items/8dea837d31428f6fad78",
+   "title": "撮り直さずに台詞を差し替える：映像パイプラインの検証ポイント",
+   "author": "wenbohaoch67",
+   "score": 0,
+   "tags": [
+    "AI",
+    "AI開発"
+   ],
+   "published_at": "2026-11-13T07:54:02+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/shipitx/items/be4a26d8d09381ebb91e",
+   "title": "個人開発でよくあるバグ10選とその解決パターン",
+   "author": "shipitx",
+   "score": 0,
+   "tags": [
+    "CodeBuild",
+    "developers"
+   ],
+   "published_at": "2026-11-13T07:53:55+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/tiri0738/items/395be599361939767207",
+   "title": "SMB共有停止による",
+   "author": "tiri0738",
+   "score": 0,
+   "tags": [
+    "fileserver"
+   ],
+   "published_at": "2026-11-13T07:49:37+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/libernorimageai1113/items/d803f4bd199db2a25fd0",
+   "title": "横長画像を正方形に置く前に、中央トリミングで消える範囲をPythonで計算する",
+   "author": "libernorimageai1113",
+   "score": 0,
+   "tags": [
+    "Python"
+   ],
+   "published_at": "2026-11-13T07:48:46+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/norder/items/07b6af5577a70a5596d9",
+   "title": "gitignore備忘録 / Gignore Memo",
+   "author": "norder",
+   "score": 0,
+   "tags": [
+    "Git",
+    "gitignore",
+    "バージョン管理"
+   ],
+   "published_at": "2026-11-13T07:43:24+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/FlatkeyAI/items/99759eeb86e8b6ee3b7a",
+   "title": "OpenAI Agents APIの新機能3つを実測した：ツール差し替え・compaction・auto_review",
+   "author": "FlatkeyAI",
+   "score": 0,
+   "tags": [
+    "OpenAI",
+    "AIAgent",
+    "LLM",
+    "Python",
+    "API"
+   ],
+   "published_at": "2026-11-13T07:39:49+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/mugenweb/items/5c909e2e3254f4ad5384",
+   "title": "GitHub Actionsのcronは2〜4時間遅れ続けた。公開の記録から数えた間隔と、週3回化でのガードの見直し",
+   "author": "mugenweb",
+   "score": 0,
+   "tags": [
+    "GitHubActions",
+    "cron",
+    "Zenn",
+    "個人開発"
+   ],
+   "published_at": "2026-11-13T07:38:03+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/mitasu_lab/items/f668905f45d3866e8626",
+   "title": "ゲーム翻訳の「機械的に見つかるミス」をリリース前に潰す無料チェッカー LocCheck を作りました",
+   "author": "mitasu_lab",
+   "score": 0,
+   "tags": [
+    "個人開発",
+    "ローカライズ",
+    "LQA",
+    "ゲーム",
+    "翻訳"
+   ],
+   "published_at": "2026-11-13T07:37:00+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/gatespace/items/de7221871682e930233d",
+   "title": "[microCMS] 本文内画像のレスポンシブ、WebP対応",
+   "author": "gatespace",
+   "score": 0,
+   "tags": [
+    "microCMS",
+    "Next.js"
+   ],
+   "published_at": "2026-11-13T07:35:00+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/danqinlinan/items/d3ff69c644605099ef81",
+   "title": "並列稼働するAIコーディングエージェントの管理ツール7選【2026年版】",
+   "author": "danqinlinan",
+   "score": 0,
+   "tags": [
+    "AI",
+    "WebDev",
+    "productivity"
+   ],
+   "published_at": "2026-11-13T07:34:17+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/gatespace/items/40041a1badff26e00a5c",
+   "title": "[microCMS] Next.js で作成したフロント側にGoogleタグマネージャーのタグを設置する",
+   "author": "gatespace",
+   "score": 0,
+   "tags": [
+    "microCMS",
+    "Next.js"
+   ],
+   "published_at": "2026-11-13T07:33:23+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/TOAI/items/82a6718da30460e31701",
+   "title": "Pydanticで防ぐ暗黙的型変換とスキーマドリフト静的検証",
+   "author": "TOAI",
+   "score": 0,
+   "tags": [
+    "Python",
+    "pydantic",
+    "FastAPI",
+    "アーキテクチャ",
+    "型安全性"
+   ],
+   "published_at": "2026-11-13T07:29:45+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/gatespace/items/306ecdbd352640fdb882",
+   "title": "[microCMS] Next.js で作成したフロント側にGoogleアドセンスを設置する",
+   "author": "gatespace",
+   "score": 0,
+   "tags": [
+    "microCMS",
+    "Next.js"
+   ],
+   "published_at": "2026-11-13T07:29:14+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/morphio/items/68f5d2d0b649a4cfce92",
+   "title": "Canvas の書き出し後に Blob.type から拡張子を決める",
+   "author": "morphio",
+   "score": 0,
+   "tags": [
+    "JavaScript"
+   ],
+   "published_at": "2026-11-13T07:22:56+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/HaruKurakami/items/b449a181ca36b8d44584",
+   "title": "Windows11のDocker上でReact、Java、PostgresSQLの開発環境整備④",
+   "author": "HaruKurakami",
+   "score": 0,
+   "tags": [
+    "docker-for-windows",
+    "React",
+    "Java",
+    "PostgreSQL",
+    "material-ui"
+   ],
+   "published_at": "2026-11-13T07:22:06+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/Octoparse_Japan/items/3f6ba41981578ab058af",
+   "title": "スクレイパーを自作せずに競合価格の監視を自動化する｜スクレイピングAPIで収集・差分検出・通知まで実装",
+   "author": "Octoparse_Japan",
+   "score": 0,
+   "tags": [
+    "Python",
+    "SQLite",
+    "API",
+    "Webスクレイピング",
+    "自動化"
+   ],
+   "published_at": "2026-11-13T07:20:48+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/r-jw/items/d1828ae8b819eaa928cb",
+   "title": "WireGuard のオンデマンド接続：外出先から家のサーバーが LAN と同じ感覚になる話",
+   "author": "r-jw",
+   "score": 0,
+   "tags": [
+    "wireguard",
+    "VPN",
+    "RaspberryPi",
+    "iPhone",
+    "自宅サーバー"
+   ],
+   "published_at": "2026-11-13T07:15:07+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/r-jw/items/67604d2411a3f216dc81",
+   "title": "VPN、まだ手動で繋いでますか？ — WireGuard が変える社内ネットワークの常識",
+   "author": "r-jw",
+   "score": 0,
+   "tags": [
+    "tailscale",
+    "wireguard",
+    "VPN",
+    "Network",
+    "Security"
+   ],
+   "published_at": "2026-11-13T07:15:04+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/chris7101/items/48c8e9f143c986cac294",
+   "title": "AIが当たり前になった世界で、人間に残る強さを考えてみた",
+   "author": "chris7101",
+   "score": 0,
+   "tags": [
+    "AI",
+    "DX",
+    "未来"
+   ],
+   "published_at": "2026-11-13T07:10:44+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/amiriqbalseo/items/4a975624e57197236aaf",
+   "title": "Building a Startup Analytics Stack: From GA4 to Activation Metrics",
+   "author": "amiriqbalseo",
+   "score": 0,
+   "tags": [
+    "MachineLearning",
+    "AI",
+    "DataAnalysis"
+   ],
+   "published_at": "2026-11-13T07:07:44+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/amiriqbalseo/items/f1c5510be0c2229ac17d",
+   "title": "Cross-Validation in Machine Learning: How K-Fold, Stratified, and Time-Series Splits Work",
+   "author": "amiriqbalseo",
+   "score": 0,
+   "tags": [
+    "MachineLearning",
+    "AI",
+    "Python"
+   ],
+   "published_at": "2026-11-13T07:05:01+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/rafluctua/items/3f32f125c04692fa5352",
+   "title": "C#を使用してPDF内の指定テキストの座標位置を取得する",
+   "author": "rafluctua",
+   "score": 0,
+   "tags": [
+    "C#",
+    "PDF",
+    "座標",
+    ".NET"
+   ],
+   "published_at": "2026-11-13T07:02:52+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/chaozi_dev77/items/f1a7feadadaeef9f031f",
+   "title": "個人開発のOG画像を毎回ゼロから作らない：GPT Image 2 をテンプレート運用するメモ",
+   "author": "chaozi_dev77",
+   "score": 0,
+   "tags": [
+    "個人開発",
+    "画像生成AI",
+    "OGP",
+    "Design"
+   ],
+   "published_at": "2026-11-13T07:01:26+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/savor-speedup-dotage/items/c3947d491dce4fb7707e",
+   "title": "次世代エージェント設計：Gemini Decisions API と Decision Models にみる「意思決定」の切り出しと較正",
+   "author": "savor-speedup-dotage",
+   "score": 0,
+   "tags": [
+    "生成AI",
+    "LLM",
+    "エージェント",
+    "Gemini",
+    "機械学習"
+   ],
+   "published_at": "2026-11-13T06:52:56+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/savor-speedup-dotage/items/31f945f3e0b720a61094",
+   "title": "プロダクションLLMにおけるEvalsとガードレール運用のハマりどころ：遅延・精度向上を両立する実践的設計論",
+   "author": "savor-speedup-dotage",
+   "score": 0,
+   "tags": [
+    "LLM",
+    "生成AI",
+    "Evals",
+    "ガードレール",
+    "MLOps"
+   ],
+   "published_at": "2026-11-13T06:52:56+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/yoyouv/items/83d849904db31dc701ac",
+   "title": "How UV-C LED Water Disinfection Works – Water Treatment Engineers' Guide",
+   "author": "yoyouv",
+   "score": 0,
+   "tags": [
+    "UV",
+    "led",
+    "水処理",
+    "engineering"
+   ],
+   "published_at": "2026-11-13T06:48:13+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/wow88my_official/items/764b576e2cd0df29b46f",
+   "title": "RAG入門：Pythonで構築するAIドキュメント検索システムの基本",
+   "author": "wow88my_official",
+   "score": 0,
+   "tags": [
+    "Python",
+    "rag",
+    "LLM"
+   ],
+   "published_at": "2026-11-13T06:42:40+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/Gen1112/items/99f80fa4e032f7b8de59",
+   "title": "【Microsoft Fabric 入門 #1】60日間の試用版を始める手順",
+   "author": "Gen1112",
+   "score": 0,
+   "tags": [
+    "MicrosoftFabric",
+    "初心者入門"
+   ],
+   "published_at": "2026-11-13T06:39:40+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/WISS1/items/b0a60e4dd579b441c958",
+   "title": "【ServiceNow】AI Agentとビルドエージェントのご紹介",
+   "author": "WISS1",
+   "score": 0,
+   "tags": [
+    "AI",
+    "ServiceNow",
+    "生成AI"
+   ],
+   "published_at": "2026-11-13T06:36:39+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/NKKTechGlobal/items/92c56d9d14838635434d",
+   "title": "LlamaParseとLangChainを用いた階層的セマンティックチャンキングとRerankの実装レシピ",
+   "author": "NKKTechGlobal",
+   "score": 0,
+   "tags": [
+    "rag",
+    "LlamaParse",
+    "LangChain",
+    "Cohere",
+    "NKKTechGlobal"
+   ],
+   "published_at": "2026-11-13T06:31:40+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/zhangzhaoyu1204/items/ad65b401978c68c87992",
+   "title": "ポッドキャストを話題で検索して音声クリップ化する：faster-whisper＋多言語Embedding＋FFmpeg",
+   "author": "zhangzhaoyu1204",
+   "score": 0,
+   "tags": [
+    "`Python`",
+    "`Whisper`",
+    "`SentenceTransformers`",
+    "`FFmpeg`",
+    "`音声処理`"
+   ],
+   "published_at": "2026-11-13T06:13:42+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/zhangzhaoyu1204/items/9a48288699a37e91d457",
+   "title": "長時間音声を5分ごとに安全分割する：FFmpeg＋Pythonで端数・検証・manifestまで",
+   "author": "zhangzhaoyu1204",
+   "score": 0,
+   "tags": [
+    "`Python`",
+    "`FFmpeg`",
+    "`ffprobe`",
+    "`音声処理`",
+    "`自動化`"
+   ],
+   "published_at": "2026-11-13T06:13:14+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/fukanosin/items/e58d0596ba44511fbd5b",
+   "title": "HULFT Squareとkintoneをつなぐ3つの方法を比べる①",
+   "author": "fukanosin",
+   "score": 0,
+   "tags": [
+    "HULFTSquare",
+    "kintone",
+    "kintoneRestApi",
+    "効率化",
+    "初心者向け"
+   ],
+   "published_at": "2026-11-13T06:11:55+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/dokoka/items/fcc94d72d6c3a0b847cc",
+   "title": "JSON を PHP の配列定義に変換するツールを作った。本物の PHP で照合したら、3か所だけ違った",
+   "author": "dokoka",
+   "score": 0,
+   "tags": [
+    "PHP",
+    "JSON",
+    "配列",
+    "個人開発",
+    "初心者"
+   ],
+   "published_at": "2026-11-13T06:10:15+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/mrrclb48z/items/3639edfed544e892f137",
+   "title": "大人向け。直角二等辺三角形が横方向に２つ「【数学練習】172」様を、sympy で計算と作図。",
+   "author": "mrrclb48z",
+   "score": 0,
+   "tags": [
+    "sympy",
+    "入試問題"
+   ],
+   "published_at": "2026-11-13T06:00:04+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/thayate/items/cff36d314da8f21c08e0",
+   "title": "IBM BobのPremium Package DevSecOpsのSafeWrite機能の検証",
+   "author": "thayate",
+   "score": 0,
+   "tags": [
+    "Bob",
+    "IBMBob",
+    "DevSecOps"
+   ],
+   "published_at": "2026-11-13T05:58:23+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/MyRecover/items/50d2dfd3648143648444",
+   "title": "PS2メモリーカードのデータ復旧方法｜消えたセーブデータを取り戻すには？",
+   "author": "MyRecover",
+   "score": 0,
+   "tags": [
+    "ps2",
+    "PS2メモリーカード",
+    "メモリーカード",
+    "セーブデータ",
+    "データ復元"
+   ],
+   "published_at": "2026-11-13T05:48:07+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/snowqueen_tg/items/57722622447389d7569c",
+   "title": "データベースの操作ログ、記録するだけで終わっていませんか？",
+   "author": "snowqueen_tg",
+   "score": 0,
+   "tags": [
+    "Database",
+    "AI",
+    "アカウント",
+    "ログ"
+   ],
+   "published_at": "2026-11-13T05:39:45+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/k56apps/items/09feaaa0d73e66af8ec4",
+   "title": "EmDash でブログの拠点をつくる（3）世界に開いて、管理画面だけ閉じる",
+   "author": "k56apps",
+   "score": 0,
+   "tags": [
+    "webdevelopment",
+    "tools"
+   ],
+   "published_at": "2026-11-13T05:38:52+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/msk98/items/e58da05ba92780b97abc",
+   "title": "Web APIの実践基礎2026（1.Web APIの基礎知識）",
+   "author": "msk98",
+   "score": 0,
+   "tags": [
+    "WebAPI",
+    "REST-API"
+   ],
+   "published_at": "2026-11-13T05:36:08+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/beatapi/items/f5db0d1301478073591f",
+   "title": "Fable 5.2 を「難しいステップだけ」に使う：モデルの振り分けと usage からのコスト計算（TypeScript）",
+   "author": "beatapi",
+   "score": 0,
+   "tags": [
+    "Claude",
+    "API",
+    "TypeScript",
+    "LLM",
+    "Anthropic"
+   ],
+   "published_at": "2026-11-13T05:29:37+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/st_n/items/4a786d0d17d90d8dd833",
+   "title": "iOSシミュレータでプッシュ通知をテストする方法（サーバー不要・xcrun simctl）",
+   "author": "st_n",
+   "score": 0,
+   "tags": [
+    "iOS",
+    "Simulator"
+   ],
+   "published_at": "2026-11-13T05:29:16+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/osakana0_0b/items/e83ee7f5c8930742fc18",
+   "title": "Jupyterノートブックで機械学習を学びたい メモ",
+   "author": "osakana0_0b",
+   "score": 0,
+   "tags": [
+    "Jupyter",
+    "Python"
+   ],
+   "published_at": "2026-11-13T05:25:39+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/takase_hiroyuki/items/c481d513f10c5c24e9e1",
+   "title": "【Vol. 03】Porteus Linux (x86_64) における日本語入力環境（uim-anthy UTF-8）の構築・自律稼働：パーミッション 750 致命的障害：root ロックアウトについて",
+   "author": "takase_hiroyuki",
+   "score": 0,
+   "tags": [
+    "Linux",
+    "Porteus",
+    "squashfs",
+    "overlayfs",
+    "porteus-ja-uim"
+   ],
+   "published_at": "2026-11-13T05:22:16+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/norder/items/dbd47aa128a95d502d11",
+   "title": "Git備忘録 / Git Memo",
+   "author": "norder",
+   "score": 0,
+   "tags": [
+    "Git",
+    "GitHub",
+    "備忘録",
+    "メモ"
+   ],
+   "published_at": "2026-11-13T05:11:43+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/nrouter_ai1991/items/e8359bce51b42cbf3e34",
+   "title": "Streaming retry safety: the boundary is the first chunk",
+   "author": "nrouter_ai1991",
+   "score": 0,
+   "tags": [
+    "LLM"
+   ],
+   "published_at": "2026-11-13T05:08:41+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/shiaiboys397/items/5c7f83960c9bbac98234",
+   "title": "MacからPower BI ServiceでAzure PostgreSQLにプライベート接続する",
+   "author": "shiaiboys397",
+   "score": 0,
+   "tags": [
+    "Azure",
+    "PowerBI",
+    "PostgreSQL",
+    "MicrosoftFabric",
+    "Bicep"
+   ],
+   "published_at": "2026-11-13T05:05:13+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/hazudojins/items/d2f2def8fa1ee81f7be6",
+   "title": "Emacs Gnus で、Nifty, Yahoo! Japan のメール送受信",
+   "author": "hazudojins",
+   "score": 0,
+   "tags": [
+    "Emacs",
+    "mail",
+    "Gnus",
+    "Yahoo",
+    "nifty"
+   ],
+   "published_at": "2026-11-13T05:04:46+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/Togra/items/f85e84b4a9cf8ebffadf",
+   "title": "SPFx 1.22 でネイティブ Web Worker を使う（検証メモ）",
+   "author": "Togra",
+   "score": 0,
+   "tags": [
+    "SPFx"
+   ],
+   "published_at": "2026-11-13T04:56:39+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/theseostrategist/items/b83d320966661809b4ec",
+   "title": "Why Crypto Software Needs a Ledger, Not a Balance Column",
+   "author": "theseostrategist",
+   "score": 0,
+   "tags": [
+    "TypeScript",
+    "crypto",
+    "Database",
+    "バックエンド",
+    "fintech"
+   ],
+   "published_at": "2026-11-13T04:51:59+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/choryo/items/e6f7e36b373a29e5254a",
+   "title": "Apex 67以降はsoqlにてxx__r.aa__cを取得する際に実行ユーザはxx__cレコードへの参照権限が必要",
+   "author": "choryo",
+   "score": 0,
+   "tags": [
+    "Salesforce",
+    "Apex",
+    "APIv67"
+   ],
+   "published_at": "2026-11-13T04:51:36+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/nrouter_ai1991/items/819ffa731f8b4f13c7ce",
+   "title": "nRouter SDKカタログの設計:薄いクライアント、単一のポリシー",
+   "author": "nrouter_ai1991",
+   "score": 0,
+   "tags": [
+    "SDK",
+    "API",
+    "LLM",
+    "nrouter",
+    "Gateway"
+   ],
+   "published_at": "2026-11-13T04:42:24+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/ditchcrimson/items/f2e700362a7f81ce8f24",
+   "title": "検索画面の設計でバックエンドエンジニアが確認したい3つのこと【PostgreSQL】",
+   "author": "ditchcrimson",
+   "score": 0,
+   "tags": [
+    "PostgreSQL",
+    "SQL",
+    "Database",
+    "設計",
+    "バックエンド"
+   ],
+   "published_at": "2026-11-13T04:38:03+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/dwdm/items/f008557a4fb63fe307f4",
+   "title": "圏外のあとに届く SMS の正体 — 偽基地局を伝送屋が分解",
+   "author": "dwdm",
+   "score": 0,
+   "tags": [
+    "Security",
+    "Network",
+    "Android",
+    "iPhone",
+    "モバイル"
+   ],
+   "published_at": "2026-11-13T04:32:17+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/TheOkachanPG/items/b0d3c796afcd5702e010",
+   "title": "書きたい記事を先に決めて、必要な統計を逆算！ChatGPTとGASでSUZURI APIの実験環境を作ってみた",
+   "author": "TheOkachanPG",
+   "score": 0,
+   "tags": [
+    "SUZURI,",
+    "ChatGPT",
+    "GoogleAppsScript",
+    "GoogleSpreadSheet,",
+    "データ分析"
+   ],
+   "published_at": "2026-11-13T04:31:57+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/a_kakiuchi/items/00a3e0df9d801a5f92e3",
+   "title": "【CSS】改行位置を整える",
+   "author": "a_kakiuchi",
+   "score": 0,
+   "tags": [
+    "HTML",
+    "CSS"
+   ],
+   "published_at": "2026-11-13T04:31:06+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/mrrclb48z/items/3c3b778c84b9153262df",
+   "title": "大人向け。角の二等分線が２つ「数学チャレンジ問題　PH=?（答えが、あの数の2乗になります。）」様を、sympy で計算と作図。",
+   "author": "mrrclb48z",
+   "score": 0,
+   "tags": [
+    "sympy",
+    "入試問題"
+   ],
+   "published_at": "2026-11-13T04:29:10+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/mrrclb48z/items/e262a7457fb26ea31aec",
+   "title": "Verification and Properties of the Golden Ratio Using SymPy「SymPyを用いた黄金比の検証と性質の確認」をAI先生に教えてもらいました。",
+   "author": "mrrclb48z",
+   "score": 0,
+   "tags": [
+    "WolframAlpha",
+    "sympy",
+    "入試問題"
+   ],
+   "published_at": "2026-11-13T04:29:07+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/Vasilii/items/659544641d0cc2ee281b",
+   "title": "Windowsの回復パーティションは削除しても大丈夫？WinREの確認方法とDiskPartの注意点",
+   "author": "Vasilii",
+   "score": 0,
+   "tags": [
+    "Windows11",
+    "Windows",
+    "diskpart",
+    "PowerShell",
+    "パーティション"
+   ],
+   "published_at": "2026-11-13T04:28:16+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/kyoutetsuya/items/bab044a7ccdd51ac423b",
+   "title": "【体験談】運転免許証・本人確認書類が流出！当事者が語る「なりすまし被害」を防ぐための緊急対策と教訓",
+   "author": "kyoutetsuya",
+   "score": 0,
+   "tags": [
+    "セキュリティ対策",
+    "情報漏洩",
+    "サイバー攻撃対策"
+   ],
+   "published_at": "2026-11-13T04:25:19+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/msk98/items/1fb7454dd1ead2a68588",
+   "title": "無料で作って遊ぶALEXAスキル2026 （7．Web APIによる他のアプリケーションとの連携）     ",
+   "author": "msk98",
+   "score": 0,
+   "tags": [
+    "alexaスキル",
+    "AlexaSkills",
+    "Alexa-hosted",
+    "Alexa"
+   ],
+   "published_at": "2026-11-13T04:11:03+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/Doc-Tanukichi/items/8382690d3fe84cae688b",
+   "title": "【クラウドをつくる側 #6】CSP の経済学 ― なぜクラウドは少数に集中するのか、それでも作り手はどこで戦えるのか",
+   "author": "Doc-Tanukichi",
+   "score": 0,
+   "tags": [
+    "Cloud",
+    "AWS",
+    "Azure",
+    "GoogleCloud",
+    "経済"
+   ],
+   "published_at": "2026-11-13T04:05:22+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/Doc-Tanukichi/items/a4dc236a34243ba0bcc2",
+   "title": "【クラウドをつくる側 #5】データセンターと電力 ― AI でラック1本 120kW 超、クラウドのいちばん遅い部品",
+   "author": "Doc-Tanukichi",
+   "score": 0,
+   "tags": [
+    "Cloud",
+    "データセンター",
+    "電力",
+    "AI",
+    "インフラ"
+   ],
+   "published_at": "2026-11-13T04:04:56+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/shiva9ro/items/9a51edc2287c6390050e",
+   "title": "UAC無効環境でWinUI 3のD&Dはどう動くか ― Files v4.3の改修と検証",
+   "author": "shiva9ro",
+   "score": 0,
+   "tags": [
+    "Windows",
+    "WinUI3",
+    "C#",
+    "ファイラー",
+    "UAC"
+   ],
+   "published_at": "2026-11-13T04:04:15+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/hironakamura_ai/items/df8aa16bb0fd3d8fc394",
+   "title": "PyTorch推論時のDropoutをevalで止める",
+   "author": "hironakamura_ai",
+   "score": 0,
+   "tags": [
+    "Python",
+    "PyTorch",
+    "機械学習",
+    "DeepLearning",
+    "AI"
+   ],
+   "published_at": "2026-11-13T04:01:00+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/warrobotsxyz/items/58ca9fec6952f643e29a",
+   "title": "Windowsのsubprocessで文字化けする原因：cp932決め打ちをやめて実バイトを見る",
+   "author": "warrobotsxyz",
+   "score": 0,
+   "tags": [
+    "Python",
+    "Windows"
+   ],
+   "published_at": "2026-11-13T03:55:45+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/VeloDB_IO/items/27b0d40393e61cf7756f",
+   "title": "Doris 4.1×Iceberg V3：SQLだけでDMLと保守を完結",
+   "author": "VeloDB_IO",
+   "score": 0,
+   "tags": [
+    "ApacheDoris",
+    "ApacheIceberg",
+    "データレイクハウス",
+    "SQL",
+    "OLAP"
+   ],
+   "published_at": "2026-11-13T03:52:43+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/hiro123/items/cada1ba1820049fe28f5",
+   "title": "Planeの横断Viewが0件でも、今日の作業がないとは限らない",
+   "author": "hiro123",
+   "score": 0,
+   "tags": [
+    "plane",
+    "タスク管理",
+    "個人開発"
+   ],
+   "published_at": "2026-11-13T03:48:20+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/Julita/items/d6a76f88440d1b2775f2",
+   "title": "一度きりの画像か、公開テンプレートか：作成ページの契約を先に決める",
+   "author": "Julita",
+   "score": 0,
+   "tags": [
+    "ドキュメント",
+    "Design"
+   ],
+   "published_at": "2026-11-13T03:46:26+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/tiri0738/items/c3d1181b584ff58e5fbd",
+   "title": "MECMのSQLでOfficeの未適用端末を確認する手順（CVE-2026-124194対応）",
+   "author": "tiri0738",
+   "score": 0,
+   "tags": [
+    "脆弱性"
+   ],
+   "published_at": "2026-11-13T03:46:21+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/hasegawa--2025/items/9c180fb76c85b30b848c",
+   "title": "Keycloak 26.1 から 26.8 へ上げたときに確かめたこと(ヘルスチェック・停止更新・イメージの組み立て)",
+   "author": "hasegawa--2025",
+   "score": 0,
+   "tags": [
+    "Keycloak",
+    "AWS",
+    "ECS",
+    "Docker",
+    "Security"
+   ],
+   "published_at": "2026-11-13T03:37:45+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/LocalManualMaker/items/8a5af881187ce413aff2",
+   "title": "コードが同じでも依存条件が違った：Store用とWACK用のMSIXを照合した話",
+   "author": "LocalManualMaker",
+   "score": 0,
+   "tags": [
+    "Windows",
+    "msix",
+    "テスト",
+    "MicrosoftStore",
+    "個人開発"
+   ],
+   "published_at": "2026-11-13T03:37:42+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/chi0818/items/24c43808aba74a956567",
+   "title": "【Python入門】付録B 文法早見表・操作の対応表・用語集",
+   "author": "chi0818",
+   "score": 0,
+   "tags": [
+    "Python",
+    "初心者",
+    "入門",
+    "Pycharm",
+    "VSCode"
+   ],
+   "published_at": "2026-11-13T03:37:17+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/chi0818/items/c5ba4e69effcf08a4031",
+   "title": "【Python入門】付録A よくあるエラーと対処法",
+   "author": "chi0818",
+   "score": 0,
+   "tags": [
+    "Python",
+    "初心者",
+    "入門",
+    "Pycharm",
+    "VSCode"
+   ],
+   "published_at": "2026-11-13T03:37:08+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/0xchance/items/c4cb5823aec3192a1dae",
+   "title": "ローカルフォルダを読み取り専用サイトとして共有するデスクトップアプリを作った",
+   "author": "0xchance",
+   "score": 0,
+   "tags": [
+    "Go",
+    "個人開発",
+    "オープンソース",
+    "デスクトップアプリ"
+   ],
+   "published_at": "2026-11-13T03:32:05+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/satoshimizuhara/items/cd91f83acd4e0db85faf",
+   "title": "問い合わせメールをAIに仕分けさせるとき、先に決めておくのは「回す先の名前」",
+   "author": "satoshimizuhara",
+   "score": 0,
+   "tags": [
+    "AI活用",
+    "業務改善",
+    "卸売",
+    "マネジメント",
+    "問い合わせ対応"
+   ],
+   "published_at": "2026-11-13T03:30:32+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/finestar1208/items/801b395036b554a46b25",
+   "title": "【BIG-IP】LTM稼働中のHA構成にAWAF（ASM）を後から追加した話",
+   "author": "finestar1208",
+   "score": 0,
+   "tags": [
+    "Network",
+    "big-ip",
+    "f5",
+    "loadbalancer"
+   ],
+   "published_at": "2026-11-13T03:29:40+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/wsir5883/items/0d94d5da015c1f83630c",
+   "title": "テキスト指示で写真編集を行うときの考え方",
+   "author": "wsir5883",
+   "score": 0,
+   "tags": [
+    "AI",
+    "画像処理",
+    "写真"
+   ],
+   "published_at": "2026-11-13T03:28:45+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/eiri_ai/items/ec528289debc42caa4b0",
+   "title": "Pythonで会議室数を計算、3件の予約を2室で回す",
+   "author": "eiri_ai",
+   "score": 0,
+   "tags": [
+    "Python",
+    "アルゴリズム",
+    "業務効率化"
+   ],
+   "published_at": "2026-11-13T03:27:54+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/zengdafa666/items/fe68268a1b08f15a5d2d",
+   "title": "2026 Meme Video Maker: Turn a Rough Idea into a Four-Field Studio Brief",
+   "author": "zengdafa666",
+   "score": 0,
+   "tags": [
+    "AI",
+    "動画",
+    "個人開発"
+   ],
+   "published_at": "2026-11-13T03:21:50+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/yonehara_masakazu/items/f9375dcf8356cdb96baf",
+   "title": "業務アプリを「スマホでも」と言われたら — CLBでWeb版とMAUI版を両方動かして選び方を整理した",
+   "author": "yonehara_masakazu",
+   "score": 0,
+   "tags": [
+    "Blazor",
+    "C#",
+    ".NET",
+    "MAUI",
+    "ローコード"
+   ],
+   "published_at": "2026-11-13T03:21:44+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/albertn/items/8da065d3134f1fbc6c01",
+   "title": "ゲームの出発点は41行 — Lanternのテンプレートを動かして、保存の仕組みまで見てみた",
+   "author": "albertn",
+   "score": 0,
+   "tags": [
+    "ゲーム開発",
+    "ゲームエンジン",
+    "Lua",
+    "3DCG",
+    "初心者"
+   ],
+   "published_at": "2026-11-13T03:17:41+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/gitmeshi/items/34263372fb027a2f7f34",
+   "title": "決済プロセッサの分散運用という課題とHyperswitchのモジュール設計",
+   "author": "gitmeshi",
+   "score": 0,
+   "tags": [
+    "Rust",
+    "Payments",
+    "OpenSource",
+    "HyperSwitch"
+   ],
+   "published_at": "2026-11-13T03:14:32+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/tomo_AWS-Engineer-Blogger/items/27529d48a037b5a56df0",
+   "title": "【Dify】システムテストの成果物3点（マトリクス／項目表／ケース表）を生成するワークフロー群",
+   "author": "tomo_AWS-Engineer-Blogger",
+   "score": 0,
+   "tags": [
+    "Dify",
+    "生成AI",
+    "システムテスト",
+    "テスト設計",
+    "ワークフロー"
+   ],
+   "published_at": "2026-11-13T03:14:29+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/tomo_AWS-Engineer-Blogger/items/af22797dc0036a85f82a",
+   "title": "アーキテクチャ設計の勘所｜良い設計の原則と代表パターンを整理する",
+   "author": "tomo_AWS-Engineer-Blogger",
+   "score": 0,
+   "tags": [
+    "アーキテクチャ",
+    "設計",
+    "AWS",
+    "Cloud"
+   ],
+   "published_at": "2026-11-13T03:13:26+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/tomo_AWS-Engineer-Blogger/items/d41f640e55257b9b3ced",
+   "title": "【Amazon Cognito】ユーザープールを新規作成する手順（コンソール操作）",
+   "author": "tomo_AWS-Engineer-Blogger",
+   "score": 0,
+   "tags": [
+    "AWS",
+    "AmazonCognito",
+    "CognitoUserPool",
+    "認証",
+    "Security"
+   ],
+   "published_at": "2026-11-13T03:12:24+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/kai_kou/items/ad8a3b6d9c131d6527cb",
+   "title": "Forgeを非対話で動かしたら鍵が環境変数から読まれず、sageは書き込めなかった",
+   "author": "kai_kou",
+   "score": 0,
+   "tags": [
+    "OpenSource",
+    "CLI",
+    "Rust",
+    "AIAgent"
+   ],
+   "published_at": "2026-11-13T03:10:22+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/Sohei-Taniguchi-CG/items/2cc1cc341ffdbd047c68",
+   "title": "ZENITH Codeディープ解析⑦ 臨時報告書で経営の出来事を時系列に読む――提出事由・代表取締役の異動・重要事象を部品会社5社で並べる",
+   "author": "Sohei-Taniguchi-CG",
+   "score": 0,
+   "tags": [
+    "Python",
+    "JavaScript",
+    "有価証券報告書",
+    "データ分析",
+    "ZENITHCode"
+   ],
+   "published_at": "2026-11-13T03:08:47+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/albertn/items/b2a7f42b15f31ef3f98d",
+   "title": "Cだけで回す立方体 — LanternのC APIを32行で確かめてみた",
+   "author": "albertn",
+   "score": 0,
+   "tags": [
+    "ゲーム開発",
+    "ゲームエンジン",
+    "C",
+    "3DCG",
+    "レンダリング"
+   ],
+   "published_at": "2026-11-13T03:06:52+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/01rabbit/items/a916d76895b43e19503f",
+   "title": "MCPのOAuthは更新だけでは塞がらない――手元で再現して点検ツールを作った",
+   "author": "01rabbit",
+   "score": 0,
+   "tags": [
+    "MCP",
+    "OAuth",
+    "Security",
+    "AIエージェント",
+    "脆弱性"
+   ],
+   "published_at": "2026-11-13T03:03:22+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/ma2shita/items/37b1ed98b6247abf5c02",
+   "title": "mise でインストールした 1password-cli で、毎度 PIN (Windows Hello) 入力を求められる対策 (Windows)",
+   "author": "ma2shita",
+   "score": 0,
+   "tags": [
+    "1Password",
+    "mise"
+   ],
+   "published_at": "2026-11-13T03:02:30+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/yoshitokinosita/items/e9ff0f63311179ef313d",
+   "title": "先月の支払管理表を複写したら合計だけが合わなかった — 式のずれをAIに列挙させ、$の位置は人が決める",
+   "author": "yoshitokinosita",
+   "score": 0,
+   "tags": [
+    "Excel",
+    "経理",
+    "生成AI",
+    "業務効率化"
+   ],
+   "published_at": "2026-11-13T03:00:56+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/techdbblog/items/fc0f45c016506be5c756",
+   "title": "PostgreSQLのMultiXact枯渇はなぜ起きるのか",
+   "author": "techdbblog",
+   "score": 0,
+   "tags": [
+    "PostgreSQL",
+    "Database",
+    "vacuum",
+    "multixact",
+    "DBA"
+   ],
+   "published_at": "2026-11-13T02:52:53+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/maejimakento/items/5a0a0d7c0103271b98b2",
+   "title": "傘の骨が支える見えない丸み",
+   "author": "maejimakento",
+   "score": 0,
+   "tags": [
+    "前嶋拳人",
+    "思考の整理",
+    "構造の美しさ",
+    "雨の日の風景"
+   ],
+   "published_at": "2026-11-13T02:49:16+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/mrmrmr/items/c92d983e520b3bfee727",
+   "title": "バッチ正規化（テック版版）",
+   "author": "mrmrmr",
+   "score": 0,
+   "tags": [
+    "G検定",
+    "DeepLearning",
+    "機械学習"
+   ],
+   "published_at": "2026-11-13T02:48:37+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/maszkot5/items/686719d38f20eaf26163",
+   "title": "台湾華語 : 最新AI動向の包括的分析",
+   "author": "maszkot5",
+   "score": 0,
+   "tags": [
+    "台湾華語",
+    "AI"
+   ],
+   "published_at": "2026-11-13T02:48:30+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/coding1/items/15573bf7a8228966234f",
+   "title": "PHP count()関数：配列の長さ（array length）を確認する方法",
+   "author": "coding1",
+   "score": 0,
+   "tags": [
+    "PHP",
+    "count()",
+    "array",
+    "length"
+   ],
+   "published_at": "2026-11-13T02:46:53+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/takumi_arai/items/018ad988abfbf2d10d4c",
+   "title": "SVG アイコンを WebP にまとめて書き出すときの注意点",
+   "author": "takumi_arai",
+   "score": 0,
+   "tags": [
+    "SVG",
+    "WebP",
+    "Inkscape",
+    "Sharp",
+    "フロントエンド"
+   ],
+   "published_at": "2026-11-13T02:45:38+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/maskot1977/items/7def9d37300590365323",
+   "title": "最新AI動向の包括的分析",
+   "author": "maskot1977",
+   "score": 0,
+   "tags": [
+    "AI"
+   ],
+   "published_at": "2026-11-13T02:40:02+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/Karinbiubiu/items/a337bd677829f6ccdb4a",
+   "title": "SafeLine WAF：コードインジェクションのテストURLでブロックをたしかめるチェックリスト",
+   "author": "Karinbiubiu",
+   "score": 0,
+   "tags": [
+    "waf",
+    "Security",
+    "Linux"
+   ],
+   "published_at": "2026-11-13T02:37:14+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/phamxuanquyen22/items/e36a825bd6b0d3083d23",
+   "title": "Coworkの会話に操作画面を埋め込む：MCP AppsとApp skillの違い、実装と通信制限のポイント",
+   "author": "phamxuanquyen22",
+   "score": 0,
+   "tags": [
+    "Microsoft365Copilot",
+    "MCP",
+    "UI",
+    "生成AI"
+   ],
+   "published_at": "2026-11-13T02:30:43+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/phamxuanquyen22/items/91cb2cfcfd04ad4f85c4",
+   "title": "添付ファイルを業務APIへ渡す：Coworkのファイル入力連携とbase64・承認・容量制限の注意点",
+   "author": "phamxuanquyen22",
+   "score": 0,
+   "tags": [
+    "Microsoft365Copilot",
+    "MCP",
+    "API",
+    "生成AI"
+   ],
+   "published_at": "2026-11-13T02:30:40+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/phamxuanquyen22/items/e5476faa8f93ef818854",
+   "title": "Coworkのプラグイン開発をCLIで：wiqdによる作成・検証・限定共有と、資料の違いに注意するポイント",
+   "author": "phamxuanquyen22",
+   "score": 0,
+   "tags": [
+    "Microsoft365Copilot",
+    "CLI",
+    "生成AI",
+    "開発"
+   ],
+   "published_at": "2026-11-13T02:30:36+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/admini_bi/items/196e51841671c8e9f3b1",
+   "title": "UTMパラメータの付け方と、GA4で数字が割れない値の決め方",
+   "author": "admini_bi",
+   "score": 0,
+   "tags": [
+    "広告運用",
+    "マーケティング",
+    "データ分析",
+    "フリーランス",
+    "SaaS"
+   ],
+   "published_at": "2026-11-13T02:24:51+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/zhe_Joce/items/794265d561b64a119452",
+   "title": "調査の起点はWiki、見解の分岐はマルチモデルチャットで見る",
+   "author": "zhe_Joce",
+   "score": 0,
+   "tags": [
+    "AI",
+    "ChatGPT",
+    "ドキュメント",
+    "開発"
+   ],
+   "published_at": "2026-11-13T02:24:28+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/kirozero/items/820e4cc2c5a7c729f704",
+   "title": "その D1、シンガポールにいませんか？ apac をやめて東京に作り直したら API が4倍速くなった",
+   "author": "kirozero",
+   "score": 0,
+   "tags": [
+    "cloudflare",
+    "CloudflareWorkers",
+    "D1",
+    "Hono",
+    "パフォーマンス"
+   ],
+   "published_at": "2026-11-13T02:23:43+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/yasu1109/items/9ae7a879bdf755b9fe38",
+   "title": "OpenIDConnectのIDトークンを自分で検証してみる。署名・aud・nonceを確認して、どこで弾かれるか手元で試す",
+   "author": "yasu1109",
+   "score": 0,
+   "tags": [
+    "openidconnect",
+    "認証",
+    "JWT",
+    "Node.js",
+    "Security"
+   ],
+   "published_at": "2026-11-13T02:19:16+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/ai_hack_lab/items/46841780c91934cc5175",
+   "title": "【Python×Anthropic】Claude 3.5 Sonnetで実現する「自律型リサーチ＆要約エージェント」の最小構成実装パターン",
+   "author": "ai_hack_lab",
+   "score": 0,
+   "tags": [
+    "Python",
+    "Claude",
+    "Anthropic",
+    "生成AI",
+    "LLM"
+   ],
+   "published_at": "2026-11-13T02:17:48+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/archybase/items/41301f1540e2ea3ddb44",
+   "title": "3Dカットアウェイを提案資料に載せる前に確認すること",
+   "author": "archybase",
+   "score": 0,
+   "tags": [
+    "AI",
+    "3D"
+   ],
+   "published_at": "2026-11-13T02:15:26+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/CircleCIJapan/items/e1f05e265efd27f796e6",
+   "title": "AIエージェントに直させたテストを、CircleCIのログとリソース使用量で確かめる",
+   "author": "CircleCIJapan",
+   "score": 0,
+   "tags": [
+    "CircleCI",
+    "テスト",
+    "AI",
+    "Vitest",
+    "CloudflareWorkers"
+   ],
+   "published_at": "2026-11-13T02:15:11+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/yukihayama/items/cf355d2cdd7822b79654",
+   "title": "GASの二重実行を止める3つの層 — トリガー掃除・LockService・冪等キーの使い分けと完全実装",
+   "author": "yukihayama",
+   "score": 0,
+   "tags": [
+    "GAS",
+    "GoogleAppsScript",
+    "自動化",
+    "AI"
+   ],
+   "published_at": "2026-11-13T02:06:07+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/HeroDevs-Japan/items/5bc96bac08c87737187d",
+   "title": "Java 8・11・17のEOL日付をOpenJDKベンダー別に整理：TemurinからRed Hatまで",
+   "author": "HeroDevs-Japan",
+   "score": 0,
+   "tags": [
+    "Java",
+    "EOL"
+   ],
+   "published_at": "2026-11-13T01:50:45+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/shin270080/items/0991833eab2007d9fd05",
+   "title": "TypeScript＋Phaser 3で「選んだ直後に分かる」PC組立UIを実装した",
+   "author": "shin270080",
+   "score": 0,
+   "tags": [
+    "TypeScript",
+    "Phaser",
+    "React",
+    "LIFF",
+    "ゲーム開発"
+   ],
+   "published_at": "2026-11-13T01:49:01+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/YaHey/items/fe99c9fe8ce2801c8113",
+   "title": "C# で PDF のハイパーリンクを更新・削除する",
+   "author": "YaHey",
+   "score": 0,
+   "tags": [
+    "C#",
+    "PDF",
+    "プログラミング",
+    "自動化"
+   ],
+   "published_at": "2026-11-13T01:45:46+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/ohisama@github/items/9844a101f457f897849b",
+   "title": "自作MCPサーバー その13",
+   "author": "ohisama@github",
+   "score": 0,
+   "tags": [
+    "自作MCP",
+    "AI",
+    "ClaudeDesktop",
+    "ChatGPT",
+    "Verilog"
+   ],
+   "published_at": "2026-11-13T01:45:05+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/nonbiri15/items/5292e58124a48558d49f",
+   "title": "画像AIエンジニアの雇われ方",
+   "author": "nonbiri15",
+   "score": 0,
+   "tags": [
+    "機械学習"
+   ],
+   "published_at": "2026-11-13T01:45:02+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/Yushi88/items/a3af6d81d3447c7aa4e4",
+   "title": "全部残す・雑に削る・測りながら削る──コンテキストエンジニアリング、記憶戦略の三択",
+   "author": "Yushi88",
+   "score": 0,
+   "tags": [
+    "最新テック活用事例",
+    "LLM",
+    "生成AI",
+    "ContextEngineering",
+    "rag"
+   ],
+   "published_at": "2026-11-13T01:42:49+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/yamori813/items/ce67155ebc539f6fc940",
+   "title": "もげないUSBコネクタ",
+   "author": "yamori813",
+   "score": 0,
+   "tags": [
+    "電子工作"
+   ],
+   "published_at": "2026-11-13T01:42:37+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/maya_zbrs/items/1facc4920e6273a83cb7",
+   "title": "【Unity】3D機能を作って簡単にオブジェクトを作ってみる",
+   "author": "maya_zbrs",
+   "score": 0,
+   "tags": [
+    "Unity",
+    "Unity3D",
+    "マテリアル"
+   ],
+   "published_at": "2026-11-13T01:41:57+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/Shankou/items/3a5527b6ee44b2e42db2",
+   "title": "Webデザイン進化論⑦",
+   "author": "Shankou",
+   "score": 0,
+   "tags": [
+    "歴史",
+    "デザイン,UI"
+   ],
+   "published_at": "2026-11-13T01:40:44+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/ohisama@github/items/a29c17c0cd4b2453bee3",
+   "title": "自作MCPサーバー その12",
+   "author": "ohisama@github",
+   "score": 0,
+   "tags": [
+    "自作MCP",
+    "AI",
+    "ClaudeDesktop",
+    "ChatGPT",
+    "C#"
+   ],
+   "published_at": "2026-11-13T01:35:20+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/MakotoIshikawa/items/2f5a4b5fff3e5486619f",
+   "title": "【Meta】Muse キャラクターカスタマイズ",
+   "author": "MakotoIshikawa",
+   "score": 0,
+   "tags": [
+    "Muse"
+   ],
+   "published_at": "2026-11-13T01:34:12+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/locolisu/items/f33b6a850767796a97df",
+   "title": "PHP2Shell対応後も php -v が8.5.4のまま？ Ubuntu 26.04の修正版とFPM再起動を確認する",
+   "author": "locolisu",
+   "score": 0,
+   "tags": [
+    "Ubuntu",
+    "PHP",
+    "php-fpm",
+    "Linux",
+    "Security"
+   ],
+   "published_at": "2026-11-13T01:33:45+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/snowqueen_tg/items/5e16bdcf0c5d3217b872",
+   "title": "データベースのアカウント、複数人で共有していませんか？",
+   "author": "snowqueen_tg",
+   "score": 0,
+   "tags": [
+    "Database",
+    "情報漏えい",
+    "不正アクセス",
+    "AI",
+    "アカウント"
+   ],
+   "published_at": "2026-11-13T01:31:30+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/ponfreelance/items/0533ee203436242151b3",
+   "title": "「触ると壊れる」free回りのレガシーCに静的解析を差し込む手順",
+   "author": "ponfreelance",
+   "score": 0,
+   "tags": [
+    "nameC言語"
+   ],
+   "published_at": "2026-11-13T01:30:24+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/takamatt_ai/items/0321fe9334032b79e03c",
+   "title": "【Salesforce】フローの「1日後」のスケジュールパスは本当に予約されたか — SOQL では見えない待ち行列の見方と、消える条件",
+   "author": "takamatt_ai",
+   "score": 0,
+   "tags": [
+    "Salesforce",
+    "flow",
+    "スケジュールパス",
+    "レコードトリガーフロー",
+    "管理者"
+   ],
+   "published_at": "2026-11-13T01:28:54+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/takamatt_ai/items/8e01ae505aa184a622d0",
+   "title": "Mac と Windows で同じ Git リポジトリを使うと、autocrlf を false に直しても「変更あり」が消えない(予防は .gitattributes で LF に固定)",
+   "author": "takamatt_ai",
+   "score": 0,
+   "tags": [
+    "Git",
+    "Windows",
+    "autocrlf",
+    "gitattributes",
+    "改行"
+   ],
+   "published_at": "2026-11-13T01:28:41+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/cauchye_asia/items/3cb1ad651ea946dfaab3",
+   "title": "SQLiteの database is locked をPythonで踏む5つの落とし穴｜timeout・読んでから書く・commit忘れ・WAL・WAL肥大",
+   "author": "cauchye_asia",
+   "score": 0,
+   "tags": [
+    "Python",
+    "SQLite",
+    "Database",
+    "トランザクション",
+    "排他制御"
+   ],
+   "published_at": "2026-11-13T01:20:12+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/sfcertlab/items/3f22b3cdbad153fd2173",
+   "title": "Salesforce認定Tableauデータアナリスト「コンテンツの作成26%」対策｜チャート・ダッシュボード・書式設定で問われること",
+   "author": "sfcertlab",
+   "score": 0,
+   "tags": [
+    "Salesforce",
+    "資格",
+    "キャリア"
+   ],
+   "published_at": "2026-11-13T01:18:39+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/anguoyang/items/1c1df1239b8a158fbbca",
+   "title": "壊れた transformers 5 版から板上 4.45 秒へ——Qwen2-VL-2B の Vision を RK3588 に載せるまで",
+   "author": "anguoyang",
+   "score": 0,
+   "tags": [
+    "rockchip",
+    "RK3588",
+    "LLM",
+    "エッジAI",
+    "RKNN"
+   ],
+   "published_at": "2026-11-13T01:18:05+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/ikenohotori/items/88602899787cbfda099f",
+   "title": "『アジャイルサムライ』を読んでいく（第3章）",
+   "author": "ikenohotori",
+   "score": 0,
+   "tags": [
+    "アジャイル",
+    "アジャイルサムライ"
+   ],
+   "published_at": "2026-11-13T01:09:32+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/pan_eng_532/items/ae10716198ab76ab8857",
+   "title": "Text",
+   "author": "pan_eng_532",
+   "score": 0,
+   "tags": [
+    "SwiftUI"
+   ],
+   "published_at": "2026-11-13T01:09:32+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/pan_eng_532/items/e7529ad1ddc41f0d29f9",
+   "title": "UI",
+   "author": "pan_eng_532",
+   "score": 0,
+   "tags": [
+    "SwiftUI"
+   ],
+   "published_at": "2026-11-13T01:06:35+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/pserrano88/items/146843682fdbfed7ec3f",
+   "title": "ドラベル（Dragon Traveler）で最初のチームを編成する手順と育成の基本",
+   "author": "pserrano88",
+   "score": 0,
+   "tags": [
+    "SaaS"
+   ],
+   "published_at": "2026-11-13T01:06:15+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/anderslee2020/items/d68431982557a8bd7b98",
+   "title": "\"exec /entrypoint.sh: no such file or directory\" なのにファイルはある：Docker の紛らわしい起動エラー 3 つ",
+   "author": "anderslee2020",
+   "score": 0,
+   "tags": [
+    "Docker",
+    "Windows",
+    "Bash",
+    "dockerfile",
+    "shell"
+   ],
+   "published_at": "2026-11-13T01:05:56+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/pan_eng_532/items/0c9e2a6cf60780abc431",
+   "title": "animation",
+   "author": "pan_eng_532",
+   "score": 0,
+   "tags": [
+    "SwiftUI"
+   ],
+   "published_at": "2026-11-13T01:05:28+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/200Ritsu/items/2ca041d6fcd2e1de2e12",
+   "title": "dynamic = 'force-dynamic' はもう書くな — Cache Components時代のルート設定・変換表",
+   "author": "200Ritsu",
+   "score": 0,
+   "tags": [
+    "Next.js",
+    "React"
+   ],
+   "published_at": "2026-11-13T01:03:07+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/chooser/items/28341a8c7d6e85fb9af9",
+   "title": "ChatGPT に毎朝のニュースと SNS の投稿づくりを任せる ── 画像まで作り、投稿のボタンは自分で",
+   "author": "chooser",
+   "score": 0,
+   "tags": [
+    "AI",
+    "ChatGPT",
+    "業務自動化",
+    "個人事業主",
+    "SNS"
+   ],
+   "published_at": "2026-11-13T01:01:14+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/vaon-luandv/items/44ed3b038d17965e986c",
+   "title": "AIレビューの指摘にラベルを付けて、直した・直さなかったを数える",
+   "author": "vaon-luandv",
+   "score": 0,
+   "tags": [
+    "コードレビュー",
+    "生成AI",
+    "GitHub",
+    "開発プロセス",
+    "Python"
+   ],
+   "published_at": "2026-11-13T00:58:59+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/ennagara128/items/867a7e870f8ffa0be9a0",
+   "title": "filter(Boolean)で0やfalseが消える理由：欠損値だけを除く条件をNode.jsで実測",
+   "author": "ennagara128",
+   "score": 0,
+   "tags": [
+    "JavaScript",
+    "Node.js",
+    "初心者",
+    "配列"
+   ],
+   "published_at": "2026-11-13T00:58:05+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/Hideki_Tamae/items/1967156836e0d269a2d5",
+   "title": "178。WorkOSが『研究者のAIエージェントが検証環境を抜け出して侵害した』と説明した日、自分が頼んでいないのに現れたツール名の数だった",
+   "author": "Hideki_Tamae",
+   "score": 0,
+   "tags": [
+    "AI",
+    "AIエージェント",
+    "MCP",
+    "ClaudeCode",
+    "Security"
+   ],
+   "published_at": "2026-11-13T00:49:21+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/gatespace/items/95cbb4b4ae6f851aecea",
+   "title": "[microCMS] フロントエンドで記事の並び順を指定する",
+   "author": "gatespace",
+   "score": 0,
+   "tags": [
+    "microCMS",
+    "Next.js"
+   ],
+   "published_at": "2026-11-13T00:42:49+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/tenanto/items/7169d835ed3501e2da74",
+   "title": "【C++】C++20でよく使われる機能",
+   "author": "tenanto",
+   "score": 0,
+   "tags": [
+    "C++"
+   ],
+   "published_at": "2026-11-13T00:42:01+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/sek_dev/items/cd265406a2c9d0c93317",
+   "title": "Composer本体とライブラリの更新を分ける",
+   "author": "sek_dev",
+   "score": 0,
+   "tags": [
+    "PHP",
+    "Composer",
+    "Laravel",
+    "デプロイ"
+   ],
+   "published_at": "2026-11-13T00:39:29+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/sino235711/items/8088b69d885c2c84a7ff",
+   "title": "GKE 入門 — はじめてのGoogle Kubernetes Engine  ",
+   "author": "sino235711",
+   "score": 0,
+   "tags": [
+    "GoogleCloud",
+    "Google",
+    "kubernetes"
+   ],
+   "published_at": "2026-11-13T00:37:03+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/rakukotofactory/items/89ca9c31fda259b49a97",
+   "title": "Windows Update後に不具合が出たときの初動確認｜更新履歴・再起動・イベントログの確認方法",
+   "author": "rakukotofactory",
+   "score": 0,
+   "tags": [
+    "Windows",
+    "WindowsUpdate",
+    "トラブルシューティング",
+    "情シス",
+    "初心者"
+   ],
+   "published_at": "2026-11-13T00:36:26+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/chiroppi_lab/items/de0be947eac078e16272",
+   "title": "JSONは正常なのに更新が消える。os.replaceとSQLiteを4ケースで比べる",
+   "author": "chiroppi_lab",
+   "score": 0,
+   "tags": [
+    "Python",
+    "SQLite",
+    "JSON",
+    "tips"
+   ],
+   "published_at": "2026-11-13T00:32:46+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/BrainCommunity/items/ff7e37e3471bcaed517a",
+   "title": "置き場の引っ越しを繰り返した。1つの場所を33ファイルが別々に書いていた2026年8月【連載 第2部④】",
+   "author": "BrainCommunity",
+   "score": 0,
+   "tags": [
+    "生成AI",
+    "Claude",
+    "AI駆動開発",
+    "Git",
+    "開発プロセス"
+   ],
+   "published_at": "2026-11-13T00:26:03+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/DnD-inc/items/85bfbefef45d4e438c68",
+   "title": "TKCと森永乳業がPeppolで電子請求書の実取引を開始｜大手との取引を続けるために整えたい請求書発行システムの3ステップ",
+   "author": "DnD-inc",
+   "score": 0,
+   "tags": [
+    "AI",
+    "生成AI",
+    "業務効率化",
+    "DX",
+    "中小企業"
+   ],
+   "published_at": "2026-11-13T00:19:22+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/ettomio0518/items/4b1f30d637ee9c3f876b",
+   "title": "「舞いカレンダー」Google Playのスクリーンショットを一新しました",
+   "author": "ettomio0518",
+   "score": 0,
+   "tags": [
+    "スケジュール管理",
+    "カレンダーアプリ",
+    "舞いカレンダー",
+    "音声入力",
+    "73歳開発者"
+   ],
+   "published_at": "2026-11-13T00:13:14+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/m_komatsu/items/e61ffee49800d97b9819",
+   "title": "DynamoDB設計で効いた技術書4選",
+   "author": "m_komatsu",
+   "score": 0,
+   "tags": [
+    "アーキテクチャ",
+    "DynamoDB",
+    "nosql",
+    "システム設計",
+    "書評"
+   ],
+   "published_at": "2026-11-13T00:07:43+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/pe-pe-desu/items/b90bbc763caf0567ebb1",
+   "title": "Teamsの挙動がおかしくなった時の対処方法",
+   "author": "pe-pe-desu",
+   "score": 0,
+   "tags": [
+    "Windows11",
+    "Teams",
+    "対処方法",
+    "Windows"
+   ],
+   "published_at": "2026-11-13T00:07:12+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/Payneteasy/items/6eea431a3c4935fc4eb9",
+   "title": "決済システムの監視設計:障害を「通知の洪水」にせず、重大イベントだけを確実に拾う方法",
+   "author": "Payneteasy",
+   "score": 0,
+   "tags": [
+    "決済",
+    "Webhook",
+    "API",
+    "fintech",
+    "バックエンド"
+   ],
+   "published_at": "2026-11-13T00:04:31+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/koukyo/items/0bb0c07d25a23fcbb56c",
+   "title": "機械学習の数学と実装を固める5冊",
+   "author": "koukyo",
+   "score": 0,
+   "tags": [
+    "機械学習",
+    "深層学習",
+    "強化学習",
+    "数学",
+    "書籍"
+   ],
+   "published_at": "2026-11-13T00:04:17+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/pythonista0328/items/3af37e536bfb4eb37c8d",
+   "title": "cronでuv: command not found｜macOSのPATH罠と対策5つ",
+   "author": "pythonista0328",
+   "score": 0,
+   "tags": [
+    "cron",
+    "UV",
+    "macOS",
+    "Python",
+    "ClaudeCode"
+   ],
+   "published_at": "2026-11-13T00:03:44+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/Doc-Tanukichi/items/1f04bfdf91924fd14ac0",
+   "title": "【クラウドをつくる側 #4】もし自分が CSP を作るなら ― Kubernetes と Crossplane で「自分たちのクラウドの API」を作る",
+   "author": "Doc-Tanukichi",
+   "score": 0,
+   "tags": [
+    "Cloud",
+    "kubernetes",
+    "crossplane",
+    "OSS",
+    "プラットフォームエンジニアリング"
+   ],
+   "published_at": "2026-11-12T23:57:25+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/Doc-Tanukichi/items/e0f1107656e90d45b7b1",
+   "title": "【クラウドをつくる側 #3】プライベートクラウドを自分で作る ― Proxmox VE・OpenStack・KubeVirt と、CSP と同じにならないもの",
+   "author": "Doc-Tanukichi",
+   "score": 0,
+   "tags": [
+    "Cloud",
+    "openstack",
+    "proxmox",
+    "KubeVirt",
+    "プライベートクラウド"
+   ],
+   "published_at": "2026-11-12T23:57:07+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/Doc-Tanukichi/items/b544fd56115ce497bc09",
+   "title": "【クラウドをつくる側 #2】CSP は OSS とどう付き合ってきたか ― マネージド化・独自基盤・OSS への貢献",
+   "author": "Doc-Tanukichi",
+   "score": 0,
+   "tags": [
+    "Cloud",
+    "OSS",
+    "AWS",
+    "Azure",
+    "GoogleCloud"
+   ],
+   "published_at": "2026-11-12T23:56:46+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/Doc-Tanukichi/items/377adab59bdac20ed944",
+   "title": "【クラウドをつくる側 #1】クラウドは何でできているか ― 使う側からは見えない部品の全体像",
+   "author": "Doc-Tanukichi",
+   "score": 0,
+   "tags": [
+    "Cloud",
+    "アーキテクチャ",
+    "AWS",
+    "仮想化",
+    "インフラ"
+   ],
+   "published_at": "2026-11-12T23:56:26+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/Kerdy/items/d165ec566f088d4e3169",
+   "title": "11/13、今日のセキュリティニュース｜ChatGPT Plusの決済失敗を装うフィッシングメール、カード情報の窃取狙う｜冷凍・冷蔵設備へのサイバー攻撃、仏スーパー約700店舗に被害　日本政府が注意喚",
+   "author": "Kerdy",
+   "score": 0,
+   "tags": [
+    "Security",
+    "サイバーセキュリティ",
+    "フィッシング",
+    "セキュリティニュース",
+    "OpenAI"
+   ],
+   "published_at": "2026-11-12T23:53:31+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/Aki-Dortu/items/35499ba750685c57dfb4",
+   "title": "【AWS AIサービス解説①】Amazon Bedrockとは？",
+   "author": "Aki-Dortu",
+   "score": 0,
+   "tags": [
+    "AWS",
+    "AmazonBedrock",
+    "生成AI",
+    "LLM",
+    "rag"
+   ],
+   "published_at": "2026-11-12T23:53:09+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/ikeshitatoshiki/items/8cc66873540e4d743051",
+   "title": "氷の気泡が語る時間の閉じ込め方",
+   "author": "ikeshitatoshiki",
+   "score": 0,
+   "tags": [
+    "池下竣紀",
+    "冷蔵庫",
+    "氷の科学",
+    "時間の流れ"
+   ],
+   "published_at": "2026-11-12T23:52:58+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/Sidejob/items/f2788fb37ed3c7f93ba2",
+   "title": "Power Automateで「400 Bad Request: Request body is empty」が出るとき確認する3点（2026年）",
+   "author": "Sidejob",
+   "score": 0,
+   "tags": [
+    "PowerAutomate",
+    "MicrosoftPowerPlatform",
+    "400BadRequest",
+    "エラー対処",
+    "企業IT"
+   ],
+   "published_at": "2026-11-12T23:45:04+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/orca-forge/items/e308b9ea2fc4ef2fe486",
+   "title": "JavaScriptのホイールでページが飛ぶ症状を距離で直す方法",
+   "author": "orca-forge",
+   "score": 0,
+   "tags": [
+    "JavaScript",
+    "スクロール",
+    "アニメーション",
+    "スマートフォン"
+   ],
+   "published_at": "2026-11-12T23:29:06+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/usagi0920/items/068aed2cf3a2c98dd196",
+   "title": "応用情報A試験の学習法を共有する",
+   "author": "usagi0920",
+   "score": 0,
+   "tags": [
+    "応用情報技術者試験"
+   ],
+   "published_at": "2026-11-12T23:21:42+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/sami-openlife/items/28b71b9b28455655e2c2",
+   "title": "存在しないファイルへの署名を、二人に頼んでしまった話",
+   "author": "sami-openlife",
+   "score": 0,
+   "tags": [
+    "AI",
+    "自律エージェント",
+    "暗号学的検証"
+   ],
+   "published_at": "2026-11-12T23:18:58+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/homhom44/items/b9a3bba5ff90f549d7ee",
+   "title": "AIが8時間かけた重みの手術を、線形計画法なら1分で──Qwen3.5の思考ループを直した「8列の編集」の正体",
+   "author": "homhom44",
+   "score": 0,
+   "tags": [
+    "LLM",
+    "線形計画法",
+    "機械学習",
+    "Qwen",
+    "最適化"
+   ],
+   "published_at": "2026-11-12T23:05:33+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/ishisaka/items/f8ce44fbebfa77808469",
+   "title": "プログラミング雑記 2026年11月13日",
+   "author": "ishisaka",
+   "score": 0,
+   "tags": [
+    "プログラミング",
+    "Cloud",
+    "AI",
+    "エンジニア"
+   ],
+   "published_at": "2026-11-12T23:03:06+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/NTTDATA-Kyushu-Cloud/items/70e80cc4137c75f91059",
+   "title": "CloudWatch エージェントで Shift_JIS のログが文字化けする ── encoding 設定後も解消しないときの対処",
+   "author": "NTTDATA-Kyushu-Cloud",
+   "score": 0,
+   "tags": [
+    "AWS",
+    "CloudWatch",
+    "WindowsServer",
+    "文字コード",
+    "ログ"
+   ],
+   "published_at": "2026-11-12T23:01:07+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/mrmrmr/items/f5c4d2335b3a88f90ae8",
+   "title": "【文系合格者が解説】G検定の計算問題は5パターンだけ｜畳み込み・パラメータ数・適合率を例題で攻略",
+   "author": "mrmrmr",
+   "score": 0,
+   "tags": [
+    "G検定",
+    "AI",
+    "DeepLearning",
+    "JDLA",
+    "資格"
+   ],
+   "published_at": "2026-11-12T23:00:05+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/mellowlaunch/items/5d10007dc7a602f412aa",
+   "title": "⚡Snowflake 入門⚡Cortex AISQLで何が変わるのか？構造化データと非構造化データ分析の未来",
+   "author": "mellowlaunch",
+   "score": 0,
+   "tags": [
+    "Snowflake",
+    "Snowflake入門",
+    "CortexAI"
+   ],
+   "published_at": "2026-11-12T22:35:31+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/yoshi_t_427/items/9ee81b4fc7a7c456a499",
+   "title": "Mindcraft導入メモ（Ollama＋Qwen3.5 9B）",
+   "author": "yoshi_t_427",
+   "score": 0,
+   "tags": [
+    "minecraft",
+    "Mindcraft",
+    "ollama",
+    "Docker",
+    "ローカルLLM"
+   ],
+   "published_at": "2026-11-12T22:31:47+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/Git_Dayori/items/f506dee5a2f3b8fa7c3e",
+   "title": "【GitHub日報】DeepSeek Harness用画像生成プラグインdsh-image-genが初登場、astryxが3日連続首位 — 2026-11-13",
+   "author": "Git_Dayori",
+   "score": 0,
+   "tags": [
+    "GitHub",
+    "トレンド",
+    "OSS",
+    "AI",
+    "開発ツール"
+   ],
+   "published_at": "2026-11-12T22:31:43+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/jiis-sasaki/items/00b589af28980e285fbf",
+   "title": "ModSecurity+OWASP CRSでサーバー側WAFを入れる7つの手順(Apache/nginx・コピペOK)",
+   "author": "jiis-sasaki",
+   "score": 0,
+   "tags": [
+    "Security",
+    "Apache",
+    "nginx",
+    "WordPress",
+    "Linux"
+   ],
+   "published_at": "2026-11-12T22:30:00+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/anguoyang/items/57ed5a84f404edb8e0ca",
+   "title": "プロファイル台帳では見えないカメラの入力",
+   "author": "anguoyang",
+   "score": 0,
+   "tags": [
+    "ONVIF",
+    "Python",
+    "IoT",
+    "Network",
+    "Security"
+   ],
+   "published_at": "2026-11-12T22:28:53+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/harupython/items/dae9371635f42dac83f3",
+   "title": "サーバーを増やしても高可用性にならない理由 ― Microsoft 365障害(EX1550543)から考える冗長化とフェイルプルーフ",
+   "author": "harupython",
+   "score": 0,
+   "tags": [
+    "Microsoft365",
+    "ExchangeOnline",
+    "障害対応",
+    "SRE",
+    "分散システム"
+   ],
+   "published_at": "2026-11-12T22:28:13+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/AUTOMOS/items/02ea7bc1ffa1d8c60de5",
+   "title": "Windows で長い名前の .mjs を 8.3 短縮名で呼ぶと拡張子が .MJS になった。export の1行を持つ中身は ERR_UNKNOWN_FILE_EXTENSION で落ち、宣言なしの代入だけの中身はエラーを出さず CommonJS として走った",
+   "author": "AUTOMOS",
+   "score": 0,
+   "tags": [
+    "Node.js",
+    "Windows",
+    "esm",
+    "JavaScript",
+    "トラブルシューティング"
+   ],
+   "published_at": "2026-11-12T22:25:50+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/maees/items/8ad678652b8981af85d1",
+   "title": "RetrofitのCallは1回限り――cloneで作り直す重複防止の設計",
+   "author": "maees",
+   "score": 0,
+   "tags": [
+    "Java",
+    "初心者",
+    "Retrofit",
+    "API"
+   ],
+   "published_at": "2026-11-12T22:20:19+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/Maku-Inc/items/47c90824b38b6c41b473",
+   "title": "【徹底解説】機械学習の不均衡データ（Imbalanced Data）対策：SMOTEと重み付けでモデル性能を最大化",
+   "author": "Maku-Inc",
+   "score": 0,
+   "tags": [
+    "機械学習",
+    "SMOTE",
+    "不均衡データ",
+    "データサイエンス"
+   ],
+   "published_at": "2026-11-12T22:11:07+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/lhjjjk4/items/1a9db069df44d84a7428",
+   "title": "AI日報 2026年11月13日：Gemini 4 Hydrogenがデフォルト主力に、GoogleのAIグラス予約開始、Codex Securityオープンソース化",
+   "author": "lhjjjk4",
+   "score": 0,
+   "tags": [
+    "AI",
+    "Security",
+    "ハードウェア",
+    "エージェント"
+   ],
+   "published_at": "2026-11-12T22:07:27+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/ohisama@github/items/b34105b2775eda9f75b5",
+   "title": "自作MCPサーバー その11",
+   "author": "ohisama@github",
+   "score": 0,
+   "tags": [
+    "自作MCP",
+    "AI",
+    "ClaudeDesktop",
+    "ChatGPT"
+   ],
+   "published_at": "2026-11-12T22:06:53+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/yoshi_t_427/items/7f55b4e0214268169cc3",
+   "title": "Samba導入メモ（Ubuntu 22.04 LTS）",
+   "author": "yoshi_t_427",
+   "score": 0,
+   "tags": [
+    "Ubuntu",
+    "samba",
+    "smb",
+    "cifs",
+    "ファイル共有"
+   ],
+   "published_at": "2026-11-12T22:05:47+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/noookooo/items/88bf220d5a391f97bacd",
+   "title": "役割方式",
+   "author": "noookooo",
+   "score": 0,
+   "tags": [
+    "Excel"
+   ],
+   "published_at": "2026-11-12T22:00:06+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/doiken_/items/182fe0fdd357ba6296a9",
+   "title": "【ネットワーク最適化入門】多品種流問題─容量を取り合うとなぜ難しくなるのか⑧",
+   "author": "doiken_",
+   "score": 0,
+   "tags": [
+    "最適化",
+    "数理最適化",
+    "整数計画法",
+    "線形計画法",
+    "Network"
+   ],
+   "published_at": "2026-11-12T21:56:47+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/caa45040/items/1f58ac496dcefe66cf81",
+   "title": "M5Stack NanoC6、8x8 Puzzle Unit (Unit Puzzle ?)で時計。(3x4数字)",
+   "author": "caa45040",
+   "score": 0,
+   "tags": [
+    "Arduino",
+    "m5nanoC6",
+    "NeoPixel",
+    "ntp",
+    "PuzzleUnit"
+   ],
+   "published_at": "2026-11-12T21:55:09+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/hk816/items/7da1de5770d50272f2e8",
+   "title": "【検査】SSDのプチフリーズ防止機能をテストで証明！「低遅延制御（Suspend/Resume）」のテスト設計",
+   "author": "hk816",
+   "score": 0,
+   "tags": [
+    "#NAND",
+    "#SSD",
+    "#Latency",
+    "#ESTR"
+   ],
+   "published_at": "2026-11-12T21:54:29+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/claute_colo/items/5fe0e113ee4e4fef31fd",
+   "title": "Hugging Face のダウンロードは中断すると最初からやり直し — 止めた分は .incomplete のまま残る",
+   "author": "claute_colo",
+   "score": 0,
+   "tags": [
+    "huggingface",
+    "Python",
+    "機械学習",
+    "Claude",
+    "生成AI"
+   ],
+   "published_at": "2026-11-12T21:43:36+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/Masato_Takeda/items/4fa16b19e7716c75effa",
+   "title": "Google スプレッドシートでも数式の計算タイミングを手動に設定できるようになった！2026年追加の「手動計算」を試す｜Google スプレッドシート",
+   "author": "Masato_Takeda",
+   "score": 0,
+   "tags": [
+    "GoogleSpreadSheet",
+    "Googleスプレッドシート",
+    "Excel",
+    "AdventCalendar2026",
+    "人が書きました"
+   ],
+   "published_at": "2026-11-12T21:40:07+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/lemonIN/items/76e7ba7bc30e6bc4d510",
+   "title": "歪む起動",
+   "author": "lemonIN",
+   "score": 0,
+   "tags": [
+    "Unity",
+    "ゲーム開発",
+    "AI"
+   ],
+   "published_at": "2026-11-12T21:30:46+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/mhamadajp/items/e2eafd541d0292b8d7d7",
+   "title": "AIがコードを書く時代、IT技術者の競争力はどこに残るのか",
+   "author": "mhamadajp",
+   "score": 0,
+   "tags": [
+    "生成AI",
+    "システム設計",
+    "受託開発",
+    "ソフトウェア工学",
+    "キャリア"
+   ],
+   "published_at": "2026-11-12T21:27:35+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/hk816/items/0225fab03b60d4724847",
+   "title": "【実装】SSDの「プチフリーズ」防止！Readを割り込ませる「Suspend/Resume」の実装",
+   "author": "hk816",
+   "score": 0,
+   "tags": [
+    "#NAND",
+    "#SSD",
+    "#Latency",
+    "#ESCR"
+   ],
+   "published_at": "2026-11-12T21:26:44+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/hk816/items/da35cce30e9e65f17e22",
+   "title": "【設計】SSDの「プチフリーズ」防止！「低遅延（ローレイテンシ）制御」アーキテクチャ設計",
+   "author": "hk816",
+   "score": 0,
+   "tags": [
+    "#NAND",
+    "#SSD",
+    "#Latency",
+    "#ESDR"
+   ],
+   "published_at": "2026-11-12T21:10:16+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/haoli197654/items/f1e2b8377fe8281d8d4e",
+   "title": "SFX v3で音のアイデアを試す：プロンプトから音響制作へ",
+   "author": "haoli197654",
+   "score": 0,
+   "tags": [
+    "AI",
+    "音声生成",
+    "サウンドデザイン",
+    "API",
+    "クリエイティブ"
+   ],
+   "published_at": "2026-11-12T20:53:33+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/ohisama@github/items/7d2c641f8e0dc91ccb61",
+   "title": "自作MCPサーバー その10",
+   "author": "ohisama@github",
+   "score": 0,
+   "tags": [
+    "自作MCP",
+    "AI",
+    "ClaudeDesktop",
+    "ChatGPT"
+   ],
+   "published_at": "2026-11-12T20:28:08+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/mrmrmr/items/19aae18f1efd06d4406d",
+   "title": "【小学5年生でもわかる】バッチ正規化ってなに？",
+   "author": "mrmrmr",
+   "score": 0,
+   "tags": [
+    "G検定",
+    "DeepLearning",
+    "機械学習"
+   ],
+   "published_at": "2026-11-12T20:12:48+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/jofraarchar093/items/9cffc9390249e65e6e0c",
+   "title": "Book writing Services Help New York Authors Publish",
+   "author": "jofraarchar093",
+   "score": 0,
+   "tags": [
+    "Book",
+    "writing",
+    "services"
+   ],
+   "published_at": "2026-11-12T19:44:41+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/arairuca/items/7644d64a276c127698f6",
+   "title": "電圧降下の多項式近似式と誤差評価",
+   "author": "arairuca",
+   "score": 0,
+   "tags": [
+    "Python",
+    "電気回路",
+    "電気",
+    "電気系ガチ素人",
+    "電気主任技術者"
+   ],
+   "published_at": "2026-11-12T19:44:35+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/jzaibar/items/10c495e8f9bc4782388a",
+   "title": "筆算の割り算をアルゴリズムのように解く手順",
+   "author": "jzaibar",
+   "score": 0,
+   "tags": [
+    "算数",
+    "割り算",
+    "数学"
+   ],
+   "published_at": "2026-11-12T19:41:24+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/pitopito/items/3f7868a3ac625df187e7",
+   "title": "2026/11/13主にITとかセキュリティの記事",
+   "author": "pitopito",
+   "score": 0,
+   "tags": [
+    "Security",
+    "ニュース"
+   ],
+   "published_at": "2026-11-12T19:21:48+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/picnic/items/d31cdc35fa12d6aa2475",
+   "title": "Google検索にGemini 4 Hydrogenが搭載、現時点で分かることと確認すべきポイント",
+   "author": "picnic",
+   "score": 0,
+   "tags": [
+    "Gemini",
+    "GoogleAI",
+    "Google",
+    "AI",
+    "LLM"
+   ],
+   "published_at": "2026-11-12T19:05:56+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/picnic/items/2c5b1b1252f45903bf5d",
+   "title": "セルフホスト版 Claude Managed Agents 提供開始｜サービス全体を自社インフラで運用",
+   "author": "picnic",
+   "score": 0,
+   "tags": [
+    "Claude",
+    "Anthropic",
+    "AI",
+    "LLM",
+    "API"
+   ],
+   "published_at": "2026-11-12T19:04:45+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/tanakanekosuke/items/ae76795eb672d7e1620c",
+   "title": "【海外テック動向】エッジLLM・Zen 6・ローカルExcalidraw：最新Devトレンド3選",
+   "author": "tanakanekosuke",
+   "score": 0,
+   "tags": [
+    "Python",
+    "GitHub",
+    "AI",
+    "Trend"
+   ],
+   "published_at": "2026-11-12T18:23:58+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/kinamocchi_tech/items/aeb510321e547824c996",
+   "title": "Gemini 4 Hydrogen とは？公式発表を3分で速報解説",
+   "author": "kinamocchi_tech",
+   "score": 0,
+   "tags": [
+    "AI",
+    "LLM",
+    "Gemini"
+   ],
+   "published_at": "2026-11-12T18:12:11+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/prismpepe/items/709fccd148562bedbd44",
+   "title": "Handy Markdown Editor による文書作成",
+   "author": "prismpepe",
+   "score": 0,
+   "tags": [
+    "自作アプリ",
+    "Markdown",
+    "Markdownエディタ",
+    "Handy-Markdown-Editor"
+   ],
+   "published_at": "2026-11-12T18:06:15+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/Masato_Takeda/items/71cc529c4f81a44af664",
+   "title": "先着〇〇名で受付終了！回答数を指定してGoogle フォームを自動で締め切る｜Google フォーム",
+   "author": "Masato_Takeda",
+   "score": 0,
+   "tags": [
+    "GoogleForms",
+    "Googleフォーム",
+    "GoogleWorkspace",
+    "AdventCalendar2026",
+    "人が書きました"
+   ],
+   "published_at": "2026-11-12T18:01:41+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/prismpepe/items/37b96b69032d51c8d9ce",
+   "title": "Handy Markdown Editor と 主要 Markdown エディタとの機能比較",
+   "author": "prismpepe",
+   "score": 0,
+   "tags": [
+    "自作アプリ",
+    "Markdown",
+    "Markdownエディタ",
+    "Handy-Markdown-Editor"
+   ],
+   "published_at": "2026-11-12T18:00:08+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/horokusa_tr7/items/d0b6307b39c881ff3812",
+   "title": "Playwright（Python版）における画面・コンポーネント設計ガイド",
+   "author": "horokusa_tr7",
+   "score": 0,
+   "tags": [
+    "Playwright",
+    "Python"
+   ],
+   "published_at": "2026-11-12T17:54:56+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/mrmrmr/items/2b7b906df4f7049afa81",
+   "title": "バギングとブースティングとは？基礎から応用までわかりやすく解説",
+   "author": "mrmrmr",
+   "score": 0,
+   "tags": [
+    "G検定",
+    "機械学習",
+    "DeepLearning",
+    "AI",
+    "データサイエンス"
+   ],
+   "published_at": "2026-11-12T17:42:45+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/masato_y/items/6c053899975be9e58754",
+   "title": "Physical AIにおける「高レベル計画」と「低レベル計画」とは何か？",
+   "author": "masato_y",
+   "score": 0,
+   "tags": [
+    "PhysicalAI"
+   ],
+   "published_at": "2026-11-12T17:29:17+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/40dai_papa/items/3de904eb05e1e0737ef7",
+   "title": "Gemini の JSON 出力を n8n で「記録してよいか」まで判定する ― レシート OCR の Code ノード実装",
+   "author": "40dai_papa",
+   "score": 0,
+   "tags": [
+    "n8n",
+    "Gemini",
+    "OCR",
+    "JavaScript",
+    "GoogleSheets"
+   ],
+   "published_at": "2026-11-12T17:22:47+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/pmc-ko/items/566dbe1776beb802029f",
+   "title": "プリザンター内部で動くSQL文を調べてみる[第11回：分析チャート編]",
+   "author": "pmc-ko",
+   "score": 0,
+   "tags": [
+    "プリザンター",
+    "Pleasanter",
+    "SQL",
+    "ソースコードリーディング",
+    "C#"
+   ],
+   "published_at": "2026-11-12T17:21:34+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/freefreefree1222/items/a2b73759030a737ce4f2",
+   "title": "WordPressにCSVを自動反映するとき、手動編集を上書きしないための楽観的排他制御",
+   "author": "freefreefree1222",
+   "score": 0,
+   "tags": [
+    "自動化",
+    "WordPress"
+   ],
+   "published_at": "2026-11-12T17:00:47+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/Masato_Takeda/items/c6eaf4020a66f9ce8832",
+   "title": "フォームの回答締切、時間がきたら手動で操作していない？指定日時に回答受付を自動終了する設定｜Google フォーム",
+   "author": "Masato_Takeda",
+   "score": 0,
+   "tags": [
+    "GoogleForms",
+    "Googleフォーム",
+    "GoogleWorkspace",
+    "AdventCalendar2026",
+    "人が書きました"
+   ],
+   "published_at": "2026-11-12T16:56:57+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/SHAOYIKYEOH/items/59db3a49e5ffa3c46da0",
+   "title": "【初心者向け】cwd（カレントディレクトリ）の落とし穴！",
+   "author": "SHAOYIKYEOH",
+   "score": 0,
+   "tags": [
+    "JavaScript",
+    "ディレクトリ"
+   ],
+   "published_at": "2026-11-12T16:44:33+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/qa_risa/items/68b15c4f1d40649dbb1d",
+   "title": "AI駆動開発ライフサイクル (AI-DLC) ナレッジバッジを受講したメモ",
+   "author": "qa_risa",
+   "score": 0,
+   "tags": [
+    "AI駆動開発",
+    "AIDLC",
+    "AWS",
+    "勉強メモ",
+    "開発手法"
+   ],
+   "published_at": "2026-11-12T16:43:39+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/softeczofficial/items/21c9b5701a7b3bd80170",
+   "title": "How to Manage Your Favorite Streaming Movies and TV Shows for Offline Viewing",
+   "author": "softeczofficial",
+   "score": 0,
+   "tags": [
+    "Video",
+    "Multimedia"
+   ],
+   "published_at": "2026-11-12T16:39:41+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/kizukidata/items/2ef5851bba221dae82bc",
+   "title": "企業・自治体の公式 note 575 本を pandas で集計したら、スキを比べる前に記事の古さをそろえる必要があった",
+   "author": "kizukidata",
+   "score": 0,
+   "tags": [
+    "Python",
+    "pandas",
+    "データ分析",
+    "matplotlib",
+    "note"
+   ],
+   "published_at": "2026-11-12T16:22:47+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/smith-multicast/items/ce3389b7cddab19356bc",
+   "title": "virtio-net multi-queueを試す：Windows Server間のファイルコピーはどれだけ速くなるか",
+   "author": "smith-multicast",
+   "score": 0,
+   "tags": [
+    "nutanix",
+    "Linux"
+   ],
+   "published_at": "2026-11-12T16:20:24+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/smith-multicast/items/88a727b98259777d2a72",
+   "title": "【Nutanix】QoSで管理・データサービストラフィックのDSCP値を設定する",
+   "author": "smith-multicast",
+   "score": 0,
+   "tags": [
+    "nutanix",
+    "QoS"
+   ],
+   "published_at": "2026-11-12T16:17:44+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/taikihamamoto/items/65d1c8da59c59310f60a",
+   "title": "【Supabase Auth】別タブから戻ると React の画面がリセットされる原因と対処：SIGNED_IN はログインのときだけじゃない",
+   "author": "taikihamamoto",
+   "score": 0,
+   "tags": [
+    "Supabase",
+    "React",
+    "JavaScript",
+    "認証"
+   ],
+   "published_at": "2026-11-12T16:16:14+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/smith-multicast/items/5f63709629ef9af7d8e2",
+   "title": "【Nutanix】CuratorページからPartial Scanを手動実行する",
+   "author": "smith-multicast",
+   "score": 0,
+   "tags": [
+    "nutanix"
+   ],
+   "published_at": "2026-11-12T16:14:26+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/smith-multicast/items/996b8542bdc220fd8c6b",
+   "title": "【Nutanix】zeus_config_printerの出力を確認してみる",
+   "author": "smith-multicast",
+   "score": 0,
+   "tags": [
+    "nutanix"
+   ],
+   "published_at": "2026-11-12T16:12:13+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/smith-multicast/items/24cd8a42f947f78ff409",
+   "title": "【Nutanix】curator_cliでデータ削減効果・vDisk使用量・アクセス状況を確認する",
+   "author": "smith-multicast",
+   "score": 0,
+   "tags": [
+    "nutanix"
+   ],
+   "published_at": "2026-11-12T16:11:14+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/smith-multicast/items/4c3e00a451b215e7829f",
+   "title": "【Nutanix】3種類のサブネットの違いと、VLAN BasicからVLAN Subnetへの移行方法",
+   "author": "smith-multicast",
+   "score": 0,
+   "tags": [
+    "nutanix",
+    "vlan"
+   ],
+   "published_at": "2026-11-12T16:09:35+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/0xNurstar/items/f4ae4148414afb044fc9",
+   "title": "エージェントの「スキル」は新しい npm パッケージだ — 一度のスキャンでは足りない理由",
+   "author": "0xNurstar",
+   "score": 0,
+   "tags": [
+    "AI",
+    "AgentSkills",
+    "GitHub"
+   ],
+   "published_at": "2026-11-12T16:09:00+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/smith-multicast/items/b587f117d27bd9b9e660",
+   "title": "[BIG-IP] VMware Workstation Proでロードバランサーの検証環境を構築する Part 16：検証端末の設定・負荷分散・Cookie Persistenceの動作確認",
+   "author": "smith-multicast",
+   "score": 0,
+   "tags": [
+    "big-ip",
+    "Network",
+    "vmware",
+    "TCP",
+    "cookie"
+   ],
+   "published_at": "2026-11-12T16:06:57+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/smith-multicast/items/80c9fab87fea14d939c1",
+   "title": "【BIG-IP】VMware Workstation Proでロードバランサーの検証環境を構築する Part 15：Virtual Serverの作成とHTTP負荷分散設定",
+   "author": "smith-multicast",
+   "score": 0,
+   "tags": [
+    "big-ip",
+    "Network",
+    "vmware"
+   ],
+   "published_at": "2026-11-12T16:03:14+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/smith-multicast/items/5ec3fb2042e500f49078",
+   "title": "【BIG-IP】VMware Workstation Proでロードバランサーの検証環境を構築する Part 14：リアルサーバの準備",
+   "author": "smith-multicast",
+   "score": 0,
+   "tags": [
+    "big-ip",
+    "Network",
+    "vmware"
+   ],
+   "published_at": "2026-11-12T16:00:44+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/smith-multicast/items/fcb4284b5b29f229ccb9",
+   "title": "【BIG-IP】VMware Workstation Proで検証環境を構築する Part 13：VyOSのインストールとルーティング設定",
+   "author": "smith-multicast",
+   "score": 0,
+   "tags": [
+    "big-ip",
+    "Network",
+    "vmware",
+    "VyOS"
+   ],
+   "published_at": "2026-11-12T15:55:44+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/Veteran/items/728f0d37ec7e031378fe",
+   "title": "【IT業界25年目】ADHDポンコツ鬱エンジニアが人生賭けて運営中の求人サービス『ヴェテラン』でも今すぐ棚卸ししたい「解約済みSaaSのIAMロール」と、ベンダー連携でやってはいけない危険設定",
+   "author": "Veteran",
+   "score": 0,
+   "tags": [
+    "AWS",
+    "IAM",
+    "Security",
+    "Cloudtrail",
+    "サプライチェーン攻撃"
+   ],
+   "published_at": "2026-11-12T15:37:04+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/oosawak@github/items/fa67260a910448cbf4f0",
+   "title": "管理画面は借りる ― microCMS と Markdown CMS を Webhook でつないだ話",
+   "author": "oosawak@github",
+   "score": 0,
+   "tags": [
+    "microCMS",
+    "cloudflare",
+    "Workers",
+    "tips",
+    "静的サイト"
+   ],
+   "published_at": "2026-11-12T15:22:43+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/etale_cohomology/items/7f21731d0522935aa1af",
+   "title": "【全４回連載（第２回）】定理証明を自動で行うNeural Theorem Proverは、「タクティク記法」と「宣言的スタイル記法」のどちらで学習して、証明の答案を提出するのか",
+   "author": "etale_cohomology",
+   "score": 0,
+   "tags": [
+    "lean4",
+    "数学",
+    "形式手法",
+    "機械学習",
+    "生成AI"
+   ],
+   "published_at": "2026-11-12T15:12:11+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/ynakayama/items/9d1239ad85e7cafa77ae",
+   "title": "粒子シミュレーションの重心速度と構造振幅を Python で計算して検証する",
+   "author": "ynakayama",
+   "score": 0,
+   "tags": [
+    "Python",
+    "numpy",
+    "シミュレーション",
+    "グラフ理論",
+    "数値計算"
+   ],
+   "published_at": "2026-11-12T15:11:04+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/io0323/items/b25949e6ec861f8a764e",
+   "title": "プログラミング・ビットコイン ―ゼロからビットコインをプログラムする方法",
+   "author": "io0323",
+   "score": 0,
+   "tags": [
+    "ビットコイン",
+    "Bitcoin",
+    "Python",
+    "ブロックチェーン",
+    "書評"
+   ],
+   "published_at": "2026-11-12T15:08:22+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/lumichy/items/bab32bd5cd1d1363039c",
+   "title": "日常写真から公的証明写真を自作するAIエージェントスキルを作った：スーツ着せ替えとコンビニ印刷まで一発完結",
+   "author": "lumichy",
+   "score": 0,
+   "tags": [
+    "AI",
+    "Python",
+    "画像生成",
+    "Agent",
+    "LLM"
+   ],
+   "published_at": "2026-11-12T15:04:56+00:00"
+  },
+  {
+   "source": "qiita",
+   "url": "https://qiita.com/kling4org/items/6c81e1bded7a4081ef3e",
+   "title": "動きのテストでは、照明とカメラワークを同時に変えない",
+   "author": "kling4org",
+   "score": 0,
+   "tags": [
+    "Video"
+   ],
+   "published_at": "2026-11-12T15:04:02+00:00"
+  },
+  {
+   "source": "zenn",
+   "url": "https://zenn.dev/shougo/articles/ng-nvim-simple-gui",
+   "title": "ng: Neovim のためのシンプルな GUI",
+   "author": "Shougo",
+   "score": null,
+   "tags": [],
+   "published_at": "2026-11-13T10:49:55+00:00"
+  },
+  {
+   "source": "zenn",
+   "url": "https://zenn.dev/atrae/articles/032b9fccca0ff7",
+   "title": "困ったらAIにすぐ聞く3年目エンジニアが社会人になって読んだ技術書 10冊.",
+   "author": "shin",
+   "score": null,
+   "tags": [],
+   "published_at": "2026-11-13T07:46:50+00:00"
+  },
+  {
+   "source": "zenn",
+   "url": "https://zenn.dev/ara_ta3/articles/thinking-about-engineers-five-years-from-now",
+   "title": "5年後のエンジニアは、何に責任を持つのだろうか",
+   "author": "ara_ta3",
+   "score": null,
+   "tags": [],
+   "published_at": "2026-11-13T05:03:44+00:00"
+  },
+  {
+   "source": "zenn",
+   "url": "https://zenn.dev/karamage/articles/5c3f8370b2b370",
+   "title": "【pstack】AIに敵対的レビューをさせるな。トークンは検証に使え",
+   "author": "karamage",
+   "score": null,
+   "tags": [],
+   "published_at": "2026-11-13T02:48:24+00:00"
+  },
+  {
+   "source": "zenn",
+   "url": "https://zenn.dev/ca_kagglers/articles/two-tower-mechanism",
+   "title": "仕組み編：Two-Towerによる検索システム（学習・推論・配信）",
+   "author": "ihiratch",
+   "score": null,
+   "tags": [],
+   "published_at": "2026-11-13T01:55:36+00:00"
+  },
+  {
+   "source": "zenn",
+   "url": "https://zenn.dev/fixstars/articles/kimi-k31-pro-benchmark",
+   "title": "最強オープンウェイトモデル Kimi-K3.1-Pro をセルフホストして独自ベンチで比べてみた",
+   "author": "iizuka kota",
+   "score": null,
+   "tags": [],
+   "published_at": "2026-11-12T23:50:35+00:00"
+  },
+  {
+   "source": "zenn",
+   "url": "https://zenn.dev/pivotmedia/articles/risk-based-testing-for-uat",
+   "title": "AIで膨らみ続けるテストケースを、リスクベースドテストで選んで回すまでの記録",
+   "author": "Keisuke",
+   "score": null,
+   "tags": [],
+   "published_at": "2026-11-12T11:41:36+00:00"
+  }
+ ]
+}
